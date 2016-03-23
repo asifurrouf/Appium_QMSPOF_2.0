@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Selendroid" verbose="3">  
+	<test name="Selendroid Demo">
+	<classes>
+		<class name="olx.appium.test.testContoh"/>
+	</classes>
+	</test>
+</suite>
