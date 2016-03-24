@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Appium Paralel Test" verbose="3" parallel="classes" thread-count="2">  
-	<test name="Example">
+	<test name="Appium test contoh">
 	<classes>
-<<<<<<< HEAD
-		<class name="olx.appium.test.testContoh"/>
-		<class name="olx.appium.test.testContoh2"/>
-=======
 		<class name="scenarios.AppiumTest"/>
->>>>>>> c04451bbb77df91476a63bfb018b4df67e34617f
 	</classes>
 	</test>
 </suite>
