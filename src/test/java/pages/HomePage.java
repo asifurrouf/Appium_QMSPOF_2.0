@@ -36,9 +36,9 @@ public class HomePage extends BasePage {
     
     public void clickMobilLink(){
     	waitForVisibilityOf(getTextMobilLink());
-    	System.out.println("Test");
-    	driver.findElement(getTextMobilLink());
+    	driver.findElement(getTextMobilLink()).click();
     	driver.navigate().back();
+    	System.out.println("Test");
     }
 
     public void clearText(WebElement elementToBeCleared) {

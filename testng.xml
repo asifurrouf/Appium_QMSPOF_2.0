@@ -2,7 +2,7 @@
 <suite name="Selendroid" verbose="3">  
 	<test name="Selendroid Demo">
 	<classes>
-		<class name="olx.appium.test.testContoh"/>
+		<class name="scenarios.AppiumTest"/>
 	</classes>
 	</test>
 </suite>
