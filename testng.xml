@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Selendroid" verbose="3">  
-	<test name="Selendroid Demo">
+<suite name="Appium Paralel Test" verbose="3" parallel="classes" thread-count="2">  
+	<test name="Example">
 	<classes>
 		<class name="olx.appium.test.testContoh"/>
+		<class name="olx.appium.test.testContoh2"/>
 	</classes>
 	</test>
 </suite>
