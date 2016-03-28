@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
@@ -24,12 +25,26 @@ public class BasePage {
     }
 
     protected void waitForVisibilityOf(By locator) {
-        WebDriverWait wait = new WebDriverWait(driver, 30);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
     protected void waitForClickabilityOf(By locator) {
-        WebDriverWait wait = new WebDriverWait(driver, 30);
+        WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
+    
+    protected boolean isElementPresent(By by) {
+   	try {
+			driver.findElement(by);
+			return true;
+		} catch (NoSuchElementException e) {
+			return false;
+		}
+	}
+    
+    public void clickElement(By by){
+    	waitForVisibilityOf(by);
+    	driver.findElement(by).click();
     }
 
     public void scrollPageUp() {

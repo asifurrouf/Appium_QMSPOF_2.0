@@ -1,0 +1,2579 @@
+[Appium] Welcome to Appium v1.5.0 (REV b28ea4442847206504446115e07dc2d6a366a825)
+[Appium] Non-default server args:
+[Appium]   port: 4726
+[Appium]   nodeconfig: 'NexusTwoHome.json'
+[Appium]   udid: '192.168.99.102:5555'
+[Appium] Deprecated server args:
+[Appium]   -U,--udid => --default-capabilities '{"udid":"192.168.99.102:5555"}'
+[Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+[Appium]   udid: '192.168.99.102:5555'
+[debug] [Appium] Starting auto register thread for grid. Will try to register every 5000 ms.
+[Appium] Appium REST http interface listener started on 0.0.0.0:4726
+[debug] [Appium] Appium successfully registered with the grid on 192.168.99.100:4444
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 17 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 11 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 11 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 14 ms - 121 
+[HTTP] --> POST /wd/hub/session 
+[MJSONWP] Calling AppiumDriver.createSession() with args: [{"appPackage":"com.app.tokobagus.betterb","appActivity":"sea.olx.activities.SplashscreenActivity","noReset":true,"no-reset":"true","full-reset":"F...
+[Appium] Creating new AndroidDriver session
+[Appium] Capabilities:
+[Appium]   appPackage: 'com.app.tokobagus.betterb'
+[Appium]   appActivity: 'sea.olx.activities.SplashscreenActivity'
+[Appium]   noReset: true
+[Appium]   no-reset: 'true'
+[Appium]   full-reset: 'False'
+[Appium]   platformName: 'Android'
+[Appium]   device: 'Android'
+[Appium]   deviceName: 'Android'
+[Appium]   fullReset: 'false'
+[Appium]   udid: '192.168.99.102:5555'
+[debug] [Appium] Capability 'no-reset' changed from string to boolean. This may cause unexpected behavior
+[debug] [Appium] Capability 'full-reset' changed from string to boolean. This may cause unexpected behavior
+[debug] [Appium] Capability 'fullReset' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] The following capabilities were provided, but are not recognized by appium: no-reset, full-reset, device.
+[BaseDriver] Session created with session id: ce9ae131-eeca-40fa-911f-5a927937c293
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_74
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/tegar/Library/Android/sdk/platform-tools/adb
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[AndroidDriver] Using device: 192.168.99.102:5555
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/tegar/Library/Android/sdk/platform-tools/adb
+[debug] [ADB] Setting device id to 192.168.99.102:5555
+[AndroidDriver] App file was not listed, instead we're going to run com.app.tokobagus.betterb directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","pm","list","packages","com.app.tokobagus.betterb"]
+[AndroidDriver] Starting Android session
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","wait-for-device"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","echo","ping"]
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","install","/usr/local/lib/node_modules/appium/node_modules/io.appium.settings/bin/settings_apk-debug.apk"]
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","install","/usr/local/lib/node_modules/appium/node_modules/appium-unlock/bin/unlock_apk-debug.apk"]
+[ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","getprop","ro.build.version.release"]
+[debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 4724 to device: 4724
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","forward","tcp:4724","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","push","/usr/local/lib/node_modules/appium/node_modules/appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar","/data/local/tmp/"]
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","ps","uiautomator"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: -P, 5037, -s, 192.168.99.102:5555, shell, uiautomator, runtest, AppiumBootstrap.jar, -c, io.appium.android.bootstrap.Bootstrap, -e, pkg, com.app.tokobagus.betterb, -e, disableAndroidWatchers, false, -e, acceptSslCerts, false
+[debug] [UiAutomator] Moving to state 'online'
+[AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","dumpsys","window"]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[AndroidDriver] Screen already unlocked, doing nothing
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","getprop","ro.build.version.sdk"]
+[debug] [ADB] Device API level: 18
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","am","start","-n","com.app.tokobagus.betterb/sea.olx.activities.SplashscreenActivity","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+[Appium] New AndroidDriver session created successfully, session ce9ae131-eeca-40fa-911f-5a927937c293 added to master session list
+[MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":tr...
+[HTTP] <-- POST /wd/hub/session 200 2541 ms - 837 
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 1438 ms - 121 
+[HTTP] --> POST /wd/hub/session/ce9ae131-eeca-40fa-911f-5a927937c293/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["ce9ae131-eeca-40fa-911f-5a927937c293"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/ce9ae131-eeca-40fa-911f-5a927937c293/back 200 777 ms - 76 
+[HTTP] --> POST /wd/hub/session/ce9ae131-eeca-40fa-911f-5a927937c293/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["ce9ae131-eeca-40fa-911f-5a927937c293"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/ce9ae131-eeca-40fa-911f-5a927937c293/back 200 777 ms - 76 
+[HTTP] --> POST /wd/hub/session/ce9ae131-eeca-40fa-911f-5a927937c293/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["ce9ae131-eeca-40fa-911f-5a927937c293"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/ce9ae131-eeca-40fa-911f-5a927937c293/back 200 693 ms - 76 
+[HTTP] --> POST /wd/hub/session/ce9ae131-eeca-40fa-911f-5a927937c293/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["ce9ae131-eeca-40fa-911f-5a927937c293"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/ce9ae131-eeca-40fa-911f-5a927937c293/back 200 1519 ms - 76 
+[HTTP] --> POST /wd/hub/session/ce9ae131-eeca-40fa-911f-5a927937c293/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["ce9ae131-eeca-40fa-911f-5a927937c293"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/ce9ae131-eeca-40fa-911f-5a927937c293/back 200 1082 ms - 76 
+[HTTP] --> POST /wd/hub/session/ce9ae131-eeca-40fa-911f-5a927937c293/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["ce9ae131-eeca-40fa-911f-5a927937c293"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/ce9ae131-eeca-40fa-911f-5a927937c293/back 200 1087 ms - 76 
+[HTTP] --> POST /wd/hub/session/ce9ae131-eeca-40fa-911f-5a927937c293/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["ce9ae131-eeca-40fa-911f-5a927937c293"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/ce9ae131-eeca-40fa-911f-5a927937c293/back 200 1090 ms - 76 
+[HTTP] --> POST /wd/hub/session/ce9ae131-eeca-40fa-911f-5a927937c293/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["ce9ae131-eeca-40fa-911f-5a927937c293"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/ce9ae131-eeca-40fa-911f-5a927937c293/back 200 1089 ms - 76 
+[HTTP] --> DELETE /wd/hub/session/ce9ae131-eeca-40fa-911f-5a927937c293 
+[MJSONWP] Calling AppiumDriver.deleteSession() with args: ["ce9ae131-eeca-40fa-911f-5a927937c293"]
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","am","force-stop","com.app.tokobagus.betterb"]
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","input","keyevent",3]
+[debug] [Logcat] Stopping logcat capture
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [UiAutomator] Shutting down UiAutomator
+[debug] [UiAutomator] Moving to state 'stopping'
+[debug] [UiAutomator] UiAutomator shut down normally
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","ps","uiautomator"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Moving to state 'stopped'
+[Appium] Removing session ce9ae131-eeca-40fa-911f-5a927937c293 from our master session list
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[MJSONWP] Responding to client with driver.deleteSession() result: null
+[HTTP] <-- DELETE /wd/hub/session/ce9ae131-eeca-40fa-911f-5a927937c293 200 656 ms - 76 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> POST /wd/hub/session 
+[MJSONWP] Calling AppiumDriver.createSession() with args: [{"appPackage":"com.app.tokobagus.betterb","appActivity":"sea.olx.activities.SplashscreenActivity","noReset":true,"no-reset":"true","full-reset":"F...
+[Appium] Creating new AndroidDriver session
+[Appium] Capabilities:
+[Appium]   appPackage: 'com.app.tokobagus.betterb'
+[Appium]   appActivity: 'sea.olx.activities.SplashscreenActivity'
+[Appium]   noReset: true
+[Appium]   no-reset: 'true'
+[Appium]   full-reset: 'False'
+[Appium]   platformName: 'Android'
+[Appium]   device: 'Android'
+[Appium]   deviceName: 'Android'
+[Appium]   fullReset: 'false'
+[Appium]   udid: '192.168.99.102:5555'
+[debug] [Appium] Capability 'no-reset' changed from string to boolean. This may cause unexpected behavior
+[debug] [Appium] Capability 'full-reset' changed from string to boolean. This may cause unexpected behavior
+[debug] [Appium] Capability 'fullReset' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] The following capabilities were provided, but are not recognized by appium: no-reset, full-reset, device.
+[BaseDriver] Session created with session id: 15b37a48-5dd5-4957-b2a7-0d888d07e072
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_74
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/tegar/Library/Android/sdk/platform-tools/adb
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[AndroidDriver] Using device: 192.168.99.102:5555
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/tegar/Library/Android/sdk/platform-tools/adb
+[debug] [ADB] Setting device id to 192.168.99.102:5555
+[AndroidDriver] App file was not listed, instead we're going to run com.app.tokobagus.betterb directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","pm","list","packages","com.app.tokobagus.betterb"]
+[AndroidDriver] Starting Android session
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","wait-for-device"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","echo","ping"]
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","install","/usr/local/lib/node_modules/appium/node_modules/io.appium.settings/bin/settings_apk-debug.apk"]
+[debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","install","/usr/local/lib/node_modules/appium/node_modules/appium-unlock/bin/unlock_apk-debug.apk"]
+[ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","getprop","ro.build.version.release"]
+[debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 4724 to device: 4724
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","forward","tcp:4724","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","push","/usr/local/lib/node_modules/appium/node_modules/appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar","/data/local/tmp/"]
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","ps","uiautomator"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: -P, 5037, -s, 192.168.99.102:5555, shell, uiautomator, runtest, AppiumBootstrap.jar, -c, io.appium.android.bootstrap.Bootstrap, -e, pkg, com.app.tokobagus.betterb, -e, disableAndroidWatchers, false, -e, acceptSslCerts, false
+[debug] [UiAutomator] Moving to state 'online'
+[AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","dumpsys","window"]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[AndroidDriver] Screen already unlocked, doing nothing
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","getprop","ro.build.version.sdk"]
+[debug] [ADB] Device API level: 18
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","am","start","-n","com.app.tokobagus.betterb/sea.olx.activities.SplashscreenActivity","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+[Appium] New AndroidDriver session created successfully, session 15b37a48-5dd5-4957-b2a7-0d888d07e072 added to master session list
+[MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":tr...
+[HTTP] <-- POST /wd/hub/session 200 2339 ms - 837 
+[HTTP] --> POST /wd/hub/session/15b37a48-5dd5-4957-b2a7-0d888d07e072/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["15b37a48-5dd5-4957-b2a7-0d888d07e072"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/15b37a48-5dd5-4957-b2a7-0d888d07e072/back 500 33 ms - 256 
+[HTTP] --> POST /wd/hub/session/15b37a48-5dd5-4957-b2a7-0d888d07e072/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["15b37a48-5dd5-4957-b2a7-0d888d07e072"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/15b37a48-5dd5-4957-b2a7-0d888d07e072/back 500 4 ms - 256 
+[HTTP] --> POST /wd/hub/session/15b37a48-5dd5-4957-b2a7-0d888d07e072/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["15b37a48-5dd5-4957-b2a7-0d888d07e072"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/15b37a48-5dd5-4957-b2a7-0d888d07e072/back 500 4 ms - 256 
+[HTTP] --> POST /wd/hub/session/15b37a48-5dd5-4957-b2a7-0d888d07e072/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["15b37a48-5dd5-4957-b2a7-0d888d07e072"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/15b37a48-5dd5-4957-b2a7-0d888d07e072/back 500 3 ms - 256 
+[HTTP] --> POST /wd/hub/session/15b37a48-5dd5-4957-b2a7-0d888d07e072/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["15b37a48-5dd5-4957-b2a7-0d888d07e072"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/15b37a48-5dd5-4957-b2a7-0d888d07e072/back 500 5 ms - 256 
+[HTTP] --> POST /wd/hub/session/15b37a48-5dd5-4957-b2a7-0d888d07e072/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["15b37a48-5dd5-4957-b2a7-0d888d07e072"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/15b37a48-5dd5-4957-b2a7-0d888d07e072/back 500 5 ms - 256 
+[HTTP] --> POST /wd/hub/session/15b37a48-5dd5-4957-b2a7-0d888d07e072/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["15b37a48-5dd5-4957-b2a7-0d888d07e072"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/15b37a48-5dd5-4957-b2a7-0d888d07e072/back 500 5 ms - 256 
+[HTTP] --> POST /wd/hub/session/15b37a48-5dd5-4957-b2a7-0d888d07e072/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["15b37a48-5dd5-4957-b2a7-0d888d07e072"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/15b37a48-5dd5-4957-b2a7-0d888d07e072/back 500 3 ms - 256 
+[HTTP] --> DELETE /wd/hub/session/15b37a48-5dd5-4957-b2a7-0d888d07e072 
+[MJSONWP] Calling AppiumDriver.deleteSession() with args: ["15b37a48-5dd5-4957-b2a7-0d888d07e072"]
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","am","force-stop","com.app.tokobagus.betterb"]
+[HTTP] --> GET /wd/hub/status 
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","input","keyevent",3]
+[debug] [Logcat] Stopping logcat capture
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[Appium] Removing session 15b37a48-5dd5-4957-b2a7-0d888d07e072 from our master session list
+[HTTP] <-- DELETE /wd/hub/session/15b37a48-5dd5-4957-b2a7-0d888d07e072 500 697 ms - 256 
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 309 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 10 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 16 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> POST /wd/hub/session 
+[MJSONWP] Calling AppiumDriver.createSession() with args: [{"appPackage":"com.app.tokobagus.betterb","appActivity":"sea.olx.activities.SplashscreenActivity","noReset":true,"no-reset":"true","full-reset":"F...
+[Appium] Creating new AndroidDriver session
+[Appium] Capabilities:
+[Appium]   appPackage: 'com.app.tokobagus.betterb'
+[Appium]   appActivity: 'sea.olx.activities.SplashscreenActivity'
+[Appium]   noReset: true
+[Appium]   no-reset: 'true'
+[Appium]   full-reset: 'False'
+[Appium]   platformName: 'Android'
+[Appium]   device: 'Android'
+[Appium]   deviceName: 'Android'
+[Appium]   fullReset: 'false'
+[Appium]   udid: '192.168.99.102:5555'
+[debug] [Appium] Capability 'no-reset' changed from string to boolean. This may cause unexpected behavior
+[debug] [Appium] Capability 'full-reset' changed from string to boolean. This may cause unexpected behavior
+[debug] [Appium] Capability 'fullReset' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] The following capabilities were provided, but are not recognized by appium: no-reset, full-reset, device.
+[BaseDriver] Session created with session id: 0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_74
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/tegar/Library/Android/sdk/platform-tools/adb
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[AndroidDriver] Using device: 192.168.99.102:5555
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/tegar/Library/Android/sdk/platform-tools/adb
+[debug] [ADB] Setting device id to 192.168.99.102:5555
+[AndroidDriver] App file was not listed, instead we're going to run com.app.tokobagus.betterb directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","pm","list","packages","com.app.tokobagus.betterb"]
+[AndroidDriver] Starting Android session
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","wait-for-device"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","echo","ping"]
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","install","/usr/local/lib/node_modules/appium/node_modules/io.appium.settings/bin/settings_apk-debug.apk"]
+[debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","install","/usr/local/lib/node_modules/appium/node_modules/appium-unlock/bin/unlock_apk-debug.apk"]
+[ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","getprop","ro.build.version.release"]
+[debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 4724 to device: 4724
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","forward","tcp:4724","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","push","/usr/local/lib/node_modules/appium/node_modules/appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar","/data/local/tmp/"]
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","ps","uiautomator"]
+[debug] [ADB] Attempting to kill process 2316
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","kill",2316]
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: -P, 5037, -s, 192.168.99.102:5555, shell, uiautomator, runtest, AppiumBootstrap.jar, -c, io.appium.android.bootstrap.Bootstrap, -e, pkg, com.app.tokobagus.betterb, -e, disableAndroidWatchers, false, -e, acceptSslCerts, false
+[debug] [UiAutomator] Moving to state 'online'
+[AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","dumpsys","window"]
+[AndroidDriver] Screen already unlocked, doing nothing
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","getprop","ro.build.version.sdk"]
+[debug] [ADB] Device API level: 18
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","am","start","-n","com.app.tokobagus.betterb/sea.olx.activities.SplashscreenActivity","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+[Appium] New AndroidDriver session created successfully, session 0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3 added to master session list
+[MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":tr...
+[HTTP] <-- POST /wd/hub/session 200 2708 ms - 837 
+[HTTP] --> POST /wd/hub/session/0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3/back 500 4 ms - 256 
+[HTTP] --> POST /wd/hub/session/0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3/back 500 3 ms - 256 
+[HTTP] --> POST /wd/hub/session/0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3/back 500 5 ms - 256 
+[HTTP] --> POST /wd/hub/session/0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3/back 500 4 ms - 256 
+[HTTP] --> POST /wd/hub/session/0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3/back 500 4 ms - 256 
+[HTTP] --> POST /wd/hub/session/0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3/back 500 4 ms - 256 
+[HTTP] --> POST /wd/hub/session/0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3/back 500 4 ms - 256 
+[HTTP] --> POST /wd/hub/session/0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3/back 500 4 ms - 256 
+[HTTP] --> DELETE /wd/hub/session/0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3 
+[MJSONWP] Calling AppiumDriver.deleteSession() with args: ["0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3"]
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","am","force-stop","com.app.tokobagus.betterb"]
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","input","keyevent",3]
+[debug] [Logcat] Stopping logcat capture
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[Appium] Removing session 0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3 from our master session list
+[HTTP] <-- DELETE /wd/hub/session/0ec7c7a2-c73b-4c16-93c2-19b95cfb9ba3 500 792 ms - 256 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[debug] [UiAutomator] Moving to state 'stopped'
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 11 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 10 ms - 121 
+[HTTP] --> POST /wd/hub/session 
+[MJSONWP] Calling AppiumDriver.createSession() with args: [{"appPackage":"com.app.tokobagus.betterb","appActivity":"sea.olx.activities.SplashscreenActivity","noReset":true,"no-reset":"true","full-reset":"F...
+[Appium] Creating new AndroidDriver session
+[Appium] Capabilities:
+[Appium]   appPackage: 'com.app.tokobagus.betterb'
+[Appium]   appActivity: 'sea.olx.activities.SplashscreenActivity'
+[Appium]   noReset: true
+[Appium]   no-reset: 'true'
+[Appium]   full-reset: 'False'
+[Appium]   platformName: 'Android'
+[Appium]   device: 'Android'
+[Appium]   deviceName: 'Android'
+[Appium]   fullReset: 'false'
+[Appium]   udid: '192.168.99.102:5555'
+[debug] [Appium] Capability 'no-reset' changed from string to boolean. This may cause unexpected behavior
+[debug] [Appium] Capability 'full-reset' changed from string to boolean. This may cause unexpected behavior
+[debug] [Appium] Capability 'fullReset' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] The following capabilities were provided, but are not recognized by appium: no-reset, full-reset, device.
+[BaseDriver] Session created with session id: c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_74
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/tegar/Library/Android/sdk/platform-tools/adb
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[AndroidDriver] Using device: 192.168.99.102:5555
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/tegar/Library/Android/sdk/platform-tools/adb
+[debug] [ADB] Setting device id to 192.168.99.102:5555
+[AndroidDriver] App file was not listed, instead we're going to run com.app.tokobagus.betterb directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","pm","list","packages","com.app.tokobagus.betterb"]
+[AndroidDriver] Starting Android session
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","wait-for-device"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","echo","ping"]
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","install","/usr/local/lib/node_modules/appium/node_modules/io.appium.settings/bin/settings_apk-debug.apk"]
+[debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","install","/usr/local/lib/node_modules/appium/node_modules/appium-unlock/bin/unlock_apk-debug.apk"]
+[ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","getprop","ro.build.version.release"]
+[debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 4724 to device: 4724
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","forward","tcp:4724","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","push","/usr/local/lib/node_modules/appium/node_modules/appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar","/data/local/tmp/"]
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","ps","uiautomator"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: -P, 5037, -s, 192.168.99.102:5555, shell, uiautomator, runtest, AppiumBootstrap.jar, -c, io.appium.android.bootstrap.Bootstrap, -e, pkg, com.app.tokobagus.betterb, -e, disableAndroidWatchers, false, -e, acceptSslCerts, false
+[debug] [UiAutomator] Moving to state 'online'
+[AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","dumpsys","window"]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[AndroidDriver] Screen already unlocked, doing nothing
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","getprop","ro.build.version.sdk"]
+[debug] [ADB] Device API level: 18
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","am","start","-n","com.app.tokobagus.betterb/sea.olx.activities.SplashscreenActivity","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+[Appium] New AndroidDriver session created successfully, session c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755 added to master session list
+[MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":tr...
+[HTTP] <-- POST /wd/hub/session 200 2191 ms - 837 
+[HTTP] --> POST /wd/hub/session/c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755/back 500 6 ms - 256 
+[HTTP] --> POST /wd/hub/session/c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755/back 500 4 ms - 256 
+[HTTP] --> POST /wd/hub/session/c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755/back 500 8 ms - 256 
+[HTTP] --> POST /wd/hub/session/c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755/back 500 13 ms - 256 
+[HTTP] --> POST /wd/hub/session/c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755/back 500 4 ms - 256 
+[HTTP] --> POST /wd/hub/session/c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755/back 500 5 ms - 256 
+[HTTP] --> POST /wd/hub/session/c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755/back 500 3 ms - 256 
+[HTTP] --> POST /wd/hub/session/c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755/back 500 3 ms - 256 
+[HTTP] --> DELETE /wd/hub/session/c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755 
+[MJSONWP] Calling AppiumDriver.deleteSession() with args: ["c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755"]
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","am","force-stop","com.app.tokobagus.betterb"]
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","input","keyevent",3]
+[debug] [Logcat] Stopping logcat capture
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[Appium] Removing session c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755 from our master session list
+[HTTP] <-- DELETE /wd/hub/session/c3636ff7-0d9d-4fd3-b6c8-4ed6d19e2755 500 718 ms - 256 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 11 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 42 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 10 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 17 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 10 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 10 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[debug] [UiAutomator] Moving to state 'stopped'
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 10 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> POST /wd/hub/session 
+[MJSONWP] Calling AppiumDriver.createSession() with args: [{"appPackage":"com.app.tokobagus.betterb","appActivity":"sea.olx.activities.SplashscreenActivity","noReset":true,"no-reset":"true","full-reset":"F...
+[Appium] Creating new AndroidDriver session
+[Appium] Capabilities:
+[Appium]   appPackage: 'com.app.tokobagus.betterb'
+[Appium]   appActivity: 'sea.olx.activities.SplashscreenActivity'
+[Appium]   noReset: true
+[Appium]   no-reset: 'true'
+[Appium]   full-reset: 'False'
+[Appium]   platformName: 'Android'
+[Appium]   device: 'Android'
+[Appium]   deviceName: 'Android'
+[Appium]   fullReset: 'false'
+[Appium]   udid: '192.168.99.102:5555'
+[debug] [Appium] Capability 'no-reset' changed from string to boolean. This may cause unexpected behavior
+[debug] [Appium] Capability 'full-reset' changed from string to boolean. This may cause unexpected behavior
+[debug] [Appium] Capability 'fullReset' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] The following capabilities were provided, but are not recognized by appium: no-reset, full-reset, device.
+[BaseDriver] Session created with session id: 775760f1-2712-4d69-b858-5e37cffb7902
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_74
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/tegar/Library/Android/sdk/platform-tools/adb
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[AndroidDriver] Using device: 192.168.99.102:5555
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/tegar/Library/Android/sdk/platform-tools/adb
+[debug] [ADB] Setting device id to 192.168.99.102:5555
+[AndroidDriver] App file was not listed, instead we're going to run com.app.tokobagus.betterb directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","pm","list","packages","com.app.tokobagus.betterb"]
+[AndroidDriver] Starting Android session
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","wait-for-device"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","echo","ping"]
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","install","/usr/local/lib/node_modules/appium/node_modules/io.appium.settings/bin/settings_apk-debug.apk"]
+[debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","install","/usr/local/lib/node_modules/appium/node_modules/appium-unlock/bin/unlock_apk-debug.apk"]
+[ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","getprop","ro.build.version.release"]
+[debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 4724 to device: 4724
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","forward","tcp:4724","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","push","/usr/local/lib/node_modules/appium/node_modules/appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar","/data/local/tmp/"]
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","ps","uiautomator"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: -P, 5037, -s, 192.168.99.102:5555, shell, uiautomator, runtest, AppiumBootstrap.jar, -c, io.appium.android.bootstrap.Bootstrap, -e, pkg, com.app.tokobagus.betterb, -e, disableAndroidWatchers, false, -e, acceptSslCerts, false
+[debug] [UiAutomator] Moving to state 'online'
+[AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","dumpsys","window"]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+[AndroidDriver] Screen already unlocked, doing nothing
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","getprop","ro.build.version.sdk"]
+[debug] [ADB] Device API level: 18
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","am","start","-n","com.app.tokobagus.betterb/sea.olx.activities.SplashscreenActivity","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+[Appium] New AndroidDriver session created successfully, session 775760f1-2712-4d69-b858-5e37cffb7902 added to master session list
+[MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":tr...
+[HTTP] <-- POST /wd/hub/session 200 2393 ms - 837 
+[HTTP] --> POST /wd/hub/session/775760f1-2712-4d69-b858-5e37cffb7902/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["775760f1-2712-4d69-b858-5e37cffb7902"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/775760f1-2712-4d69-b858-5e37cffb7902/back 200 1153 ms - 76 
+[HTTP] --> POST /wd/hub/session/775760f1-2712-4d69-b858-5e37cffb7902/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["775760f1-2712-4d69-b858-5e37cffb7902"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/775760f1-2712-4d69-b858-5e37cffb7902/back 200 1174 ms - 76 
+[HTTP] --> POST /wd/hub/session/775760f1-2712-4d69-b858-5e37cffb7902/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["775760f1-2712-4d69-b858-5e37cffb7902"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/775760f1-2712-4d69-b858-5e37cffb7902/back 200 1129 ms - 76 
+[HTTP] --> POST /wd/hub/session/775760f1-2712-4d69-b858-5e37cffb7902/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["775760f1-2712-4d69-b858-5e37cffb7902"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/775760f1-2712-4d69-b858-5e37cffb7902/back 200 1020 ms - 76 
+[HTTP] --> POST /wd/hub/session/775760f1-2712-4d69-b858-5e37cffb7902/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["775760f1-2712-4d69-b858-5e37cffb7902"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/775760f1-2712-4d69-b858-5e37cffb7902/back 200 1022 ms - 76 
+[HTTP] --> POST /wd/hub/session/775760f1-2712-4d69-b858-5e37cffb7902/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["775760f1-2712-4d69-b858-5e37cffb7902"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/775760f1-2712-4d69-b858-5e37cffb7902/back 200 1022 ms - 76 
+[HTTP] --> POST /wd/hub/session/775760f1-2712-4d69-b858-5e37cffb7902/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["775760f1-2712-4d69-b858-5e37cffb7902"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/775760f1-2712-4d69-b858-5e37cffb7902/back 200 1024 ms - 76 
+[HTTP] --> POST /wd/hub/session/775760f1-2712-4d69-b858-5e37cffb7902/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["775760f1-2712-4d69-b858-5e37cffb7902"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/775760f1-2712-4d69-b858-5e37cffb7902/back 200 1038 ms - 76 
+[HTTP] --> DELETE /wd/hub/session/775760f1-2712-4d69-b858-5e37cffb7902 
+[MJSONWP] Calling AppiumDriver.deleteSession() with args: ["775760f1-2712-4d69-b858-5e37cffb7902"]
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","am","force-stop","com.app.tokobagus.betterb"]
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","input","keyevent",3]
+[debug] [Logcat] Stopping logcat capture
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"OK, shutting down","status":0}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] Time: 10.468
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] OK (1 test)
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [UiAutomator] Shutting down UiAutomator
+[debug] [UiAutomator] Moving to state 'stopping'
+[debug] [UiAutomator] UiAutomator shut down normally
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","ps","uiautomator"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Moving to state 'stopped'
+[Appium] Removing session 775760f1-2712-4d69-b858-5e37cffb7902 from our master session list
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[MJSONWP] Responding to client with driver.deleteSession() result: null
+[HTTP] <-- DELETE /wd/hub/session/775760f1-2712-4d69-b858-5e37cffb7902 200 762 ms - 76 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 10 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> POST /wd/hub/session 
+[MJSONWP] Calling AppiumDriver.createSession() with args: [{"appPackage":"com.app.tokobagus.betterb","appActivity":"sea.olx.activities.SplashscreenActivity","noReset":true,"no-reset":"true","full-reset":"F...
+[Appium] Creating new AndroidDriver session
+[Appium] Capabilities:
+[Appium]   appPackage: 'com.app.tokobagus.betterb'
+[Appium]   appActivity: 'sea.olx.activities.SplashscreenActivity'
+[Appium]   noReset: true
+[Appium]   no-reset: 'true'
+[Appium]   full-reset: 'False'
+[Appium]   platformName: 'Android'
+[Appium]   device: 'Android'
+[Appium]   deviceName: 'Android'
+[Appium]   fullReset: 'false'
+[Appium]   udid: '192.168.99.102:5555'
+[debug] [Appium] Capability 'no-reset' changed from string to boolean. This may cause unexpected behavior
+[debug] [Appium] Capability 'full-reset' changed from string to boolean. This may cause unexpected behavior
+[debug] [Appium] Capability 'fullReset' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] The following capabilities were provided, but are not recognized by appium: no-reset, full-reset, device.
+[BaseDriver] Session created with session id: 97383231-63fb-4c17-bc1b-a35054e9e3b3
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_74
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/tegar/Library/Android/sdk/platform-tools/adb
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[AndroidDriver] Using device: 192.168.99.102:5555
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/tegar/Library/Android/sdk/platform-tools/adb
+[debug] [ADB] Setting device id to 192.168.99.102:5555
+[AndroidDriver] App file was not listed, instead we're going to run com.app.tokobagus.betterb directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","pm","list","packages","com.app.tokobagus.betterb"]
+[AndroidDriver] Starting Android session
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","wait-for-device"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","echo","ping"]
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","install","/usr/local/lib/node_modules/appium/node_modules/io.appium.settings/bin/settings_apk-debug.apk"]
+[debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","install","/usr/local/lib/node_modules/appium/node_modules/appium-unlock/bin/unlock_apk-debug.apk"]
+[ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","getprop","ro.build.version.release"]
+[debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 4724 to device: 4724
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","forward","tcp:4724","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","push","/usr/local/lib/node_modules/appium/node_modules/appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar","/data/local/tmp/"]
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","ps","uiautomator"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: -P, 5037, -s, 192.168.99.102:5555, shell, uiautomator, runtest, AppiumBootstrap.jar, -c, io.appium.android.bootstrap.Bootstrap, -e, pkg, com.app.tokobagus.betterb, -e, disableAndroidWatchers, false, -e, acceptSslCerts, false
+[debug] [UiAutomator] Moving to state 'online'
+[AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","dumpsys","window"]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[AndroidDriver] Screen already unlocked, doing nothing
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","getprop","ro.build.version.sdk"]
+[debug] [ADB] Device API level: 18
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","am","start","-n","com.app.tokobagus.betterb/sea.olx.activities.SplashscreenActivity","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+[Appium] New AndroidDriver session created successfully, session 97383231-63fb-4c17-bc1b-a35054e9e3b3 added to master session list
+[MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":tr...
+[HTTP] <-- POST /wd/hub/session 200 2760 ms - 837 
+[HTTP] --> POST /wd/hub/session/97383231-63fb-4c17-bc1b-a35054e9e3b3/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["97383231-63fb-4c17-bc1b-a35054e9e3b3"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/97383231-63fb-4c17-bc1b-a35054e9e3b3/back 500 7 ms - 256 
+[HTTP] --> POST /wd/hub/session/97383231-63fb-4c17-bc1b-a35054e9e3b3/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["97383231-63fb-4c17-bc1b-a35054e9e3b3"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/97383231-63fb-4c17-bc1b-a35054e9e3b3/back 500 4 ms - 256 
+[HTTP] --> POST /wd/hub/session/97383231-63fb-4c17-bc1b-a35054e9e3b3/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["97383231-63fb-4c17-bc1b-a35054e9e3b3"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/97383231-63fb-4c17-bc1b-a35054e9e3b3/back 500 4 ms - 256 
+[HTTP] --> POST /wd/hub/session/97383231-63fb-4c17-bc1b-a35054e9e3b3/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["97383231-63fb-4c17-bc1b-a35054e9e3b3"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/97383231-63fb-4c17-bc1b-a35054e9e3b3/back 500 5 ms - 256 
+[HTTP] --> POST /wd/hub/session/97383231-63fb-4c17-bc1b-a35054e9e3b3/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["97383231-63fb-4c17-bc1b-a35054e9e3b3"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/97383231-63fb-4c17-bc1b-a35054e9e3b3/back 500 3 ms - 256 
+[HTTP] --> POST /wd/hub/session/97383231-63fb-4c17-bc1b-a35054e9e3b3/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["97383231-63fb-4c17-bc1b-a35054e9e3b3"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/97383231-63fb-4c17-bc1b-a35054e9e3b3/back 500 5 ms - 256 
+[HTTP] --> POST /wd/hub/session/97383231-63fb-4c17-bc1b-a35054e9e3b3/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["97383231-63fb-4c17-bc1b-a35054e9e3b3"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/97383231-63fb-4c17-bc1b-a35054e9e3b3/back 500 2 ms - 256 
+[HTTP] --> POST /wd/hub/session/97383231-63fb-4c17-bc1b-a35054e9e3b3/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["97383231-63fb-4c17-bc1b-a35054e9e3b3"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/97383231-63fb-4c17-bc1b-a35054e9e3b3/back 500 3 ms - 256 
+[HTTP] --> DELETE /wd/hub/session/97383231-63fb-4c17-bc1b-a35054e9e3b3 
+[MJSONWP] Calling AppiumDriver.deleteSession() with args: ["97383231-63fb-4c17-bc1b-a35054e9e3b3"]
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","am","force-stop","com.app.tokobagus.betterb"]
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","input","keyevent",3]
+[debug] [Logcat] Stopping logcat capture
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[Appium] Removing session 97383231-63fb-4c17-bc1b-a35054e9e3b3 from our master session list
+[HTTP] <-- DELETE /wd/hub/session/97383231-63fb-4c17-bc1b-a35054e9e3b3 500 705 ms - 256 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 26 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[debug] [UiAutomator] Moving to state 'stopped'
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> POST /wd/hub/session 
+[MJSONWP] Calling AppiumDriver.createSession() with args: [{"appPackage":"com.app.tokobagus.betterb","appActivity":"sea.olx.activities.SplashscreenActivity","noReset":true,"no-reset":"true","full-reset":"F...
+[Appium] Creating new AndroidDriver session
+[Appium] Capabilities:
+[Appium]   appPackage: 'com.app.tokobagus.betterb'
+[Appium]   appActivity: 'sea.olx.activities.SplashscreenActivity'
+[Appium]   noReset: true
+[Appium]   no-reset: 'true'
+[Appium]   full-reset: 'False'
+[Appium]   platformName: 'Android'
+[Appium]   device: 'Android'
+[Appium]   deviceName: 'Android'
+[Appium]   fullReset: 'false'
+[Appium]   udid: '192.168.99.102:5555'
+[debug] [Appium] Capability 'no-reset' changed from string to boolean. This may cause unexpected behavior
+[debug] [Appium] Capability 'full-reset' changed from string to boolean. This may cause unexpected behavior
+[debug] [Appium] Capability 'fullReset' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] The following capabilities were provided, but are not recognized by appium: no-reset, full-reset, device.
+[BaseDriver] Session created with session id: 2363a932-7378-4774-8ae3-1565e2a5f20d
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_74
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/tegar/Library/Android/sdk/platform-tools/adb
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[AndroidDriver] Using device: 192.168.99.102:5555
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/tegar/Library/Android/sdk/platform-tools/adb
+[debug] [ADB] Setting device id to 192.168.99.102:5555
+[AndroidDriver] App file was not listed, instead we're going to run com.app.tokobagus.betterb directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","pm","list","packages","com.app.tokobagus.betterb"]
+[AndroidDriver] Starting Android session
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","wait-for-device"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","echo","ping"]
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","install","/usr/local/lib/node_modules/appium/node_modules/io.appium.settings/bin/settings_apk-debug.apk"]
+[debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","install","/usr/local/lib/node_modules/appium/node_modules/appium-unlock/bin/unlock_apk-debug.apk"]
+[ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","getprop","ro.build.version.release"]
+[debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 4724 to device: 4724
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","forward","tcp:4724","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","push","/usr/local/lib/node_modules/appium/node_modules/appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar","/data/local/tmp/"]
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","ps","uiautomator"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: -P, 5037, -s, 192.168.99.102:5555, shell, uiautomator, runtest, AppiumBootstrap.jar, -c, io.appium.android.bootstrap.Bootstrap, -e, pkg, com.app.tokobagus.betterb, -e, disableAndroidWatchers, false, -e, acceptSslCerts, false
+[debug] [UiAutomator] Moving to state 'online'
+[AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","dumpsys","window"]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[AndroidDriver] Screen already unlocked, doing nothing
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","getprop","ro.build.version.sdk"]
+[debug] [ADB] Device API level: 18
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","am","start","-n","com.app.tokobagus.betterb/sea.olx.activities.SplashscreenActivity","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+[Appium] New AndroidDriver session created successfully, session 2363a932-7378-4774-8ae3-1565e2a5f20d added to master session list
+[MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":tr...
+[HTTP] <-- POST /wd/hub/session 200 2091 ms - 837 
+[HTTP] --> POST /wd/hub/session/2363a932-7378-4774-8ae3-1565e2a5f20d/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["2363a932-7378-4774-8ae3-1565e2a5f20d"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/2363a932-7378-4774-8ae3-1565e2a5f20d/back 500 3 ms - 256 
+[HTTP] --> POST /wd/hub/session/2363a932-7378-4774-8ae3-1565e2a5f20d/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["2363a932-7378-4774-8ae3-1565e2a5f20d"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/2363a932-7378-4774-8ae3-1565e2a5f20d/back 500 3 ms - 256 
+[HTTP] --> POST /wd/hub/session/2363a932-7378-4774-8ae3-1565e2a5f20d/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["2363a932-7378-4774-8ae3-1565e2a5f20d"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/2363a932-7378-4774-8ae3-1565e2a5f20d/back 500 2 ms - 256 
+[HTTP] --> POST /wd/hub/session/2363a932-7378-4774-8ae3-1565e2a5f20d/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["2363a932-7378-4774-8ae3-1565e2a5f20d"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/2363a932-7378-4774-8ae3-1565e2a5f20d/back 500 3 ms - 256 
+[HTTP] --> POST /wd/hub/session/2363a932-7378-4774-8ae3-1565e2a5f20d/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["2363a932-7378-4774-8ae3-1565e2a5f20d"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/2363a932-7378-4774-8ae3-1565e2a5f20d/back 500 2 ms - 256 
+[HTTP] --> POST /wd/hub/session/2363a932-7378-4774-8ae3-1565e2a5f20d/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["2363a932-7378-4774-8ae3-1565e2a5f20d"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/2363a932-7378-4774-8ae3-1565e2a5f20d/back 500 2 ms - 256 
+[HTTP] --> POST /wd/hub/session/2363a932-7378-4774-8ae3-1565e2a5f20d/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["2363a932-7378-4774-8ae3-1565e2a5f20d"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/2363a932-7378-4774-8ae3-1565e2a5f20d/back 500 3 ms - 256 
+[HTTP] --> POST /wd/hub/session/2363a932-7378-4774-8ae3-1565e2a5f20d/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["2363a932-7378-4774-8ae3-1565e2a5f20d"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/2363a932-7378-4774-8ae3-1565e2a5f20d/back 500 2 ms - 256 
+[HTTP] --> DELETE /wd/hub/session/2363a932-7378-4774-8ae3-1565e2a5f20d 
+[MJSONWP] Calling AppiumDriver.deleteSession() with args: ["2363a932-7378-4774-8ae3-1565e2a5f20d"]
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","am","force-stop","com.app.tokobagus.betterb"]
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","input","keyevent",3]
+[debug] [Logcat] Stopping logcat capture
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[Appium] Removing session 2363a932-7378-4774-8ae3-1565e2a5f20d from our master session list
+[HTTP] <-- DELETE /wd/hub/session/2363a932-7378-4774-8ae3-1565e2a5f20d 500 669 ms - 256 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> POST /wd/hub/session 
+[MJSONWP] Calling AppiumDriver.createSession() with args: [{"appPackage":"com.app.tokobagus.betterb","appActivity":"sea.olx.activities.SplashscreenActivity","noReset":true,"no-reset":"true","full-reset":"F...
+[Appium] Creating new AndroidDriver session
+[Appium] Capabilities:
+[Appium]   appPackage: 'com.app.tokobagus.betterb'
+[Appium]   appActivity: 'sea.olx.activities.SplashscreenActivity'
+[Appium]   noReset: true
+[Appium]   no-reset: 'true'
+[Appium]   full-reset: 'False'
+[Appium]   platformName: 'Android'
+[Appium]   device: 'Android'
+[Appium]   deviceName: 'Android'
+[Appium]   fullReset: 'false'
+[Appium]   udid: '192.168.99.102:5555'
+[debug] [Appium] Capability 'no-reset' changed from string to boolean. This may cause unexpected behavior
+[debug] [Appium] Capability 'full-reset' changed from string to boolean. This may cause unexpected behavior
+[debug] [Appium] Capability 'fullReset' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] The following capabilities were provided, but are not recognized by appium: no-reset, full-reset, device.
+[BaseDriver] Session created with session id: f587164a-6fe4-4af8-a895-caba11f31bd8
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_74
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/tegar/Library/Android/sdk/platform-tools/adb
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[AndroidDriver] Using device: 192.168.99.102:5555
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/tegar/Library/Android/sdk/platform-tools/adb
+[debug] [ADB] Setting device id to 192.168.99.102:5555
+[AndroidDriver] App file was not listed, instead we're going to run com.app.tokobagus.betterb directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","pm","list","packages","com.app.tokobagus.betterb"]
+[AndroidDriver] Starting Android session
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","wait-for-device"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","echo","ping"]
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","install","/usr/local/lib/node_modules/appium/node_modules/io.appium.settings/bin/settings_apk-debug.apk"]
+[debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","install","/usr/local/lib/node_modules/appium/node_modules/appium-unlock/bin/unlock_apk-debug.apk"]
+[ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","getprop","ro.build.version.release"]
+[debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 4724 to device: 4724
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","forward","tcp:4724","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","push","/usr/local/lib/node_modules/appium/node_modules/appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar","/data/local/tmp/"]
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","ps","uiautomator"]
+[debug] [ADB] Attempting to kill process 3203
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","kill",3203]
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: -P, 5037, -s, 192.168.99.102:5555, shell, uiautomator, runtest, AppiumBootstrap.jar, -c, io.appium.android.bootstrap.Bootstrap, -e, pkg, com.app.tokobagus.betterb, -e, disableAndroidWatchers, false, -e, acceptSslCerts, false
+[debug] [UiAutomator] Moving to state 'online'
+[AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","dumpsys","window"]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+[AndroidDriver] Screen already unlocked, doing nothing
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","getprop","ro.build.version.sdk"]
+[debug] [ADB] Device API level: 18
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","am","start","-n","com.app.tokobagus.betterb/sea.olx.activities.SplashscreenActivity","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[Appium] New AndroidDriver session created successfully, session f587164a-6fe4-4af8-a895-caba11f31bd8 added to master session list
+[MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":tr...
+[HTTP] <-- POST /wd/hub/session 200 2695 ms - 837 
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 488 ms - 121 
+[HTTP] --> POST /wd/hub/session/f587164a-6fe4-4af8-a895-caba11f31bd8/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["f587164a-6fe4-4af8-a895-caba11f31bd8"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/f587164a-6fe4-4af8-a895-caba11f31bd8/back 200 656 ms - 76 
+[HTTP] --> POST /wd/hub/session/f587164a-6fe4-4af8-a895-caba11f31bd8/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["f587164a-6fe4-4af8-a895-caba11f31bd8"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/f587164a-6fe4-4af8-a895-caba11f31bd8/back 200 1089 ms - 76 
+[HTTP] --> POST /wd/hub/session/f587164a-6fe4-4af8-a895-caba11f31bd8/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["f587164a-6fe4-4af8-a895-caba11f31bd8"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/f587164a-6fe4-4af8-a895-caba11f31bd8/back 200 1117 ms - 76 
+[HTTP] --> POST /wd/hub/session/f587164a-6fe4-4af8-a895-caba11f31bd8/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["f587164a-6fe4-4af8-a895-caba11f31bd8"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/f587164a-6fe4-4af8-a895-caba11f31bd8/back 200 1463 ms - 76 
+[HTTP] --> POST /wd/hub/session/f587164a-6fe4-4af8-a895-caba11f31bd8/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["f587164a-6fe4-4af8-a895-caba11f31bd8"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/f587164a-6fe4-4af8-a895-caba11f31bd8/back 200 1081 ms - 76 
+[HTTP] --> POST /wd/hub/session/f587164a-6fe4-4af8-a895-caba11f31bd8/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["f587164a-6fe4-4af8-a895-caba11f31bd8"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/f587164a-6fe4-4af8-a895-caba11f31bd8/back 200 1073 ms - 76 
+[HTTP] --> POST /wd/hub/session/f587164a-6fe4-4af8-a895-caba11f31bd8/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["f587164a-6fe4-4af8-a895-caba11f31bd8"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/f587164a-6fe4-4af8-a895-caba11f31bd8/back 200 1086 ms - 76 
+[HTTP] --> POST /wd/hub/session/f587164a-6fe4-4af8-a895-caba11f31bd8/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["f587164a-6fe4-4af8-a895-caba11f31bd8"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/f587164a-6fe4-4af8-a895-caba11f31bd8/back 200 1080 ms - 76 
+[HTTP] --> DELETE /wd/hub/session/f587164a-6fe4-4af8-a895-caba11f31bd8 
+[MJSONWP] Calling AppiumDriver.deleteSession() with args: ["f587164a-6fe4-4af8-a895-caba11f31bd8"]
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","am","force-stop","com.app.tokobagus.betterb"]
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","input","keyevent",3]
+[debug] [Logcat] Stopping logcat capture
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"OK, shutting down","status":0}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] Time: 10.345
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] OK (1 test)
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [UiAutomator] Shutting down UiAutomator
+[debug] [UiAutomator] Moving to state 'stopping'
+[debug] [UiAutomator] UiAutomator shut down normally
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","ps","uiautomator"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Moving to state 'stopped'
+[Appium] Removing session f587164a-6fe4-4af8-a895-caba11f31bd8 from our master session list
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[MJSONWP] Responding to client with driver.deleteSession() result: null
+[HTTP] <-- DELETE /wd/hub/session/f587164a-6fe4-4af8-a895-caba11f31bd8 200 798 ms - 76 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> POST /wd/hub/session 
+[MJSONWP] Calling AppiumDriver.createSession() with args: [{"appPackage":"com.app.tokobagus.betterb","appActivity":"sea.olx.activities.SplashscreenActivity","noReset":true,"no-reset":"true","full-reset":"F...
+[Appium] Creating new AndroidDriver session
+[Appium] Capabilities:
+[Appium]   appPackage: 'com.app.tokobagus.betterb'
+[Appium]   appActivity: 'sea.olx.activities.SplashscreenActivity'
+[Appium]   noReset: true
+[Appium]   no-reset: 'true'
+[Appium]   full-reset: 'False'
+[Appium]   platformName: 'Android'
+[Appium]   device: 'Android'
+[Appium]   deviceName: 'Android'
+[Appium]   fullReset: 'false'
+[Appium]   udid: '192.168.99.102:5555'
+[debug] [Appium] Capability 'no-reset' changed from string to boolean. This may cause unexpected behavior
+[debug] [Appium] Capability 'full-reset' changed from string to boolean. This may cause unexpected behavior
+[debug] [Appium] Capability 'fullReset' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] The following capabilities were provided, but are not recognized by appium: no-reset, full-reset, device.
+[BaseDriver] Session created with session id: 0baca12e-43ae-4abf-9507-74da8109d95b
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_74
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/tegar/Library/Android/sdk/platform-tools/adb
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[AndroidDriver] Using device: 192.168.99.102:5555
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/tegar/Library/Android/sdk/platform-tools/adb
+[debug] [ADB] Setting device id to 192.168.99.102:5555
+[AndroidDriver] App file was not listed, instead we're going to run com.app.tokobagus.betterb directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","pm","list","packages","com.app.tokobagus.betterb"]
+[AndroidDriver] Starting Android session
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","wait-for-device"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","echo","ping"]
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","install","/usr/local/lib/node_modules/appium/node_modules/io.appium.settings/bin/settings_apk-debug.apk"]
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","install","/usr/local/lib/node_modules/appium/node_modules/appium-unlock/bin/unlock_apk-debug.apk"]
+[ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","getprop","ro.build.version.release"]
+[debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 4724 to device: 4724
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","forward","tcp:4724","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","push","/usr/local/lib/node_modules/appium/node_modules/appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar","/data/local/tmp/"]
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","ps","uiautomator"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: -P, 5037, -s, 192.168.99.102:5555, shell, uiautomator, runtest, AppiumBootstrap.jar, -c, io.appium.android.bootstrap.Bootstrap, -e, pkg, com.app.tokobagus.betterb, -e, disableAndroidWatchers, false, -e, acceptSslCerts, false
+[debug] [UiAutomator] Moving to state 'online'
+[AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","dumpsys","window"]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+[AndroidDriver] Screen already unlocked, doing nothing
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","getprop","ro.build.version.sdk"]
+[debug] [ADB] Device API level: 18
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","am","start","-n","com.app.tokobagus.betterb/sea.olx.activities.SplashscreenActivity","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+[Appium] New AndroidDriver session created successfully, session 0baca12e-43ae-4abf-9507-74da8109d95b added to master session list
+[MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":tr...
+[HTTP] <-- POST /wd/hub/session 200 2257 ms - 837 
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 1602 ms - 121 
+[HTTP] --> POST /wd/hub/session/0baca12e-43ae-4abf-9507-74da8109d95b/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["0baca12e-43ae-4abf-9507-74da8109d95b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/0baca12e-43ae-4abf-9507-74da8109d95b/back 200 1428 ms - 76 
+[HTTP] --> POST /wd/hub/session/0baca12e-43ae-4abf-9507-74da8109d95b/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["0baca12e-43ae-4abf-9507-74da8109d95b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/0baca12e-43ae-4abf-9507-74da8109d95b/back 200 2028 ms - 76 
+[HTTP] --> POST /wd/hub/session/0baca12e-43ae-4abf-9507-74da8109d95b/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["0baca12e-43ae-4abf-9507-74da8109d95b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/0baca12e-43ae-4abf-9507-74da8109d95b/back 200 1015 ms - 76 
+[HTTP] --> POST /wd/hub/session/0baca12e-43ae-4abf-9507-74da8109d95b/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["0baca12e-43ae-4abf-9507-74da8109d95b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/0baca12e-43ae-4abf-9507-74da8109d95b/back 200 1079 ms - 76 
+[HTTP] --> POST /wd/hub/session/0baca12e-43ae-4abf-9507-74da8109d95b/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["0baca12e-43ae-4abf-9507-74da8109d95b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/0baca12e-43ae-4abf-9507-74da8109d95b/back 200 1084 ms - 76 
+[HTTP] --> POST /wd/hub/session/0baca12e-43ae-4abf-9507-74da8109d95b/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["0baca12e-43ae-4abf-9507-74da8109d95b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/0baca12e-43ae-4abf-9507-74da8109d95b/back 200 1079 ms - 76 
+[HTTP] --> POST /wd/hub/session/0baca12e-43ae-4abf-9507-74da8109d95b/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["0baca12e-43ae-4abf-9507-74da8109d95b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/0baca12e-43ae-4abf-9507-74da8109d95b/back 200 1071 ms - 76 
+[HTTP] --> POST /wd/hub/session/0baca12e-43ae-4abf-9507-74da8109d95b/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["0baca12e-43ae-4abf-9507-74da8109d95b"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.back() result: true
+[HTTP] <-- POST /wd/hub/session/0baca12e-43ae-4abf-9507-74da8109d95b/back 200 1075 ms - 76 
+[HTTP] --> DELETE /wd/hub/session/0baca12e-43ae-4abf-9507-74da8109d95b 
+[MJSONWP] Calling AppiumDriver.deleteSession() with args: ["0baca12e-43ae-4abf-9507-74da8109d95b"]
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","am","force-stop","com.app.tokobagus.betterb"]
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","input","keyevent",3]
+[debug] [Logcat] Stopping logcat capture
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [UiAutomator] Shutting down UiAutomator
+[debug] [UiAutomator] Moving to state 'stopping'
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"OK, shutting down","status":0}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] Time: 11.904
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] OK (1 test)
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+[debug] [UiAutomator] UiAutomator shut down normally
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","ps","uiautomator"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Moving to state 'stopped'
+[Appium] Removing session 0baca12e-43ae-4abf-9507-74da8109d95b from our master session list
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[MJSONWP] Responding to client with driver.deleteSession() result: null
+[HTTP] <-- DELETE /wd/hub/session/0baca12e-43ae-4abf-9507-74da8109d95b 200 759 ms - 76 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[HTTP] --> POST /wd/hub/session 
+[MJSONWP] Calling AppiumDriver.createSession() with args: [{"appPackage":"com.app.tokobagus.betterb","appActivity":"sea.olx.activities.SplashscreenActivity","noReset":true,"no-reset":"true","full-reset":"F...
+[Appium] Creating new AndroidDriver session
+[Appium] Capabilities:
+[Appium]   appPackage: 'com.app.tokobagus.betterb'
+[Appium]   appActivity: 'sea.olx.activities.SplashscreenActivity'
+[Appium]   noReset: true
+[Appium]   no-reset: 'true'
+[Appium]   full-reset: 'False'
+[Appium]   platformName: 'Android'
+[Appium]   device: 'Android'
+[Appium]   deviceName: 'Android'
+[Appium]   fullReset: 'false'
+[Appium]   udid: '192.168.99.102:5555'
+[debug] [Appium] Capability 'no-reset' changed from string to boolean. This may cause unexpected behavior
+[debug] [Appium] Capability 'full-reset' changed from string to boolean. This may cause unexpected behavior
+[debug] [Appium] Capability 'fullReset' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] The following capabilities were provided, but are not recognized by appium: no-reset, full-reset, device.
+[BaseDriver] Session created with session id: d2d0a436-9585-4d72-aeec-84db27e9cc5e
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_74
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/tegar/Library/Android/sdk/platform-tools/adb
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[AndroidDriver] Using device: 192.168.99.102:5555
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/tegar/Library/Android/sdk/platform-tools/adb
+[debug] [ADB] Setting device id to 192.168.99.102:5555
+[AndroidDriver] App file was not listed, instead we're going to run com.app.tokobagus.betterb directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","pm","list","packages","com.app.tokobagus.betterb"]
+[AndroidDriver] Starting Android session
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","wait-for-device"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","echo","ping"]
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","install","/usr/local/lib/node_modules/appium/node_modules/io.appium.settings/bin/settings_apk-debug.apk"]
+[debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","install","/usr/local/lib/node_modules/appium/node_modules/appium-unlock/bin/unlock_apk-debug.apk"]
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","getprop","ro.build.version.release"]
+[debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 4724 to device: 4724
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","forward","tcp:4724","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","push","/usr/local/lib/node_modules/appium/node_modules/appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar","/data/local/tmp/"]
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","ps","uiautomator"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: -P, 5037, -s, 192.168.99.102:5555, shell, uiautomator, runtest, AppiumBootstrap.jar, -c, io.appium.android.bootstrap.Bootstrap, -e, pkg, com.app.tokobagus.betterb, -e, disableAndroidWatchers, false, -e, acceptSslCerts, false
+[debug] [UiAutomator] Moving to state 'online'
+[AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","dumpsys","window"]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[AndroidDriver] Screen already unlocked, doing nothing
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","getprop","ro.build.version.sdk"]
+[debug] [ADB] Device API level: 18
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","am","start","-n","com.app.tokobagus.betterb/sea.olx.activities.SplashscreenActivity","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+[Appium] New AndroidDriver session created successfully, session d2d0a436-9585-4d72-aeec-84db27e9cc5e added to master session list
+[MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":tr...
+[HTTP] <-- POST /wd/hub/session 200 2222 ms - 837 
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 963 ms - 121 
+[HTTP] --> POST /wd/hub/session/d2d0a436-9585-4d72-aeec-84db27e9cc5e/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["d2d0a436-9585-4d72-aeec-84db27e9cc5e"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/d2d0a436-9585-4d72-aeec-84db27e9cc5e/back 500 5 ms - 256 
+[HTTP] --> POST /wd/hub/session/d2d0a436-9585-4d72-aeec-84db27e9cc5e/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["d2d0a436-9585-4d72-aeec-84db27e9cc5e"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/d2d0a436-9585-4d72-aeec-84db27e9cc5e/back 500 3 ms - 256 
+[HTTP] --> POST /wd/hub/session/d2d0a436-9585-4d72-aeec-84db27e9cc5e/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["d2d0a436-9585-4d72-aeec-84db27e9cc5e"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/d2d0a436-9585-4d72-aeec-84db27e9cc5e/back 500 5 ms - 256 
+[HTTP] --> POST /wd/hub/session/d2d0a436-9585-4d72-aeec-84db27e9cc5e/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["d2d0a436-9585-4d72-aeec-84db27e9cc5e"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/d2d0a436-9585-4d72-aeec-84db27e9cc5e/back 500 3 ms - 256 
+[HTTP] --> POST /wd/hub/session/d2d0a436-9585-4d72-aeec-84db27e9cc5e/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["d2d0a436-9585-4d72-aeec-84db27e9cc5e"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/d2d0a436-9585-4d72-aeec-84db27e9cc5e/back 500 4 ms - 256 
+[HTTP] --> POST /wd/hub/session/d2d0a436-9585-4d72-aeec-84db27e9cc5e/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["d2d0a436-9585-4d72-aeec-84db27e9cc5e"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/d2d0a436-9585-4d72-aeec-84db27e9cc5e/back 500 3 ms - 256 
+[HTTP] --> POST /wd/hub/session/d2d0a436-9585-4d72-aeec-84db27e9cc5e/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["d2d0a436-9585-4d72-aeec-84db27e9cc5e"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/d2d0a436-9585-4d72-aeec-84db27e9cc5e/back 500 3 ms - 256 
+[HTTP] --> POST /wd/hub/session/d2d0a436-9585-4d72-aeec-84db27e9cc5e/back 
+[MJSONWP] Calling AppiumDriver.back() with args: ["d2d0a436-9585-4d72-aeec-84db27e9cc5e"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+[HTTP] <-- POST /wd/hub/session/d2d0a436-9585-4d72-aeec-84db27e9cc5e/back 500 4 ms - 256 
+[HTTP] --> DELETE /wd/hub/session/d2d0a436-9585-4d72-aeec-84db27e9cc5e 
+[MJSONWP] Calling AppiumDriver.deleteSession() with args: ["d2d0a436-9585-4d72-aeec-84db27e9cc5e"]
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","am","force-stop","com.app.tokobagus.betterb"]
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/tegar/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.99.102:5555","shell","input","keyevent",3]
+[debug] [Logcat] Stopping logcat capture
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[Appium] Removing session d2d0a436-9585-4d72-aeec-84db27e9cc5e from our master session list
+[HTTP] <-- DELETE /wd/hub/session/d2d0a436-9585-4d72-aeec-84db27e9cc5e 500 680 ms - 256 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 9 ms - 121 
+[debug] [UiAutomator] Moving to state 'stopped'
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> POST /wd/hub/session 
+[MJSONWP] Calling AppiumDriver.createSession() with args: [{"appPackage":"com.app.tokobagus.betterb","appActivity":"sea.olx.activities.SplashscreenActivity","noReset":true,"no-reset":"true","full-reset":"F...
+[Appium] Creating new AndroidDriver session
+[Appium] Capabilities:
+[Appium]   appPackage: 'com.app.tokobagus.betterb'
+[Appium]   appActivity: 'sea.olx.activities.SplashscreenActivity'
+[Appium]   noReset: true
+[Appium]   no-reset: 'true'
+[Appium]   full-reset: 'False'
+[Appium]   platformName: 'Android'
+[Appium]   device: 'Android'
+[Appium]   deviceName: 'Android'
+[Appium]   fullReset: 'false'
+[Appium]   udid: '192.168.99.102:5555'
+[debug] [Appium] Capability 'no-reset' changed from string to boolean. This may cause unexpected behavior
+[debug] [Appium] Capability 'full-reset' changed from string to boolean. This may cause unexpected behavior
+[debug] [Appium] Capability 'fullReset' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] The following capabilities were provided, but are not recognized by appium: no-reset, full-reset, device.
+[BaseDriver] Session created with session id: 240606af-4321-4e81-8530-03efd01db601
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_74
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/tegar/Library/Android/sdk/platform-tools/adb
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 0 device(s) connected
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Getting connected devices...
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[debug] [ADB] 0 device(s) connected
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 0 device(s) connected
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 0 device(s) connected
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 0 device(s) connected
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 0 device(s) connected
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 0 device(s) connected
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 0 device(s) connected
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [AndroidDriver] Shutting down Android driver
+[AndroidDriver] Cannot shut down Android driver; it has already shut down
+[HTTP] <-- POST /wd/hub/session 500 24720 ms - 179 
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 22295 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 7 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 10 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 11 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 
+[HTTP] --> GET /wd/hub/status 
+[MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.5.0","revision":"b28ea4442847206504446115e07dc2d6a366a825"}}
+[HTTP] <-- GET /wd/hub/status 200 8 ms - 121 

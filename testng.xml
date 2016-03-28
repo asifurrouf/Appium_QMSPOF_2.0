@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Selendroid" verbose="3">  
-	<test name="Selendroid Demo">
+<suite name="Mobile OLXID" verbose="3" parallel="tests" thread-count="2">  
+	<test name="Homepage OLXID Mobil">
 	<classes>
-		<class name="scenarios.AppiumTest"/>
+	    <class name="scenarios.HomePageTest"/>
+	</classes>
+	</test>
+	<test name="Homepage OLXID Motor dan Property">
+	<classes>
+	     <class name="scenarios.LoginPageTest"/>
 	</classes>
 	</test>
 </suite>
