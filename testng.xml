@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Mobile OLXID" verbose="3" parallel="tests" thread-count="2">  
-	<test name="Homepage OLXID Mobil">
-<suite name="Appium Paralel Test" verbose="3" parallel="classes" thread-count="2">  
-	<test name="Appium test contoh">
-	<classes>
-	    <class name="scenarios.HomePageTest"/>
-	</classes>
-	</test>
-	<test name="Homepage OLXID Motor dan Property">
-	<classes>
-	     <class name="scenarios.LoginPageTest"/>
-	</classes>
-	</test>
+    <test name="Listing Page Mobile OLX">
+      <classes>
+          <class name="scenarios.ListingPageTest"/>
+      </classes>
+    </test>
 </suite>

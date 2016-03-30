@@ -17,16 +17,12 @@ public class LoginPage extends BasePage {
         super(driver);
     }
     
-    public By getTextLocator(String locator){
-    	return By.xpath("//android.widget.EditText[@text='"+locator+"']");
-    	//return By.xpath("//android.widget.TextView[@text='"+locator+"']");
-    }
      
     @Step("Input Email")
     public void inputEmail(){
-    	waitForVisibilityOf(getTextLocator(emailInput));
-    	driver.findElement(getTextLocator(emailInput)).clear();
-    	driver.findElement(getTextLocator(emailInput)).sendKeys("bravo@olx.co.id");	
+    	waitForVisibilityOf(getEditTextLocator(emailInput));
+    	driver.findElement(getEditTextLocator(emailInput)).clear();
+    	driver.findElement(getEditTextLocator(emailInput)).sendKeys("bravo@olx.co.id");	
     }
     
     public LoginPage invalidLogin() {

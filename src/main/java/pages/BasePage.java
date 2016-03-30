@@ -1,21 +1,29 @@
 package pages;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.appium.java_client.android.AndroidDriver;
+
+import org.openqa.selenium.TakesScreenshot;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.HashMap;
 
 /**
  * Created Simple by Egakun on 22 March 2015
  */
 public class BasePage {
-
 
     protected WebDriver driver;
     String app_package_name = "com.app.tokobagus.betterb:id/name";
@@ -29,7 +37,12 @@ public class BasePage {
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
     protected void waitForClickabilityOf(By locator) {
-        WebDriverWait wait = new WebDriverWait(driver, 5);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
+    
+    protected void WaitForClickabilityOf(By locator,int time){
+    	WebDriverWait wait = new WebDriverWait(driver, time);
         wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
     
@@ -42,11 +55,58 @@ public class BasePage {
 		}
 	}
     
-    public void clickElement(By by){
-    	waitForVisibilityOf(by);
+    protected void clickElement(By by){
+    	waitForClickabilityOf(by);
     	driver.findElement(by).click();
     }
+    
+    protected void clickElement(By by, int time){
+    	WaitForClickabilityOf(by, time);
+    	driver.findElement(by).click();
+    }
+    
+    
+    protected void sendKeysElement(By by,String keys){
+    	waitForVisibilityOf(by);
+    	//driver.findElement(by).clear();
+    	driver.findElement(by).sendKeys(keys);
+    }
+    
+    public By getTextLocator(String locator){
+    	return By.xpath("//android.widget.TextView[@text='"+locator+"']");
+    }
+    
+    public By getEditTextLocator(String locator){
+    	return By.xpath("//android.widget.EditText[@text='"+locator+"']");
+    }
+    
+    public By getIdLocator(String locator){
+    	return By.id(locator);
+    }
+    
+    public By getImageLocator(String locator){
+    	return By.xpath("//android.widget.ImageButton[@index='"+locator+"']");
+    }
+    
+    public By getButtonLocator(String locator){
+    	return By.xpath("//android.widget.Button[@text='"+locator+"']");
+    }
+    
+    protected byte[] attachScreenShot(String filename) throws IOException{
+    	File file = new File(Constant.screenshotsDir+filename);
+    	FileOutputStream screenshotStream = new FileOutputStream(file);
+    	byte[] bytes =  ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);	
+    	screenshotStream.write(bytes);
+        screenshotStream.close();
+        return bytes;
+    }
 
+    protected void takeScreenShotInFile(String filename) throws Exception{
+    	File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+    	new File(Constant.screenshotsDir).mkdirs();
+    	FileUtils.copyFile(file, new File(Constant.screenshotsDir+filename));
+    }
+    
     public void scrollPageUp() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         HashMap<String, Double> swipeObject = new HashMap<String, Double>();

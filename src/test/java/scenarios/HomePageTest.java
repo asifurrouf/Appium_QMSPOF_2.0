@@ -34,7 +34,7 @@ public class HomePageTest extends AndroidSetup {
    	@TestCaseId("TC_ADR_001_001")
    	@Title("Verify All Link Available")
    	@Test
-   	public void verify_All_CategoryAndLink(){
+   	public void verifyAllCategoryAndLink(){
 		homepage.getTextMobilLink();
 		homepage.getTextMotorLink();
 		homepage.getTextPropertyLink();

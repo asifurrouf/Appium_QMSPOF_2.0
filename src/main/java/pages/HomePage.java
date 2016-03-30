@@ -32,18 +32,18 @@ public class HomePage extends BasePage {
     
     //android.widget.ImageButton
     
-    public By getTextLocator(String locator){
-    	return By.xpath("//android.widget.TextView[@text='"+locator+"']");
-    }
-    
-    public By getIdLocator(String locator){
-    	return By.id(locator);
-    }
-    
-    public By getImageLocator(String locator){
-    	return By.xpath("//android.widget.ImageButton[@index='"+locator+"']");
-    }
-    
+//    public By getTextLocator(String locator){
+//    	return By.xpath("//android.widget.TextView[@text='"+locator+"']");
+//    }
+//    
+//    public By getIdLocator(String locator){
+//    	return By.id(locator);
+//    }
+//    
+//    public By getImageLocator(String locator){
+//    	return By.xpath("//android.widget.ImageButton[@index='"+locator+"']");
+//    }
+//    
     public LoginPage goToLoginPage(){
     	return new LoginPage(driver);
     }
@@ -51,7 +51,6 @@ public class HomePage extends BasePage {
     @Step("Locate Mobil Link")
     public void getTextMobilLink(){
     	 waitForVisibilityOf(getTextLocator(mobilLink));
-    	//isElementPresent(getTextLocator(mobilLink));
     }
     
     @Step("Locate Motor Link")
@@ -66,50 +65,42 @@ public class HomePage extends BasePage {
     
     @Step("Locate Keperluan Pribadi Link")
     public void getTextKeperluanPribadiLink(){
-    	//return getTextLocator(keperluanPribadi);
     	waitForVisibilityOf(getTextLocator(keperluanPribadi));
     }
     
     @Step("Locate Electronik Link")
     public void getTextElectronicLink(){
-    	//return getTextLocator(elektronic);
     	waitForVisibilityOf(getTextLocator(elektronic));
     }
     
     @Step("Locate Hobi Link")
     public void getTextHobiLink(){
     	waitForVisibilityOf(getTextLocator(hobi));
-    	//return getTextLocator(hobi);
     }
     
     @Step("Locate Rumah Link")
     public void getTextRumahTanggaLink(){
     	waitForVisibilityOf(getTextLocator(rumah));
-    	//return getTextLocator(rumah);
     }
     
     @Step("Locate Perlengkapan Bayi Link")
     public void getTextPerlengkapanBayiLink(){
     	waitForVisibilityOf(getTextLocator(perlengkapanBayi));
-    	//return getTextLocator(perlengkapanBayi);
     }
     
     @Step("Locate Post An Ads Button")
     public void getPostAdsLink(){
     	waitForVisibilityOf(getIdLocator(postAdsLink));
-    	//return getIdLocator(postAdsLink);
     }
     
     @Step("Locate Lokasi Link ")
     public void getLokasiLink(){
     	waitForVisibilityOf(getIdLocator(pilihLokasi));
-    	//return getIdLocator(pilihLokasi);
     }
     
     @Step("Locate Search Link ")
     public void getSearchLink(){
     	waitForVisibilityOf(getIdLocator(searchLink));
-    	//return getIdLocator(searchLink);
     }
     
     @Step("Locate Image Drawer Link")
@@ -124,8 +115,11 @@ public class HomePage extends BasePage {
     	return new LoginPage(driver);
     }
     
-    
-    
+    @Step("Go to Mobil Menu")
+    public MobilPage clickMobilPage(){
+    	clickElement(getTextLocator(mobilLink));
+    	return new MobilPage(driver);
+    }
     
     public ResultPage searchFor(String keyword) {
         waitForClickabilityOf(search_button_locator);
@@ -144,26 +138,17 @@ public class HomePage extends BasePage {
     
     @Step("Click Mobil Link")
     public void clickMobilLink(){
-    	//waitForVisibilityOf(getTextMobilLink());
-    	//driver.findElement(getTextMobilLink()).click();
     	clickBackButton();
-    	//System.out.println("Test");
     }
 
     @Step("Click Motor Link")
     public void clickMotorLink(){
-    //	waitForVisibilityOf(getTextMotorLink());
-   // 	driver.findElement(getTextMotorLink()).click();
     	clickBackButton();
-    	//System.out.println("Test");
     }
     
     @Step("Click Property Link")
     public void clickPropertyLink(){
-    //	waitForVisibilityOf(getTextPropertyLink());
-    //	driver.findElement(getTextPropertyLink()).click();
     	clickBackButton();
-    	//System.out.println("Test");
     }
     
     
