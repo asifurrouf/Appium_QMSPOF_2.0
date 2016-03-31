@@ -19,7 +19,8 @@ public class ListingPage extends BasePage {
 	private String filterTermurah="Termurah";
 	private String filterTermahal="Termahal";
 	private String filterText="Filter";
-	private String brandTextTitleMobil="com.app.tokobagus.betterb:id/title";
+	private String brandTextTitleMobilID="com.app.tokobagus.betterb:id/title";
+	private String priceTextMobilID="com.app.tokobagus.betterb:id/price";
 	private String actionBarID="com.app.tokobagus.betterb:id/action_bar";
 	
 	public ListingPage(WebDriver driver) {
@@ -72,29 +73,51 @@ public class ListingPage extends BasePage {
 	}
 	
 	@Step("Iterate Value from Result Search = {0}")
-	public void iterateValueFilter(String keyword) throws Exception{
-		System.out.println("--Iterate value from search mobil keyword");
+	public void verifyResultFilterByKeyword(String keyword) throws Exception{
+		System.out.println("--Iterate value from Result Search Mobil keyword");
 		Boolean status=true;
-		 List<WebElement> elements = driver.findElements(getIdLocator(brandTextTitleMobil));
+		waitForVisibilityOf(getIdLocator(brandTextTitleMobilID));
+		 List<WebElement> elements = driver.findElements(getIdLocator(brandTextTitleMobilID));
 		 Iterator<WebElement> program = elements.iterator();
 		 while (program.hasNext()) {
 		        String values = program.next().getText();
-		        System.out.println(values.toUpperCase());
+		        System.out.println("Search for keyword : "+keyword.toUpperCase()+
+		        		           " from Apps Value : "+values.toUpperCase());
 		        if (!values.toUpperCase().contains(keyword.toUpperCase())){
 		        	status=false;
 		        }
 		    }
 		 if (!status){
-			 takeScreenShotInFile("iterateValueFilter.png");
-			 getAttachment("iterateValueFilter.png");
-			 Assert.fail("Please check the result from the attachment : iterateValueFilter.png");
+			 takeScreenShotInFile("iterateMobilKeywordFilter.png");
+			 getAttachment("iterateMobilKeywordFilter.png");
+			 Assert.fail("Please check the result from the attachment : iterateMobilKeywordFilter.png");
+		 }
+		 else{
+			 Assert.assertTrue(status);
 		 }
 	}
 	
-	@Attachment(value = "{0}", type = "image/png")
-	public byte[] getAttachment(String filename) throws Exception{
-		return attachScreenShot(filename);
+	@Step("Iterate Value from Result Search by Price from {0} to {1}")
+	public void verifyResultFilterByPriceRange(int fromHarga, int toHarga) throws Exception{
+		System.out.println("--Iterate value from search mobil price");
+		Boolean status=true;
+		waitForVisibilityOf(getIdLocator(priceTextMobilID));
+		 List<WebElement> elements = driver.findElements(getIdLocator(priceTextMobilID));
+		 Iterator<WebElement> program = elements.iterator();
+		 while (program.hasNext()) {
+		        String values = program.next().getText();
+		        int nilai = Integer.parseInt(values.replace("Rp ", "").replace(".", ""));
+		        System.out.println("Range Harga "+String.valueOf(nilai)+
+		        		           " From : "+String.valueOf(fromHarga)+" , To Harga : "+String.valueOf(toHarga));
+		     if(nilai<fromHarga || nilai>toHarga){
+		    	 takeScreenShotInFile("iterateMobilPriceFilter.png");
+				 getAttachment("iterateMobilPriceFilter.png");
+				 Assert.fail("Please check the result from the attachment : iterateMobilPriceFilter.png");
+		     }
+		     else{
+		    	 Assert.assertTrue(status);
+		     }
+		 }
 	}
-	
-	
+
 }

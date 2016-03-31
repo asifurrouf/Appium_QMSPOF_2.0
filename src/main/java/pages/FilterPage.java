@@ -8,18 +8,25 @@ import ru.yandex.qatools.allure.annotations.Step;
 public class FilterPage extends BasePage{
     private String keywordInputText="Cari...";
     private String chooseButtonText="Semua Indonesia Iklan";
-	private String chooseRangeHarga="Harga (Rp)";
+	private String chooseRangeHargaText="Harga (Rp)";
 	private String buttonFilterSubmitID="com.app.tokobagus.betterb:id/btnSubmit";
     private String uncheckCariDalamDeskripsiID="com.app.tokobagus.betterb:id/checkbox";
-	
+	public  String dariHargaText="dari";
+	public  String sampaiHargaText="sampai";
+    private String selesaiButtonText="Selesai";
+    private String chooseElementsRangeHargaButtonID="com.app.tokobagus.betterb:id/chooserBtn";
+    private String chooseElementsRangeHargaText="com.app.tokobagus.betterb:id/value";
+    
+    
 	public FilterPage(WebDriver driver) {
 		super(driver);
 	}
 	
-	@Step("Fill Keyword {0}")
+	@Step("Fill Keyword = {0}")
 	public void fillKeyword(String keys){
 		sendKeysElement(getEditTextLocator(keywordInputText), keys);
 	}
+	
 	
 	@Step("Uncheck Cari Dalam Deskripsi Options")
 	public void uncheckCariDalamDeskripsi(){
@@ -37,16 +44,57 @@ public class FilterPage extends BasePage{
 		return new MobilKategoriPage(driver);
 	}
 	
-	@Step("Choose Harga")
-	public void chooseHarga(){
-		
+	@Step("Choose 'Harga' Filter")
+	public ListingPage filterHarga(){
+		clickHargaButton();
+		sendKeysElement(getEditTextLocator(dariHargaText), "50000000");
+		sendKeysElement(getEditTextLocator(sampaiHargaText), "100000000");
+		clickSelesaiChooseHarga();
+		clickFilterSubmitButton();
+		return clickFilterSubmitButton();
 	}
-
+    
+	@Step("Fill Filter 'Harga' dari ")
+	public void fillHargaDari(){
+		sendKeysElement(getEditTextLocator(dariHargaText), "50000000");	
+	}
+	
+	@Step("Fill Filter 'Harga' sampai ")
+	public void fillHargaSampai(){
+		sendKeysElement(getEditTextLocator(sampaiHargaText), "100000000");
+	}
+	
+	
 	public void clickFilterKeyword(){
 		clickElement(getEditTextLocator(keywordInputText));
 	}
 	
-	@Step("Click Filter Submit Button")
+	@Step("Click Pilih 'Harga' Button Filter")
+	public void clickHargaButton(){
+		clickElement(getButtonLocator(chooseRangeHargaText));
+	}
+	
+	@Step("Click Pilih 'Harga' Button Filter")
+	public void clickHargaButtonFromElements(){
+		getTextElements(chooseElementsRangeHargaButtonID, 2).click();
+	}
+	
+	@Step("Fill Set From Harga")
+	public void setFromHargaFromElements(String fromHarga){
+		getTextElements(chooseElementsRangeHargaText, 0).sendKeys(fromHarga);
+	}
+	
+	@Step("Fill Set To Harga")
+	public void setToHargaFromElements(String toHarga){
+		getTextElements(chooseElementsRangeHargaText, 1).sendKeys(toHarga);
+	}
+	
+	@Step("Click 'Selesai' Choose Harga Filter")
+	public void clickSelesaiChooseHarga(){
+		clickElement(getTextLocator(selesaiButtonText));
+	}
+	
+	@Step("Click 'Submit' Button Filter")
 	public ListingPage clickFilterSubmitButton(){
         clickElement(getIdLocator(buttonFilterSubmitID));
         return new ListingPage(driver);

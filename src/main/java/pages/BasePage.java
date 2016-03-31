@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.android.AndroidDriver;
+import ru.yandex.qatools.allure.annotations.Attachment;
 
 import org.openqa.selenium.TakesScreenshot;
 
@@ -19,6 +20,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created Simple by Egakun on 22 March 2015
@@ -68,7 +70,7 @@ public class BasePage {
     
     protected void sendKeysElement(By by,String keys){
     	waitForVisibilityOf(by);
-    	//driver.findElement(by).clear();
+    	driver.findElement(by).clear();
     	driver.findElement(by).sendKeys(keys);
     }
     
@@ -92,6 +94,7 @@ public class BasePage {
     	return By.xpath("//android.widget.Button[@text='"+locator+"']");
     }
     
+  
     protected byte[] attachScreenShot(String filename) throws IOException{
     	File file = new File(Constant.screenshotsDir+filename);
     	FileOutputStream screenshotStream = new FileOutputStream(file);
@@ -106,6 +109,17 @@ public class BasePage {
     	new File(Constant.screenshotsDir).mkdirs();
     	FileUtils.copyFile(file, new File(Constant.screenshotsDir+filename));
     }
+    
+    protected WebElement getTextElements(String locator,int index){
+    	List<WebElement> elements = driver.findElements(getIdLocator(locator));
+    	return elements.get(index);
+    }
+    
+    @Attachment(value = "{0}", type = "image/png")
+	public byte[] getAttachment(String filename) throws Exception{
+		return attachScreenShot(filename);
+	}
+	
     
     public void scrollPageUp() {
         JavascriptExecutor js = (JavascriptExecutor) driver;

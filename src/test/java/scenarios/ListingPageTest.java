@@ -1,6 +1,7 @@
 package scenarios;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import pages.FilterPage;
@@ -27,6 +28,16 @@ public class ListingPageTest extends AndroidSetup{
   public void tearDown() throws Exception {
   	System.out.println("MobilPage Quit");
       driver.quit();
+  }
+  
+  @DataProvider(name = "DataRangeHarga")
+  public Object[][] createData() {
+      Object[][] retObjArr={{50000000,100000000},
+                            {50000000,50000000},
+                            {100000000,50000000},
+                            {0,0}
+                           };
+      return(retObjArr);
   }
   
   @Test(priority=1)
@@ -60,18 +71,34 @@ public class ListingPageTest extends AndroidSetup{
   @Test(priority=3)
   @Stories("As A User I want to be able to set Filter on Listing Page")
   @TestCaseId("TC_ADR_003_002")
-  @Title("Verify Filter On Listing Page - Uncheck Cari Dalam Deskripsi")
-  public void setFilterOnListingPage() throws Exception{
+  @Title("Verify Filter On Listing Page - Uncheck Cari Dalam Deskripsi - Input Keyword")
+  public void setFilterOnListingPageKeyword() throws Exception{
 	  System.out.println("--Verify Filter On Listing Page");
 	  FilterPage filter = listing.clickFilter();
 	  filter.uncheckCariDalamDeskripsi();
 	  filter.fillKeyword(mobilKeyword);
+	  Thread.sleep(2000);//wait autocomplete form appear
 	  listing.clickActionBar();//choose filter from input not autocomplete module
 	  listing = filter.clickFilterSubmitButton();//click submit button
-	  listing.iterateValueFilter(mobilKeyword);
+	  listing.verifyResultFilterByKeyword(mobilKeyword);
   }
   
-   
+  
+  @Test(priority=4,dataProvider="DataRangeHarga")
+  @Stories("As A User I want to be able to set Filter on Listing Page")
+  @TestCaseId("TC_ADR_003_002")
+  @Title("Verify Filter On Listing Page - Set Range Harga")
+  public void setFilterOnListingPagePrice(int fromHarga, int toHarga) throws Exception{
+	  System.out.println("Verify Filter On Listing Page - Set Range Harga");
+	  FilterPage filter = listing.clickFilter();
+	  filter.clickHargaButtonFromElements();
+	  filter.setFromHargaFromElements(String.valueOf(fromHarga));
+	  filter.setToHargaFromElements(String.valueOf(toHarga));
+	  filter.clickSelesaiChooseHarga();
+	  filter.clickFilterSubmitButton();
+	  listing.verifyResultFilterByPriceRange(fromHarga, toHarga);
+  }
+  
   //@Test - Sort Price is NAT = True (should be change by Dev)
   //@Test(priority=3)
   @Stories("As A User I want to be able to Sort Price Product")
