@@ -50,8 +50,11 @@ public class BasePage {
     
     protected boolean isElementPresent(By by) {
    	try {
-			driver.findElement(by);
-			return true;
+			if (driver.findElement(by).isDisplayed()){
+		     	return true;
+			}else{
+				return false;
+			}
 		} catch (NoSuchElementException e) {
 			return false;
 		}
