@@ -30,15 +30,7 @@ public class ListingPageTest extends AndroidSetup{
       driver.quit();
   }
   
-  @DataProvider(name = "DataRangeHarga")
-  public Object[][] createData() {
-      Object[][] retObjArr={{50000000,100000000},
-                            {50000000,50000000},
-                            {100000000,50000000},
-                            {0,0}
-                           };
-      return(retObjArr);
-  }
+  
   
   @Test(priority=1)
   @Stories("As A User I Want to be Able to Verify Mobil Menu")
@@ -70,7 +62,7 @@ public class ListingPageTest extends AndroidSetup{
   
   @Test(priority=3)
   @Stories("As A User I want to be able to set Filter on Listing Page")
-  @TestCaseId("TC_ADR_003_002")
+  @TestCaseId("TC_ADR_003_003")
   @Title("Verify Filter On Listing Page - Uncheck Cari Dalam Deskripsi - Input Keyword")
   public void setFilterOnListingPageKeyword() throws Exception{
 	  System.out.println("--Verify Filter On Listing Page");
@@ -83,14 +75,25 @@ public class ListingPageTest extends AndroidSetup{
 	  listing.verifyResultFilterByKeyword(mobilKeyword);
   }
   
+  @DataProvider(name = "DataRangeHarga")
+  public Object[][] createData() {
+      Object[][] retObjArr={{50000000,100000000},
+                            {75000000,75000000},
+                            {100000000,75000000},
+                            {0,0}
+                           };
+      return(retObjArr);
+  }
   
-  @Test(priority=4,dataProvider="DataRangeHarga")
+  //@Test(priority=4,dataProvider="DataRangeHarga")
   @Stories("As A User I want to be able to set Filter on Listing Page")
-  @TestCaseId("TC_ADR_003_002")
+  @TestCaseId("TC_ADR_003_004")
   @Title("Verify Filter On Listing Page - Set Range Harga")
   public void setFilterOnListingPagePrice(int fromHarga, int toHarga) throws Exception{
 	  System.out.println("Verify Filter On Listing Page - Set Range Harga");
 	  FilterPage filter = listing.clickFilter();
+	  //filter.clickClearFilter();
+	  filter.fillKeyword("");
 	  filter.clickHargaButtonFromElements();
 	  filter.setFromHargaFromElements(String.valueOf(fromHarga));
 	  filter.setToHargaFromElements(String.valueOf(toHarga));
@@ -99,13 +102,22 @@ public class ListingPageTest extends AndroidSetup{
 	  listing.verifyResultFilterByPriceRange(fromHarga, toHarga);
   }
   
-  //@Test - Sort Price is NAT = True (should be change by Dev)
-  //@Test(priority=3)
+  @Test(priority=5)
   @Stories("As A User I want to be able to Sort Price Product")
-  @TestCaseId("TC_ADR_003_00X")
+  @TestCaseId("TC_ADR_003_005")
   @Title("Verify Price Sort Cheapest")
-  public void verifyPriceSortCheapest(){
+  public void verifyPriceSortCheapest()throws Exception{
      listing.chooseHargaTermurah();
+     listing.verifySort("Termurah");
+  }
+  
+  @Test(priority=6)
+  @Stories("As A User I want to be able to Sort Price Product")
+  @TestCaseId("TC_ADR_003_006")
+  @Title("Verify Price Sort Most Expensive")
+  public void verifyPriceSortExpensive()throws Exception{
+     listing.chooseHargaTermahal();
+     listing.verifySort("Termahal");
   }
   
 }

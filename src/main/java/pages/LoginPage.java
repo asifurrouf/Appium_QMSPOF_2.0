@@ -10,8 +10,10 @@ public class LoginPage extends BasePage {
     By showPassword = By.id(app_package_name + "show_password");
     By login_Button = By.id(app_package_name + "btn_login");
     private String navigateImageLoc = "Buka navigasi";
-    private String loginLink ="com.app.tokobagus.betterb:id/log_in";
-    private String emailInput="Email";
+    private String loginLinkID="com.app.tokobagus.betterb:id/log_in";
+    private String emailTextInput="Email";
+    private String passwordTextInputID="com.app.tokobagus.betterb:id/value";
+    private String submitLoginButtonID="com.app.tokobagus.betterb:id/btnLogInNew";
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -19,10 +21,18 @@ public class LoginPage extends BasePage {
     
      
     @Step("Input Email")
-    public void inputEmail(){
-    	waitForVisibilityOf(getEditTextLocator(emailInput));
-    	driver.findElement(getEditTextLocator(emailInput)).clear();
-    	driver.findElement(getEditTextLocator(emailInput)).sendKeys("bravo@olx.co.id");	
+    public void inputEmail(String email){
+    	sendKeysElement(getEditTextLocator(emailTextInput),email);
+    }
+    
+    @Step("Input Password")
+    public void inputPassword(String password){
+    	sendKeysElements(getIdLocator(passwordTextInputID), 1, password);
+    }
+    
+    @Step("Click Submit Login Button")
+    public void clickSubmitLoginButton(){
+    	clickElement(getIdLocator(submitLoginButtonID));
     }
     
     public LoginPage invalidLogin() {

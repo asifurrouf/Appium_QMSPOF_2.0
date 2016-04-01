@@ -13,6 +13,9 @@ import ru.yandex.qatools.allure.annotations.Title;
 
 @Features("LoginPage")
 public class LoginPageTest extends AndroidSetup{
+	private String emailValid="frengky.sheeran@gmail.com";
+	private String passValid="frengky123.,";
+	
 	@BeforeClass
 	public void setUp() throws Exception{
 		prepareAndroidForAppium();
@@ -32,6 +35,6 @@ public class LoginPageTest extends AndroidSetup{
 	 public void userAbleToLoginWithValidCredential(){
 		 HomePage homepage = new HomePage(driver);
 		 LoginPage loginpage = homepage.clickLoginPage();
-		 loginpage.inputEmail();
+		 loginpage.inputEmail(emailValid);
 	 }
 }

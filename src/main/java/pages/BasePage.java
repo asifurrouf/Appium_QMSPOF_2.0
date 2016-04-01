@@ -74,6 +74,13 @@ public class BasePage {
     	driver.findElement(by).sendKeys(keys);
     }
     
+    protected void sendKeysElements(By locator,int index, String keys){
+    	waitForVisibilityOf(locator);
+    	WebElement element=getTextElements(locator, index);
+    	element.clear();
+    	element.sendKeys(keys);
+    }
+    
     public By getTextLocator(String locator){
     	return By.xpath("//android.widget.TextView[@text='"+locator+"']");
     }
@@ -115,10 +122,21 @@ public class BasePage {
     	return elements.get(index);
     }
     
+    protected WebElement getTextElements(By locator,int index){
+    	List<WebElement> elements = driver.findElements(locator);
+    	return elements.get(index);
+    }
+    
     @Attachment(value = "{0}", type = "image/png")
 	public byte[] getAttachment(String filename) throws Exception{
+    	takeScreenShotInFile(filename);
 		return attachScreenShot(filename);
 	}
+    
+    @Attachment("{method}")
+    public String getTextAttachment(String input) throws Exception{
+    	return input;
+    }
 	
     
     public void scrollPageUp() {
@@ -174,4 +192,22 @@ public class BasePage {
         tapObject.put("element", Double.valueOf(((RemoteWebElement) elementToTap).getId()));
         js.executeScript("mobile: tap", tapObject);
     }
+    
+    public int[] sortDesc(int[] intArray) { 
+        int n = intArray.length;
+        int temp = 0;
+        for(int i=0; i < n; i++){
+                for(int j=1; j < (n-i); j++){  
+                        if(intArray[j-1] < intArray[j]){
+                                //swap the elements!
+                                temp = intArray[j-1];
+                                intArray[j-1] = intArray[j];
+                                intArray[j] = temp;
+                        }
+                }
+        }
+        return intArray;
+    }
+
+    
 }

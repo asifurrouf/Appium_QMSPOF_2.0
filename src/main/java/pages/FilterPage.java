@@ -16,7 +16,8 @@ public class FilterPage extends BasePage{
     private String selesaiButtonText="Selesai";
     private String chooseElementsRangeHargaButtonID="com.app.tokobagus.betterb:id/chooserBtn";
     private String chooseElementsRangeHargaText="com.app.tokobagus.betterb:id/value";
-    
+    private String clearFilterID="com.app.tokobagus.betterb:id/action_clear";
+    private String keywordFilterID="com.app.tokobagus.betterb:id/value";
     
 	public FilterPage(WebDriver driver) {
 		super(driver);
@@ -24,7 +25,8 @@ public class FilterPage extends BasePage{
 	
 	@Step("Fill Keyword = {0}")
 	public void fillKeyword(String keys){
-		sendKeysElement(getEditTextLocator(keywordInputText), keys);
+		//sendKeysElement(getEditTextLocator(keywordInputText), keys);
+		sendKeysElement(getIdLocator(keywordFilterID),keys);
 	}
 	
 	
@@ -81,12 +83,12 @@ public class FilterPage extends BasePage{
 	
 	@Step("Fill Set From Harga")
 	public void setFromHargaFromElements(String fromHarga){
-		getTextElements(chooseElementsRangeHargaText, 0).sendKeys(fromHarga);
+        sendKeysElements(getIdLocator(chooseElementsRangeHargaText), 0, fromHarga);
 	}
 	
 	@Step("Fill Set To Harga")
 	public void setToHargaFromElements(String toHarga){
-		getTextElements(chooseElementsRangeHargaText, 1).sendKeys(toHarga);
+		sendKeysElements(getIdLocator(chooseElementsRangeHargaText), 1, toHarga);
 	}
 	
 	@Step("Click 'Selesai' Choose Harga Filter")
@@ -98,5 +100,10 @@ public class FilterPage extends BasePage{
 	public ListingPage clickFilterSubmitButton(){
         clickElement(getIdLocator(buttonFilterSubmitID));
         return new ListingPage(driver);
+	}
+	
+	@Step("Clear Filter")
+	public void clickClearFilter(){
+		clickElement(getIdLocator(clearFilterID));
 	}
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Mobile OLXID" verbose="3" parallel="tests" thread-count="2">  
-    <test name="Listing Page Mobile OLX">
+    <test name="HomePage Mobile OLX">
       <classes>
           <class name="scenarios.ListingPageTest"/>
       </classes>
