@@ -135,8 +135,8 @@ public class ListingPage extends BasePage {
 	@Step("{method} {0}")
 	public void verifySort(String keyword) throws Exception{
 		 System.out.println("verifySort "+keyword);
-		 waitForVisibilityOf(getIdLocator(priceTextMobilID));
-		 List<WebElement> topListing = driver.findElements(getIdLocator(topListingID));
+		 List<WebElement> topListing = driver.findElements(getIdLocator(topListingID)); 
+		 //return 0 if empty list
 		 List<WebElement> elements = driver.findElements(getIdLocator(priceTextMobilID));
 		 Iterator<WebElement> program = elements.iterator();
 		 int normalAdsArraySize = elements.size()-topListing.size();

@@ -11,7 +11,6 @@ import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import io.appium.java_client.android.AndroidDriver;
 import ru.yandex.qatools.allure.annotations.Attachment;
 
 import org.openqa.selenium.TakesScreenshot;
@@ -49,7 +48,7 @@ public class BasePage {
     }
     
     protected boolean isElementPresent(By by) {
-   	try {
+   	try {   
 			if (driver.findElement(by).isDisplayed()){
 		     	return true;
 			}else{
@@ -59,6 +58,16 @@ public class BasePage {
 			return false;
 		}
 	}
+    
+    protected boolean isWaitElementPresent(By by){
+     try {
+    	 waitForVisibilityOf(by);
+    	 return true;
+     } catch (NoSuchElementException e){
+    	 return false;
+     }
+    	
+    }
     
     protected void clickElement(By by){
     	waitForClickabilityOf(by);
@@ -76,12 +85,20 @@ public class BasePage {
     	driver.findElement(by).clear();
     	driver.findElement(by).sendKeys(keys);
     }
-    
+
     protected void sendKeysElements(By locator,int index, String keys){
     	waitForVisibilityOf(locator);
     	WebElement element=getTextElements(locator, index);
     	element.clear();
     	element.sendKeys(keys);
+    }
+    
+    protected void sendKeysElements(WebElement element,String keys){
+    	element.sendKeys(keys);
+    }
+    
+    protected void clickElements(WebElement element){
+    	element.click();
     }
     
     public By getTextLocator(String locator){
@@ -125,7 +142,14 @@ public class BasePage {
     	return elements.get(index);
     }
     
+    protected List<WebElement> getListElements(By locator){
+    	waitForVisibilityOf(locator);
+    	List<WebElement> elements = driver.findElements(locator);
+    	return elements;
+    }
+    
     protected WebElement getTextElements(By locator,int index){
+    	waitForVisibilityOf(locator);
     	List<WebElement> elements = driver.findElements(locator);
     	return elements.get(index);
     }
@@ -196,6 +220,7 @@ public class BasePage {
         js.executeScript("mobile: tap", tapObject);
     }
     
+    //creating sort descending
     public int[] sortDesc(int[] intArray) { 
         int n = intArray.length;
         int temp = 0;

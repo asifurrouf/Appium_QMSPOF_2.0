@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import ru.yandex.qatools.allure.annotations.Step;
 
@@ -25,25 +24,12 @@ public class HomePage extends BasePage {
     private String searchLink="com.app.tokobagus.betterb:id/action_search";
     private String imageIndex="0";
     private String navLogin="com.app.tokobagus.betterb:id/log_in";
+    private String navDaftar="com.app.tokobagus.betterb:id/register";
     
     public HomePage(WebDriver driver) {
         super(driver);
     }
     
-    //android.widget.ImageButton
-    
-//    public By getTextLocator(String locator){
-//    	return By.xpath("//android.widget.TextView[@text='"+locator+"']");
-//    }
-//    
-//    public By getIdLocator(String locator){
-//    	return By.id(locator);
-//    }
-//    
-//    public By getImageLocator(String locator){
-//    	return By.xpath("//android.widget.ImageButton[@index='"+locator+"']");
-//    }
-//    
     public LoginPage goToLoginPage(){
     	return new LoginPage(driver);
     }
@@ -113,6 +99,13 @@ public class HomePage extends BasePage {
     	clickElement(getImageLocator(imageIndex));
     	clickElement(getIdLocator(navLogin));
     	return new LoginPage(driver);
+    }
+    
+    @Step("Go To Dafter Menu")
+    public DaftarPage clickDaftarPage(){
+    	clickElement(getImageLocator(imageIndex));
+    	clickElement(getIdLocator(navDaftar));
+    	return new DaftarPage(driver);
     }
     
     @Step("Go to Mobil Menu")

@@ -29,7 +29,6 @@ public class LoginPageTest extends AndroidSetup{
 	 @AfterClass
 	 public void tearDown() throws Exception {
 	    	System.out.println("LoginPage Quit");
-	    	loginpage.clickLogout();
 	        driver.quit();
 	 }
 	 
@@ -74,5 +73,8 @@ public class LoginPageTest extends AndroidSetup{
 		 loginpage.inputPassword(passValid);
 		 loginpage.clickSubmitLoginButton();
 		 loginpage.verifySuccessLogin();
+		 //loginpage.clickLogout();
+		 homepage=loginpage.clickLogout();
+		 homepage.getTextMobilLink();
 	 }
 }

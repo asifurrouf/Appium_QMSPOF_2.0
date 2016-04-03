@@ -1,8 +1,6 @@
 package pages;
 
 import org.openqa.selenium.WebDriver;
-
-import io.appium.java_client.android.AndroidDriver;
 import ru.yandex.qatools.allure.annotations.Step;
 
 public class FilterPage extends BasePage{

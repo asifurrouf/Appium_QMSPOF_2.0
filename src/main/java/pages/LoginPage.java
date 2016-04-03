@@ -12,8 +12,6 @@ public class LoginPage extends BasePage {
     By password = By.id(app_package_name + "user_password");
     By showPassword = By.id(app_package_name + "show_password");
     By login_Button = By.id(app_package_name + "btn_login");
-    private String navigateImageLoc = "Buka navigasi";
-    private String loginLinkID="com.app.tokobagus.betterb:id/log_in";
     private String emailTextInput="Email";
     private String passwordTextInputID="com.app.tokobagus.betterb:id/value";
     private String submitLoginButtonID="com.app.tokobagus.betterb:id/btnLogInNew";
@@ -56,7 +54,7 @@ public class LoginPage extends BasePage {
     public void verifyInvalidLogin() throws Exception{
      try{	
     	if(isElementPresent(getTextLocator(loginPageTitle))){
-    		Assert.assertTrue(true);;
+    		Assert.assertTrue(true);
     	}else{
     		Assert.fail("Invalid Credential Should Not Be Successfully Login");
     	}
@@ -67,14 +65,21 @@ public class LoginPage extends BasePage {
     }
     
     @Step("Verify Success Login")
-    public void verifySuccessLogin(){
-    	Assert.assertTrue(isElementPresent(getIdLocator(userLoginID)));
+    public void verifySuccessLogin(){   	
+    	try{
+    	  waitForVisibilityOf(getIdLocator(userLoginID));
+    	  System.out.println("User Login Location : "+driver.findElement(getIdLocator(userLoginID)).getText());
+    	}catch(NoSuchElementException e){
+    		Assert.fail("Anda Gagal Login");
+    	}
+
     }
     
     @Step("Click LogOut")
-    public void clickLogout(){
+    public HomePage clickLogout(){
     	System.out.println("Click Logout");
     	clickElement(getTextLocator(logoutButtonText));
+    	return new HomePage(driver);
     }
     
     public LoginPage invalidLogin() {
