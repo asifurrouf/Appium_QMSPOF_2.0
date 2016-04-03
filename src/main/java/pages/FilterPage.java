@@ -34,9 +34,9 @@ public class FilterPage extends BasePage{
 	}
 	
 	@Step("Choose Location")
-	public PilihLokasiPage chooseLocation(){
+	public HeaderPage chooseLocation(){
 		clickElement(getTextLocator(chooseButtonText));
-		return new PilihLokasiPage(driver);
+		return new HeaderPage(driver);
 	}
 	
 	@Step("Choose Category")
@@ -69,6 +69,7 @@ public class FilterPage extends BasePage{
 		clickElement(getEditTextLocator(keywordInputText));
 	}
 	
+	@Deprecated
 	@Step("Click Pilih 'Harga' Button Filter")
 	public void clickHargaButton(){
 		clickElement(getButtonLocator(chooseRangeHargaText));

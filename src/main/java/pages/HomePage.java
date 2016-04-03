@@ -1,5 +1,6 @@
 package pages;
 
+import org.apache.http.entity.mime.Header;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -25,6 +26,8 @@ public class HomePage extends BasePage {
     private String imageIndex="0";
     private String navLogin="com.app.tokobagus.betterb:id/log_in";
     private String navDaftar="com.app.tokobagus.betterb:id/register";
+    private String searchButtonID="com.app.tokobagus.betterb:id/action_search";
+    private String locationChooserID="com.app.tokobagus.betterb:id/locationChooser";
     
     public HomePage(WebDriver driver) {
         super(driver);
@@ -144,6 +147,17 @@ public class HomePage extends BasePage {
     	clickBackButton();
     }
     
+    @Step("Click Search")
+	public HeaderPage clickSearchButton(){
+		clickElement(getIdLocator(searchButtonID));
+		return new HeaderPage(driver);
+	}
+    
+    @Step("Click Location Chooser")
+	public HeaderPage clickLocationChooser(){
+		clickElement(getIdLocator(locationChooserID));
+		return new HeaderPage(driver);
+	}
     
     
     public void clearText(WebElement elementToBeCleared) {

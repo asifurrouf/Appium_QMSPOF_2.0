@@ -11,7 +11,7 @@ import ru.yandex.qatools.allure.annotations.Stories;
 import ru.yandex.qatools.allure.annotations.TestCaseId;
 import ru.yandex.qatools.allure.annotations.Title;
 
-@Features("Login Page")
+@Features("Login Feature")
 public class LoginPageTest extends AndroidSetup{
 	private String emailValid="frengky.sheeran@gmail.com";
 	private String passValid="frengky123.,";

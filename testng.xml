@@ -2,7 +2,7 @@
 <suite name="Mobile OLXID" verbose="3" parallel="tests" thread-count="2">  
     <test name="HomePage Mobile OLX">
       <classes>
-          <class name="scenarios.DaftarPageTest"/>
+          <class name="scenarios.HeaderPageTest"/>
       </classes>
     </test>
 </suite>

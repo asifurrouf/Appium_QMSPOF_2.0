@@ -1,16 +1,20 @@
 package scenarios;
 
 import org.testng.annotations.AfterClass;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import pages.DaftarPage;
 import pages.HomePage;
 import pages.SuccessDaftarPage;
+import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;
 import ru.yandex.qatools.allure.annotations.TestCaseId;
 import ru.yandex.qatools.allure.annotations.Title;
 
+
+@Features("Registrasi Feature")
 public class DaftarPageTest extends AndroidSetup{
 	private DaftarPage daftarPage;
 	private String emailDaftarInvalidFormat="daftar";

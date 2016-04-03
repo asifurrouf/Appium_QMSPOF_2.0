@@ -13,7 +13,7 @@ import ru.yandex.qatools.allure.annotations.TestCaseId;
 import ru.yandex.qatools.allure.annotations.Title;
 
 
-@Features ("Homepage")
+@Features ("Homepage Feature")
 public class HomePageTest extends AndroidSetup {
 	HomePage homepage;
 	

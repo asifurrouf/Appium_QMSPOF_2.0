@@ -85,7 +85,7 @@ public class BasePage {
     	driver.findElement(by).clear();
     	driver.findElement(by).sendKeys(keys);
     }
-
+    
     protected void sendKeysElements(By locator,int index, String keys){
     	waitForVisibilityOf(locator);
     	WebElement element=getTextElements(locator, index);
