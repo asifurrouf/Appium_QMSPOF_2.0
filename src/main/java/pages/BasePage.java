@@ -121,7 +121,10 @@ public class BasePage {
     	return By.xpath("//android.widget.Button[@text='"+locator+"']");
     }
     
-  
+    public By getAndroidViewLocator(int index){
+    	return (By.xpath("//android.view.View[@clickable='True']"));
+    }
+    
     protected byte[] attachScreenShot(String filename) throws IOException{
     	File file = new File(Constant.screenshotsDir+filename);
     	FileOutputStream screenshotStream = new FileOutputStream(file);

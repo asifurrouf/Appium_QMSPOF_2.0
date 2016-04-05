@@ -159,6 +159,12 @@ public class HomePage extends BasePage {
 		return new HeaderPage(driver);
 	}
     
+    @Step("Click Jual Iklan")
+    public JualIklanPage clickJualIklan(){
+    	clickElement(getIdLocator(postAdsLink));
+    	return new JualIklanPage(driver);
+    }
+    
     
     public void clearText(WebElement elementToBeCleared) {
         elementToBeCleared.sendKeys("x");

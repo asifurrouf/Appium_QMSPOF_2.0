@@ -26,11 +26,9 @@ public class ListingPageTest extends AndroidSetup{
   
   @AfterClass
   public void tearDown() throws Exception {
-  	System.out.println("MobilPage Quit");
+  	System.out.println("Listing Page Quit");
       driver.quit();
   }
-  
-  
   
   @Test(priority=1)
   @Stories("As A User I Want to be Able to Verify Mobil Menu")
@@ -69,6 +67,7 @@ public class ListingPageTest extends AndroidSetup{
 	  FilterPage filter = listing.clickFilter();
 	  filter.uncheckCariDalamDeskripsi();
 	  filter.fillKeyword(mobilKeyword);
+	  listing.clickActionBar();
 	  Thread.sleep(2000);//wait autocomplete form appear
 	  listing.clickActionBar();//choose filter from input not autocomplete module
 	  listing = filter.clickFilterSubmitButton();//click submit button

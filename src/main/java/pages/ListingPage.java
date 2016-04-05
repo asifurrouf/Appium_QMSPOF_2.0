@@ -6,6 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import org.apache.commons.lang3.ArrayUtils;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -135,9 +136,9 @@ public class ListingPage extends BasePage {
 	@Step("{method} {0}")
 	public void verifySort(String keyword) throws Exception{
 		 System.out.println("verifySort "+keyword);
-		 List<WebElement> topListing = driver.findElements(getIdLocator(topListingID)); 
 		 //return 0 if empty list
-		 List<WebElement> elements = driver.findElements(getIdLocator(priceTextMobilID));
+		 List<WebElement> elements = getListElements(getIdLocator(priceTextMobilID));
+		 List<WebElement> topListing = driver.findElements(getIdLocator(topListingID));  
 		 Iterator<WebElement> program = elements.iterator();
 		 int normalAdsArraySize = elements.size()-topListing.size();
 		 int[] hargaArray = new int[elements.size()];
