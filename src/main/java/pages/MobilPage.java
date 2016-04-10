@@ -63,4 +63,9 @@ public class MobilPage extends BasePage {
 		return new ListingPage(driver);
 	}
 	
+	@Step("Clik Semua Mobil Link")
+	public void chooseSemuaMobilLink(){
+		clickElement(getTextLocator(semuaMobilLink));
+	}
+	
 }

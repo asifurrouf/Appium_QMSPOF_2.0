@@ -10,6 +10,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
 
 import ru.yandex.qatools.allure.annotations.Attachment;
 
@@ -24,7 +27,7 @@ import java.util.List;
 /**
  * Created Simple by Egakun on 22 March 2015
  */
-public class BasePage {
+public class BasePage implements ITestListener {
 
     protected WebDriver driver;
     String app_package_name = "com.app.tokobagus.betterb:id/name";
@@ -32,6 +35,30 @@ public class BasePage {
     public BasePage(WebDriver driver) {
         this.driver = driver;
     }
+    
+    //Capture test only on Fail
+    @Override
+    public void onTestFailure(ITestResult result) {
+    	System.out.println("***** Error "+result.getName()+" test has failed *****");
+    	String methodName=result.getName().toString().trim();
+    	try {
+    	    getAttachment(methodName);
+    	} catch (Exception e){
+    		System.out.print("-->Unable to screen capture");
+    	}
+    }
+    
+    public void onFinish(ITestContext context) {}
+    
+    public void onTestStart(ITestResult result) {   }
+  
+    public void onTestSuccess(ITestResult result) {   }
+
+    public void onTestSkipped(ITestResult result) {   }
+
+    public void onTestFailedButWithinSuccessPercentage(ITestResult result) {   }
+
+    public void onStart(ITestContext context) {   }
 
     protected void waitForVisibilityOf(By locator) {
         WebDriverWait wait = new WebDriverWait(driver, 10);

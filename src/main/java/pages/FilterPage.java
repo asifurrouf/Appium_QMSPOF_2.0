@@ -40,8 +40,8 @@ public class FilterPage extends BasePage{
 	}
 	
 	@Step("Choose Category")
-	public MobilKategoriPage chooseCategory(){
-		return new MobilKategoriPage(driver);
+	public KategoriPage chooseCategory(){
+		return new KategoriPage(driver);
 	}
 	
 	@Step("Choose 'Harga' Filter")

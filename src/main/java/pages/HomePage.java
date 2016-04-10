@@ -117,6 +117,7 @@ public class HomePage extends BasePage {
     	return new MobilPage(driver);
     }
     
+    
     public ResultPage searchFor(String keyword) {
         waitForClickabilityOf(search_button_locator);
         driver.findElement(search_button_locator).click();
