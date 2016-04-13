@@ -3,7 +3,6 @@ package pages;
 import java.util.List;
 
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.NotFoundException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -45,6 +44,7 @@ public class JualIklanPage extends BasePage{
 	public JualIklanPage(WebDriver driver) {
 		super(driver);
 	}
+	
     
 	@Step("Check Kembali ke Pasang Iklan")
 	public void checkKembaliKePasangIklan(){
@@ -67,7 +67,7 @@ public class JualIklanPage extends BasePage{
 		this.kategoriIklan = elementsButtonPasang.get(0);
 	}
 	
-	@Step("Set Judul Iklan Kedua")
+	@Step("Set Element Jual Iklan Kedua")
 	public void setElementJualIklanKedua(){ //after set judul, deskripsi dan kategori
 		List<WebElement> elementsButtonPasang = getListElements(getIdLocator(chooserButtonID));
 		this.hargaButton = elementsButtonPasang.get(1);
@@ -105,6 +105,16 @@ public class JualIklanPage extends BasePage{
 		Assert.assertTrue(elementsTextError.get(4).getText().toLowerCase().contains("nama"));
 	}
 	
+	@Step("Verify Error Notification Title")
+	public void verifyErrorOnTitle(){
+		Assert.assertTrue(getListElements(getIdLocator(errorMessageID)).get(0).getText().toLowerCase().contains("tidak bisa kurang"));
+	}
+	
+	@Step("Verify Error Notification Description")
+	public void verifyErrorOnDesc(){
+		Assert.assertTrue(getListElements(getIdLocator(errorMessageID)).get(1).getText().toLowerCase().contains("tidak bisa kurang"));
+	}
+	
 	@Step("Click Pasang Iklan Button")
 	public void clickPasangIklanButton(){
 		clickElement(getIdLocator(postAnAdsButtonID));
@@ -130,7 +140,7 @@ public class JualIklanPage extends BasePage{
 	public void clickDefaultOpenImage(){
       try{
 	    clickElement(getIdLocator(alwaysWithGalleryID));	
-	  }catch(NotFoundException e){
+	  }catch(NoSuchElementException e){
 	    System.out.println("Default Open with Gallery");	
 	   }
 	}
@@ -161,7 +171,7 @@ public class JualIklanPage extends BasePage{
 		hargaButton.click();
 	}
 
-	@Step("Fill Harga Product {0}")
+	@Step("Input Harga Product {0}")
 	public void fillHargaProduct(String harga){
 		sendKeysElement(getIdLocator(textFieldID), harga);
 	}

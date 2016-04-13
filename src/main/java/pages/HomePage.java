@@ -1,6 +1,5 @@
 package pages;
 
-import org.apache.http.entity.mime.Header;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -28,6 +27,7 @@ public class HomePage extends BasePage {
     private String navDaftar="com.app.tokobagus.betterb:id/register";
     private String searchButtonID="com.app.tokobagus.betterb:id/action_search";
     private String locationChooserID="com.app.tokobagus.betterb:id/locationChooser";
+    private String searchTextID="com.app.tokobagus.betterb:id/search_src_text";
     
     public HomePage(WebDriver driver) {
         super(driver);
@@ -39,62 +39,73 @@ public class HomePage extends BasePage {
     
     @Step("Locate Mobil Link")
     public void getTextMobilLink(){
-    	 waitForVisibilityOf(getTextLocator(mobilLink));
+    	 //waitForVisibilityOf(getTextLocator(mobilLink));
+    	 isWaitElementPresent(getTextLocator(mobilLink));
     }
     
     @Step("Locate Motor Link")
     public void getTextMotorLink(){
-    	waitForVisibilityOf(getTextLocator(motorLink));
+    	//waitForVisibilityOf(getTextLocator(motorLink));
+    	isWaitElementPresent(getTextLocator(motorLink));
     }
     
     @Step("Locate Property Link")
     public void getTextPropertyLink(){
-    	waitForVisibilityOf(getTextLocator(propertyLink));
+    	//waitForVisibilityOf(getTextLocator(propertyLink));
+    	isWaitElementPresent(getTextLocator(propertyLink));
     }
     
     @Step("Locate Keperluan Pribadi Link")
     public void getTextKeperluanPribadiLink(){
-    	waitForVisibilityOf(getTextLocator(keperluanPribadi));
+    	//waitForVisibilityOf(getTextLocator(keperluanPribadi));
+    	isWaitElementPresent(getTextLocator(keperluanPribadi));
     }
     
     @Step("Locate Electronik Link")
     public void getTextElectronicLink(){
-    	waitForVisibilityOf(getTextLocator(elektronic));
+    	//waitForVisibilityOf(getTextLocator(elektronic));
+    	isWaitElementPresent(getTextLocator(elektronic));
     }
     
     @Step("Locate Hobi Link")
     public void getTextHobiLink(){
-    	waitForVisibilityOf(getTextLocator(hobi));
+    	//waitForVisibilityOf(getTextLocator(hobi));
+    	isWaitElementPresent(getTextLocator(hobi));
     }
     
     @Step("Locate Rumah Link")
     public void getTextRumahTanggaLink(){
-    	waitForVisibilityOf(getTextLocator(rumah));
+    	//waitForVisibilityOf(getTextLocator(rumah));
+    	isWaitElementPresent(getTextLocator(rumah));
     }
     
     @Step("Locate Perlengkapan Bayi Link")
     public void getTextPerlengkapanBayiLink(){
-    	waitForVisibilityOf(getTextLocator(perlengkapanBayi));
+    	//waitForVisibilityOf(getTextLocator(perlengkapanBayi));
+    	isWaitElementPresent(getTextLocator(perlengkapanBayi));
     }
     
     @Step("Locate Post An Ads Button")
     public void getPostAdsLink(){
-    	waitForVisibilityOf(getIdLocator(postAdsLink));
+    	//waitForVisibilityOf(getIdLocator(postAdsLink));
+    	isWaitElementPresent(getIdLocator(postAdsLink));
     }
     
     @Step("Locate Lokasi Link ")
     public void getLokasiLink(){
-    	waitForVisibilityOf(getIdLocator(pilihLokasi));
+    	//waitForVisibilityOf(getIdLocator(pilihLokasi));
+    	isWaitElementPresent(getIdLocator(pilihLokasi));
     }
     
     @Step("Locate Search Link ")
     public void getSearchLink(){
-    	waitForVisibilityOf(getIdLocator(searchLink));
+    	//waitForVisibilityOf(getIdLocator(searchLink));
+    	isWaitElementPresent(getIdLocator(searchLink));
     }
     
     @Step("Locate Image Drawer Link")
     public void getImageDrawer(){
-    	waitForVisibilityOf(getImageLocator(imageIndex));
+    	isWaitElementPresent(getImageLocator(imageIndex));
     }
     
     @Step("Go to Login Menu")
@@ -104,7 +115,7 @@ public class HomePage extends BasePage {
     	return new LoginPage(driver);
     }
     
-    @Step("Go To Dafter Menu")
+    @Step("Go To Daftar Menu")
     public DaftarPage clickDaftarPage(){
     	clickElement(getImageLocator(imageIndex));
     	clickElement(getIdLocator(navDaftar));
@@ -118,14 +129,10 @@ public class HomePage extends BasePage {
     }
     
     
-    public ResultPage searchFor(String keyword) {
-        waitForClickabilityOf(search_button_locator);
-        driver.findElement(search_button_locator).click();
-
-        waitForVisibilityOf(search_textbox_locator);
-        driver.findElement(search_textbox_locator).sendKeys(keyword);
-
-        return new ResultPage(driver);
+    public ListingPage searchFor(String keyword) {
+    	sendKeysElement(getIdLocator(searchTextID), keyword);
+        clickElement(getIdLocator(searchLink));
+        return new ListingPage(driver);
     }
     
     @Step("Click Back Button")
@@ -153,6 +160,12 @@ public class HomePage extends BasePage {
 		clickElement(getIdLocator(searchButtonID));
 		return new HeaderPage(driver);
 	}
+    
+    @Step("Input Search Keyword")
+    public ListingPage inputSearchKeyword(String keys){
+    	sendKeysElement(getIdLocator(searchTextID), keys+"\n");
+    	return new ListingPage(driver);
+    }
     
     @Step("Click Location Chooser")
 	public HeaderPage clickLocationChooser(){

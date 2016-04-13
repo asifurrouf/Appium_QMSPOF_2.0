@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-import org.openqa.selenium.NoSuchElementException;
+//import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -20,7 +20,7 @@ public class ListingPage extends BasePage {
 	private String filterTerbaru="Terbaru";
 	private String filterTermurah="Termurah";
 	private String filterTermahal="Termahal";
-	private String filterText="Filter";
+	//private String filterText="Filter";
 	private String brandTextTitleMobilID="com.app.tokobagus.betterb:id/title";
 	private String priceTextMobilID="com.app.tokobagus.betterb:id/price";
 	private String actionBarID="com.app.tokobagus.betterb:id/action_bar";
@@ -119,7 +119,7 @@ public class ListingPage extends BasePage {
 	    }
 	    fromHarga=tempFromHarga;
 	    toHarga=tempToHarga;
-		Boolean status=true;
+		//Boolean status=true;
 		waitForVisibilityOf(getIdLocator(priceTextMobilID));
 		 List<WebElement> elements = driver.findElements(getIdLocator(priceTextMobilID));
 		 Iterator<WebElement> program = elements.iterator();
@@ -132,7 +132,6 @@ public class ListingPage extends BasePage {
 				 getAttachment("iterateMobilPriceFilter.png");
 				 Assert.fail("Please check the result from the attachment : iterateMobilPriceFilter.png");
 		     }
-		     
 		 }
 	}
 	

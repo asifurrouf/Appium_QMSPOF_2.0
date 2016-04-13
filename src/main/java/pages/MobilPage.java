@@ -1,12 +1,7 @@
 package pages;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.Assert;
+
 import pages.ListingPage;
 
 import ru.yandex.qatools.allure.annotations.Step;
@@ -28,32 +23,32 @@ public class MobilPage extends BasePage {
     
 	@Step("Verify Semua Mobil Link")
 	public void getSemuaMobilLink(){
-		waitForVisibilityOf(getTextLocator(semuaMobilLink));
+		isWaitElementPresent(getTextLocator(semuaMobilLink));
 	}
 	
 	@Step("Verify Mobil Bekas Link")
 	public void getMobilBekasLink(){
-		waitForVisibilityOf(getTextLocator(mobilBekasLink));
+		isWaitElementPresent(getTextLocator(mobilBekasLink));
 	}
 	
 	@Step("Verify Aksesoris Link")
 	public void getAksesorisLink(){
-		waitForVisibilityOf(getTextLocator(aksesorisLink));
+		isWaitElementPresent(getTextLocator(aksesorisLink));
 	}
 	
 	@Step("Verify Audio Mobil Link")
 	public void getAudioMobilLink(){
-		waitForVisibilityOf(getTextLocator(audioMobilLink));
+		isWaitElementPresent(getTextLocator(audioMobilLink));
 	}
 	
 	@Step("Verify SparePart Link")
 	public void getSparepartLink(){
-		waitForVisibilityOf(getTextLocator(sparepartLink));
+		isWaitElementPresent(getTextLocator(sparepartLink));
 	}
 	
 	@Step("Verify Velg Dan Ban Link")
 	public void getVelgDanBanLink(){
-		waitForVisibilityOf(getTextLocator(velgDanBanLink));
+		isWaitElementPresent(getTextLocator(velgDanBanLink));
 	}	
 	
 	@Step("Click Semua Mobil Link")

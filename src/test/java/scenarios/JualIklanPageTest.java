@@ -1,8 +1,14 @@
 package scenarios;
 
+import java.io.IOException;
+
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import pages.BasePage;
 import pages.HomePage;
 import pages.JualIklanPage;
 import pages.KategoriPage;
@@ -27,6 +33,7 @@ public class JualIklanPageTest extends AndroidSetup{
     private String telpIklan="081122334455";
     private String hargaProduct="325000000";
     private String transmisi="Triptonic";
+    private String emailIklanNotRegistered="frengky.orlend@gmail.com";
     
 	@BeforeClass
 	public void setUp() throws Exception{
@@ -39,6 +46,19 @@ public class JualIklanPageTest extends AndroidSetup{
 	    	System.out.println("Jual Iklan Page Page Quit");
 	        driver.quit();
 	 }
+	
+	@AfterMethod
+    public void onTestFailure(ITestResult testResult) throws IOException {
+      if(testResult.getStatus() == ITestResult.FAILURE){
+          System.out.println(testResult.getStatus());
+          BasePage bp =  new BasePage(driver);
+          try {
+             bp.getAttachment("Failed on "+testResult+" .jpg");
+          }catch(Exception e){
+        	 System.out.println("-->Failed to Execute ScreenShot"); 
+          }
+      }
+	}
 	
 	@Test(priority=1)
 	 @Stories("As A User I Wont Be Able to Sell Product")
@@ -56,7 +76,7 @@ public class JualIklanPageTest extends AndroidSetup{
 	 
 	 @Test(priority=2)
 	 @Stories("As A User I Wont Be Able to Sell Product")
-	 @TestCaseId("TC_ADR_006_001")
+	 @TestCaseId("TC_ADR_006_002")
 	 @Title("Verify User Not Able to Post An Ads If Title Length Less Than 15, Description Less than 20, Email wrong Format, Phone Wrong Format")
 	 public void verifyUserNotAbleToPostAnAdsIfElementsNotMeetCriteria() throws Exception{
 	    jualIklan.setElementJualIklan();
@@ -88,28 +108,48 @@ public class JualIklanPageTest extends AndroidSetup{
         driver.scrollTo("Telepon");
         jualIklan.setNama(namaPengiklan);
         jualIklan.setElementTelpPengiklan();
-        jualIklan.setTelp(telpIklan);
         jualIklan.setEmail(emailIklan.replace("@gmail.com", ""));//wrong email format
+        jualIklan.setTelp(telpIklan);
         driver.scrollTo("Pasang iklan");
         jualIklan.clickPasangIklanButton();
-        jualIklan.verifyAllErrorNotification();
+        driver.scrollTo("Ambil foto");
+        jualIklan.verifyErrorOnTitle();
+        jualIklan.verifyErrorOnDesc();
 	 }
 	 	
-	 //@Test(priority=2)
+	 @Test(priority=3)
 	 @Stories("As A User I Want to Be Able to Sell Product")
-	 @TestCaseId("TC_ADR_006_002")
-	 @Title("As A User I Want to Be Able to Sell Product")
+	 @TestCaseId("TC_ADR_006_003")
+	 @Title("As A User I Want to Be Able to Sell Product - Email not Registered Before")
 	 public void verifyUserAbleToPostAnAds() throws Exception{
-		 HomePage homepage = new HomePage(driver);
-		 jualIklan = homepage.clickJualIklan();
-         jualIklan.setElementJualIklan();
-         jualIklan.clickImageButonIklan();
-         jualIklan.chooseGaleryImage();
-         jualIklan.captureImageFromCamera();
-         driver.scrollTo("Nama");
-         jualIklan.setElementJualIklanKedua();
+	    jualIklan.setElementJualIklan();
+	    KategoriPage kategori = jualIklan.clickCategoryMobil();
+	    kategori.clickCategory(categoryL1);
+	    kategori.clickCategory(categoryL2);
+	    kategori.clickCategory(categoryL3);
+	    jualIklan.setTitleJualIklan(titleIklan);
+	    jualIklan.setDescription(descIklan);
+	    jualIklan.setElementJualIklanKedua();
+	    jualIklan.clickHargaChooserButton();
+	    jualIklan.fillHargaProduct(hargaProduct);
+	    jualIklan.selesaiSetHargaProduct();
+	    jualIklan.clickTipeKendaraanButton();
+	    jualIklan.setTipeKendaraan();
+	        //Page automatically scroll on Tipe Kendaraan Position
+	    jualIklan.setElementJualIklanKetiga();
+	    jualIklan.clickTransmisi();
+	    jualIklan.chooseTransmisi(transmisi);
+	    jualIklan.clickTahunPembuatan();
+	    jualIklan.setTahunPembuatan();//latest tahun pembuatan
+	    LocationPage location = jualIklan.clickLocation();
+	    location.clickLocation(locationL1);
+	    location.clickLocation(locationL2);
+	    driver.scrollTo("Telepon");
+	    jualIklan.setNama(namaPengiklan);
+	    jualIklan.setElementTelpPengiklan();
+	    jualIklan.setEmail(emailIklanNotRegistered);//wrong email format
+	    jualIklan.setTelp(telpIklan);
+	    driver.scrollTo("Pasang iklan");
+	    jualIklan.clickPasangIklanButton();
 	 }
-	
-	
-	
 }
