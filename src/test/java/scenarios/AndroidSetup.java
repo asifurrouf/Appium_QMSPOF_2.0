@@ -37,4 +37,6 @@ public class AndroidSetup {
         //capabilities.setCapability("app", app.getAbsolutePath());
         driver =  new AndroidDriver(new URL("http://192.168.99.100:4444/wd/hub"), capabilities);
     }
+    
+    
 }

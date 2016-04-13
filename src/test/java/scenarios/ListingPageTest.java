@@ -1,9 +1,10 @@
 package scenarios;
+
+import org.testng.annotations.Test;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
-
 import pages.FilterPage;
 import pages.HomePage;
 import pages.ListingPage;
@@ -13,22 +14,25 @@ import ru.yandex.qatools.allure.annotations.Stories;
 import ru.yandex.qatools.allure.annotations.TestCaseId;
 import ru.yandex.qatools.allure.annotations.Title;
 
+
 @Features("Listing Page Feature")
 public class ListingPageTest extends AndroidSetup{
   protected ListingPage listing;
   private String mobilKeyword="Ertiga";
   
-  @BeforeClass
+ 
+@BeforeClass
   public void setUp() throws Exception{
 	  prepareAndroidForAppium();
       System.out.println("Listing Page Feature Running on ...");
   }
   
-  @AfterClass
+@AfterClass
   public void tearDown() throws Exception {
   	System.out.println("Listing Page Quit");
       driver.quit();
   }
+
   
   @Test(priority=1)
   @Stories("As A User I Want to be Able to Verify Mobil Menu")

@@ -2,9 +2,7 @@ package scenarios;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import pages.HomePage;
 import pages.JualIklanPage;
 import pages.KategoriPage;
@@ -27,6 +25,8 @@ public class JualIklanPageTest extends AndroidSetup{
     private String locationL2="Bandung Kota";
 	private String emailIklan="frengky.sheeran@gmail.com";
     private String telpIklan="081122334455";
+    private String hargaProduct="325000000";
+    private String transmisi="Triptonic";
     
 	@BeforeClass
 	public void setUp() throws Exception{
@@ -47,9 +47,9 @@ public class JualIklanPageTest extends AndroidSetup{
 	 public void verifyUserNotAbleToPostAnAdsIfAllFieldBlank() throws Exception{
 		HomePage homepage = new HomePage(driver);
 		jualIklan = homepage.clickJualIklan();
+		jualIklan.checkKembaliKePasangIklan();
         jualIklan.setElementJualIklan();
         driver.scrollTo("Nama");
-        //jualIklan.setElementJualIklanKedua();
         jualIklan.clickPasangIklanButton();
         jualIklan.verifyAllErrorNotification();
 	 }
@@ -60,26 +60,39 @@ public class JualIklanPageTest extends AndroidSetup{
 	 @Title("Verify User Not Able to Post An Ads If Title Length Less Than 15, Description Less than 20, Email wrong Format, Phone Wrong Format")
 	 public void verifyUserNotAbleToPostAnAdsIfElementsNotMeetCriteria() throws Exception{
 	    jualIklan.setElementJualIklan();
-        jualIklan.clickImageButonIklan();
-        jualIklan.chooseGaleryImage();
-        jualIklan.captureImageFromCamera();
+       // jualIklan.clickImageButonIklan();// for capture image from camera, sometimes cant connect 
+       // jualIklan.chooseGaleryImage();
+       // jualIklan.captureImageFromCamera();
         jualIklan.setElementJualIklan();
         KategoriPage kategori = jualIklan.clickCategoryMobil();
         kategori.clickCategory(categoryL1);
         kategori.clickCategory(categoryL2);
         kategori.clickCategory(categoryL3);
-        jualIklan.setTitleJualIklan(titleIklan.substring(0,14));//Iklan Title Kurang dari 15
-        jualIklan.setDescription(descIklan.substring(0,19));//Iklan deskripsi Kurang dari 20
+        jualIklan.setTitleJualIklan(titleIklan.substring(0,14));//Iklan Title Less Than 15
+        jualIklan.setDescription(descIklan.substring(0,19));//Iklan deskripsi Less Than 20
         jualIklan.setElementJualIklanKedua();
+        jualIklan.clickHargaChooserButton();
+        jualIklan.fillHargaProduct(hargaProduct);
+        jualIklan.selesaiSetHargaProduct();
+        jualIklan.clickTipeKendaraanButton();
+        jualIklan.setTipeKendaraan();
+        //Page automatically scroll on Tipe Kendaraan Position
+        jualIklan.setElementJualIklanKetiga();
+        jualIklan.clickTransmisi();
+        jualIklan.chooseTransmisi(transmisi);
+        jualIklan.clickTahunPembuatan();
+        jualIklan.setTahunPembuatan();//latest tahun pembuatan
         LocationPage location = jualIklan.clickLocation();
         location.clickLocation(locationL1);
         location.clickLocation(locationL2);
+        driver.scrollTo("Telepon");
         jualIklan.setNama(namaPengiklan);
-        driver.scrollTo("Nama");
-        jualIklan.setNama(namaPengiklan.replace("@gmail", "")); //Email in wrong format
+        jualIklan.setElementTelpPengiklan();
         jualIklan.setTelp(telpIklan);
+        jualIklan.setEmail(emailIklan.replace("@gmail.com", ""));//wrong email format
+        driver.scrollTo("Pasang iklan");
         jualIklan.clickPasangIklanButton();
-        driver.scrollTo("Ambil foto");
+        jualIklan.verifyAllErrorNotification();
 	 }
 	 	
 	 //@Test(priority=2)

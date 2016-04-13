@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Mobile OLXID" verbose="3" parallel="tests" thread-count="2">  
-    <test name="HomePage Mobile OLX">
-      <classes>
+    <test name="Mobile OLXID" preserve-order="true">
+       <classes>
           <class name="scenarios.JualIklanPageTest"/>
-      </classes>
+       </classes>
     </test>
 </suite>

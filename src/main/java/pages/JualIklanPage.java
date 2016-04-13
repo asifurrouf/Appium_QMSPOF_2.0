@@ -18,13 +18,14 @@ public class JualIklanPage extends BasePage{
 	private String chooseTextGaleryPic="Kamera";
 	private String imageTextOpen="Gallery";
 	private String alwaysWithGalleryID="android:id/button_always";
-	private String imageGridGalleryID="com.android.gallery:id/grid";
 	private String shutterCameraButtonID="com.android.camera:id/shutter_button";
 	private String cameraButtonDoneID="com.android.camera:id/btn_done";
 	private String errorMessageID="com.app.tokobagus.betterb:id/errorMsg";
 	private String postAnAdsButtonID="com.app.tokobagus.betterb:id/postAdBtn";
 	private String selesaiInputHargaID="com.app.tokobagus.betterb:id/buttonDefaultPositive";
 	private String tipeKendaraanID="android:id/text1";
+	private String tahunPembuatanID="android:id/text1";
+	private String spinnerButtonID="com.app.tokobagus.betterb:id/spinner";
 	private WebElement judulIklan;
 	private WebElement deskripsiIklan;
 	private WebElement namaPengiklan;
@@ -35,48 +36,67 @@ public class JualIklanPage extends BasePage{
 	private WebElement lokasiIlkan;
 	private WebElement hargaButton;
 	private WebElement tipeKendaraanButton;
+	private WebElement transmisiKendBtn;
+	private WebElement tahunPembuatanBtn;
+    
 	
 	
 	
 	public JualIklanPage(WebDriver driver) {
 		super(driver);
 	}
- 
+    
+	@Step("Check Kembali ke Pasang Iklan")
+	public void checkKembaliKePasangIklan(){
+		try{
+			clickElement(getTextLocator("Buat baru"));
+		}catch(Exception e){
+			System.out.println("Continue to Next Process");
+			Assert.assertTrue(true);
+		}
+	}
+	
 	@Step("Set Element Jual Iklan Pertama")
 	public void setElementJualIklan(){
 		List<WebElement> elementsTextPasang = getListElements(getIdLocator(textFieldID));
 		this.judulIklan = elementsTextPasang.get(0);
 		this.deskripsiIklan = elementsTextPasang.get(1);
 		this.namaPengiklan = elementsTextPasang.get(2);
-		//this.emailPengiklan = elementsTextPasang.get(3);
-		//this.pinBBPengiklan = elementsTextPasang.get(4);
-		//this.telpPengiklan = elementsTextPasang.get(5);
 		
 		List<WebElement> elementsButtonPasang = getListElements(getIdLocator(chooserButtonID));
 		this.kategoriIklan = elementsButtonPasang.get(0);
-		//this.lokasiIlkan = elementsButtonPasang.get(1);
 	}
 	
 	@Step("Set Judul Iklan Kedua")
 	public void setElementJualIklanKedua(){ //after set judul, deskripsi dan kategori
 		List<WebElement> elementsButtonPasang = getListElements(getIdLocator(chooserButtonID));
-		this.hargaButton = elementsButtonPasang.get(0);
-		this.tipeKendaraanButton = elementsButtonPasang.get(1);
+		this.hargaButton = elementsButtonPasang.get(1);
+		List<WebElement> elementsSpinnerPasang = getListElements(getIdLocator(spinnerButtonID));
+		this.tipeKendaraanButton = elementsSpinnerPasang.get(0);
 	}
 	
 	@Step("Set Element Jual Iklan Ketiga")
 	public void setElementJualIklanKetiga(){
-		List<WebElement> elementsChooserBtn = getListElements(getTextLocator(chooserButtonID));
-		this.hargaButton = elementsChooserBtn.get(0);
-		this.tipeKendaraanButton = elementsChooserBtn.get(1);
+		List<WebElement> elementsChooserBtn = getListElements(getIdLocator(chooserButtonID));
+		this.lokasiIlkan = elementsChooserBtn.get(0);
+		List<WebElement> elementsSpinnerBtn = getListElements(getIdLocator(spinnerButtonID));
+		//element 0 still use by Tipe Kendaraan
+		this.transmisiKendBtn = elementsSpinnerBtn.get(1);
+		this.tahunPembuatanBtn = elementsSpinnerBtn.get(2);
 		List<WebElement> elementsTextPasang = getListElements(getIdLocator(textFieldID));
+		this.namaPengiklan = elementsTextPasang.get(0);
 		this.emailPengiklan = elementsTextPasang.get(1);
 		this.pinBBPengiklan = elementsTextPasang.get(2);
+	}
+	
+	@Step("Set Element telpPengiklan")
+	public void setElementTelpPengiklan(){
+		List<WebElement> elementsTextPasang = getListElements(getIdLocator(textFieldID));
 		this.telpPengiklan = elementsTextPasang.get(3);
 	}
 
 	@Step("Verify Error Notifcation on All Element")
-	public void verifyAllErrorNotification(){
+	public void verifyAllErrorNotification() throws Exception{
 		List<WebElement> elementsTextError = getListElements(getIdLocator(errorMessageID));
 		Assert.assertTrue(elementsTextError.get(0).getText().toLowerCase().contains("judul"));
 		Assert.assertTrue(elementsTextError.get(1).getText().toLowerCase().contains("kategori"));
@@ -84,8 +104,6 @@ public class JualIklanPage extends BasePage{
 		Assert.assertTrue(elementsTextError.get(3).getText().toLowerCase().contains("lokasi"));
 		Assert.assertTrue(elementsTextError.get(4).getText().toLowerCase().contains("nama"));
 	}
-	
-
 	
 	@Step("Click Pasang Iklan Button")
 	public void clickPasangIklanButton(){
@@ -128,7 +146,7 @@ public class JualIklanPage extends BasePage{
 	  }
 	}
 	
-	@Step("Input Title Jual Iklan")
+	@Step("Input Title Jual Iklan {0}")
 	public void setTitleJualIklan(String keys){
 		judulIklan.sendKeys(keys);
 	}
@@ -143,14 +161,19 @@ public class JualIklanPage extends BasePage{
 		hargaButton.click();
 	}
 
-	@Step("Fill Harga Product")
-	public void fillHargaProduct(){
-		sendKeysElement(getIdLocator(textFieldID), "325000000");
+	@Step("Fill Harga Product {0}")
+	public void fillHargaProduct(String harga){
+		sendKeysElement(getIdLocator(textFieldID), harga);
 	}
 	
 	@Step("Selesai set Harga Product")
 	public void selesaiSetHargaProduct(){
 		clickElement(getIdLocator(selesaiInputHargaID));
+	}
+	
+	@Step("Click Tipe Kendaraan")
+	public void clickTipeKendaraanButton(){
+		tipeKendaraanButton.click();
 	}
 	
 	@Step("Set Tipe Kendaraan")
@@ -162,29 +185,52 @@ public class JualIklanPage extends BasePage{
 	public LocationPage clickLocation(){
 		lokasiIlkan.click();
 		return new LocationPage(driver);
-//		LocationPage locationPage = new LocationPage(driver);
-//		locationPage.clickLocation("Jawa Barat");
-//		locationPage.clickLocation("Bandung Kota");
 	}
 	
-	@Step("Input Nama")
+	@Step("Input Nama {0}")
 	public void setNama(String keys){
 		namaPengiklan.sendKeys(keys);
 	}
 	
-	@Step("Input Telp")
+	@Step("Input Telp {0}")
 	public void setTelp(String keys){
 	    telpPengiklan.sendKeys(keys);	
 	}
+	
 	
 	@Step("Choose Kategori Mobil")
 	public KategoriPage clickCategoryMobil(){
 		kategoriIklan.click();
 		return new KategoriPage(driver);
-//		KategoriPage mobilKat = new KategoriPage(driver);
-//		mobilKat.clickCategory("Mobil");
-//		mobilKat.clickCategory("Mobil Bekas");
-//		mobilKat.clickCategory("BMW");
 	}
 	
+	@Step("Click Tipe Transmisi")
+	public void clickTransmisi(){
+		transmisiKendBtn.click();
+	}
+	
+	@Step("Choose Transmisi Kendaraan {0}")
+	public void chooseTransmisi(String transmisi){
+		clickElement(getSpinnerLocator(transmisi));//tiptronic transmission
+	}
+	
+	@Step("Click Tahun Pembuatan")
+	public void clickTahunPembuatan(){
+		tahunPembuatanBtn.click();
+	}
+	
+	@Step("Set Tahun Pembuatan")
+	public void setTahunPembuatan(){
+		getTextElements(getIdLocator(tahunPembuatanID),0).click();//tahun pembuatan sekarang
+	}
+	
+	@Step("Input Email {0}")
+	public void setEmail(String keys){
+		emailPengiklan.sendKeys(keys);
+	}
+	
+	@Step("Input pinBB Pengiklan {0}")
+	public void setPinBB(String keys){
+		pinBBPengiklan.sendKeys(keys);
+	}
 }

@@ -1,18 +1,16 @@
 package pages;
 
 import java.util.Arrays;
-import java.util.Collections;
+
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.commons.lang3.ArrayUtils;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 
-import io.appium.java_client.android.AndroidDriver;
-import ru.yandex.qatools.allure.annotations.Attachment;
 import ru.yandex.qatools.allure.annotations.Step;
 
 public class ListingPage extends BasePage {
@@ -32,6 +30,12 @@ public class ListingPage extends BasePage {
 	public ListingPage(WebDriver driver) {
 		super(driver);
 	}
+	
+	@AfterMethod
+	public void setAttachment() throws Exception{
+		getAttachment("capture.png");
+	}
+	
 	
 	@Step("Verify Filter on Mobil Bottom Result Page")
 	public void getFilterOnMobilBottomResultPage(){
