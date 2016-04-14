@@ -25,6 +25,11 @@ public class JualIklanPage extends BasePage{
 	private String tipeKendaraanID="android:id/text1";
 	private String tahunPembuatanID="android:id/text1";
 	private String spinnerButtonID="com.app.tokobagus.betterb:id/spinner";
+	private String pesanEmailRegisteredID="android:id/message";
+	private String buttonBatalPasangID="android:id/button2";
+	private String buttonLanjutPasangID="android:id/button1";
+    private String successPostingID="com.app.tokobagus.betterb:id/postadSuccessThanks";
+	private String backToHomePageID="com.app.tokobagus.betterb:id/backToHP";
 	private WebElement judulIklan;
 	private WebElement deskripsiIklan;
 	private WebElement namaPengiklan;
@@ -51,7 +56,7 @@ public class JualIklanPage extends BasePage{
 		try{
 			clickElement(getTextLocator("Buat baru"));
 		}catch(Exception e){
-			System.out.println("Continue to Next Process");
+			System.out.println("-->Continue to Next Process");
 			Assert.assertTrue(true);
 		}
 	}
@@ -101,8 +106,8 @@ public class JualIklanPage extends BasePage{
 		Assert.assertTrue(elementsTextError.get(0).getText().toLowerCase().contains("judul"));
 		Assert.assertTrue(elementsTextError.get(1).getText().toLowerCase().contains("kategori"));
 		Assert.assertTrue(elementsTextError.get(2).getText().toLowerCase().contains("deskripsi"));
-		Assert.assertTrue(elementsTextError.get(3).getText().toLowerCase().contains("lokasi"));
-		Assert.assertTrue(elementsTextError.get(4).getText().toLowerCase().contains("nama"));
+		//Assert.assertTrue(elementsTextError.get(3).getText().toLowerCase().contains("lokasi"));
+		//Assert.assertTrue(elementsTextError.get(4).getText().toLowerCase().contains("nama"));
 	}
 	
 	@Step("Verify Error Notification Title")
@@ -113,6 +118,11 @@ public class JualIklanPage extends BasePage{
 	@Step("Verify Error Notification Description")
 	public void verifyErrorOnDesc(){
 		Assert.assertTrue(getListElements(getIdLocator(errorMessageID)).get(1).getText().toLowerCase().contains("tidak bisa kurang"));
+	}
+	
+	@Step("Verify Error Telp Invalid")
+	public void verifyErrorPhone(){
+		Assert.assertTrue(getListElements(getIdLocator(errorMessageID)).get(0).getText().toLowerCase().contains("telepon"));
 	}
 	
 	@Step("Click Pasang Iklan Button")
@@ -236,11 +246,46 @@ public class JualIklanPage extends BasePage{
 	
 	@Step("Input Email {0}")
 	public void setEmail(String keys){
+	  if(emailPengiklan.isEnabled()){
 		emailPengiklan.sendKeys(keys);
+	  }
 	}
 	
 	@Step("Input pinBB Pengiklan {0}")
 	public void setPinBB(String keys){
 		pinBBPengiklan.sendKeys(keys);
 	}
+	
+	@Step("Verify Email Registered or Not")
+	public boolean verifyIsEmailRegistered(){
+		try{
+			isWaitElementPresent(getIdLocator(pesanEmailRegisteredID));
+			return true;
+		}catch(Exception e){
+			return false;
+		}
+	}
+	
+	@Step("Click Lanjut Login")
+	public LoginPage clickLanjutLogin(){
+		clickElement(getIdLocator(buttonLanjutPasangID));
+		return new LoginPage(driver);
+	}
+	
+	@Step("Verify User Success Posting an Ads")
+	public void verifySuccessPostingAds() throws Exception{
+	    try{
+	    	Assert.assertTrue(driver.findElement(getIdLocator(successPostingID)).getText()
+	    			.toLowerCase().contains("terima kasih"));
+	    }catch(Exception e){
+	    	getAttachment("FailedPostingAds.png");
+	    	Assert.fail("Fail to Post an Ads");
+	    }
+	}
+	
+	@Step("Click Back to HomePage")
+	public void clickBacktoHomePage(){
+		clickElement(getIdLocator(backToHomePageID));
+	}
+	
 }

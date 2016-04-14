@@ -13,6 +13,7 @@ import pages.HomePage;
 import pages.JualIklanPage;
 import pages.KategoriPage;
 import pages.LocationPage;
+import pages.LoginPage;
 import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;
 import ru.yandex.qatools.allure.annotations.TestCaseId;
@@ -29,11 +30,13 @@ public class JualIklanPageTest extends AndroidSetup{
     private String categoryL3="BMW";
     private String locationL1="Jawa Barat";
     private String locationL2="Bandung Kota";
-	private String emailIklan="frengky.sheeran@gmail.com";
+	private String emailIklanRegistered="frengky.sheeran@gmail.com";
     private String telpIklan="081122334455";
+    private String telpIklanInvalid="--------";
     private String hargaProduct="325000000";
     private String transmisi="Triptonic";
     private String emailIklanNotRegistered="frengky.orlend@gmail.com";
+    private String passValid="frengky123.,";
     
 	@BeforeClass
 	public void setUp() throws Exception{
@@ -48,23 +51,26 @@ public class JualIklanPageTest extends AndroidSetup{
 	 }
 	
 	@AfterMethod
-    public void onTestFailure(ITestResult testResult) throws IOException {
+    public void onTestFailure(ITestResult testResult) throws IOException, Exception {
+		//System.out.println("onTestFailure "+testResult.getStatus());
+		BasePage bp =  new BasePage(driver);
       if(testResult.getStatus() == ITestResult.FAILURE){
-          System.out.println(testResult.getStatus());
-          BasePage bp =  new BasePage(driver);
-          try {
-             bp.getAttachment("Failed on "+testResult+" .jpg");
-          }catch(Exception e){
-        	 System.out.println("-->Failed to Execute ScreenShot"); 
-          }
+    	  System.out.println("test result fail");
+          bp.getAttachment("FailedOn_JualIklanPageTest."+testResult.getMethod().getMethodName()+".png");
+          System.out.println("--FailedOn_JualIklanPageTest."+testResult.getMethod().getMethodName()+".png");
+      }else{
+    	  System.out.println("test result success");
+    	  bp.getAttachment("SuccessOn_JualIklanPageTest."+testResult.getMethod().getMethodName()+".png");
+    	  System.out.println("--SuccessOn_JualIklanPageTest."+testResult.getMethod().getMethodName()+".png");
       }
 	}
 	
-	@Test(priority=1)
+	 @Test(priority=1)
 	 @Stories("As A User I Wont Be Able to Sell Product")
 	 @TestCaseId("TC_ADR_006_001")
 	 @Title("Verify User Not Able to Post An Ads If All Field Blank")
 	 public void verifyUserNotAbleToPostAnAdsIfAllFieldBlank() throws Exception{
+		System.out.println("Verify User Not Able to Post An Ads If All Field Blank");
 		HomePage homepage = new HomePage(driver);
 		jualIklan = homepage.clickJualIklan();
 		jualIklan.checkKembaliKePasangIklan();
@@ -72,17 +78,18 @@ public class JualIklanPageTest extends AndroidSetup{
         driver.scrollTo("Nama");
         jualIklan.clickPasangIklanButton();
         jualIklan.verifyAllErrorNotification();
+        driver.navigate().back();//back to homepage
 	 }
-	 
+	
 	 @Test(priority=2)
 	 @Stories("As A User I Wont Be Able to Sell Product")
 	 @TestCaseId("TC_ADR_006_002")
 	 @Title("Verify User Not Able to Post An Ads If Title Length Less Than 15, Description Less than 20, Email wrong Format, Phone Wrong Format")
 	 public void verifyUserNotAbleToPostAnAdsIfElementsNotMeetCriteria() throws Exception{
-	    jualIklan.setElementJualIklan();
-       // jualIklan.clickImageButonIklan();// for capture image from camera, sometimes cant connect 
-       // jualIklan.chooseGaleryImage();
-       // jualIklan.captureImageFromCamera();
+		System.out.println("Verify User Not Able to Post An Ads If Title Length Less Than 15");
+		HomePage homepage = new HomePage(driver);
+		jualIklan = homepage.clickJualIklan();
+		jualIklan.checkKembaliKePasangIklan();
         jualIklan.setElementJualIklan();
         KategoriPage kategori = jualIklan.clickCategoryMobil();
         kategori.clickCategory(categoryL1);
@@ -108,21 +115,28 @@ public class JualIklanPageTest extends AndroidSetup{
         driver.scrollTo("Telepon");
         jualIklan.setNama(namaPengiklan);
         jualIklan.setElementTelpPengiklan();
-        jualIklan.setEmail(emailIklan.replace("@gmail.com", ""));//wrong email format
-        jualIklan.setTelp(telpIklan);
+        jualIklan.setEmail(emailIklanRegistered.replace("@gmail.com", ""));//wrong email format
+        jualIklan.setTelp(telpIklanInvalid);
         driver.scrollTo("Pasang iklan");
         jualIklan.clickPasangIklanButton();
         driver.scrollTo("Ambil foto");
         jualIklan.verifyErrorOnTitle();
         jualIklan.verifyErrorOnDesc();
+        driver.scrollTo("Pasang iklan");
+        jualIklan.verifyErrorPhone();
+        driver.navigate().back();//back to homepage
 	 }
 	 	
 	 @Test(priority=3)
 	 @Stories("As A User I Want to Be Able to Sell Product")
 	 @TestCaseId("TC_ADR_006_003")
-	 @Title("As A User I Want to Be Able to Sell Product - Email not Registered Before")
-	 public void verifyUserAbleToPostAnAds() throws Exception{
-	    jualIklan.setElementJualIklan();
+	 @Title("Verify User Able to Post An Ads  - Email not Registered Before")
+	 public void verifyUserAbleToPostAnAdsUnRegisteredUser() throws Exception{
+		System.out.println("Verify User Able to Post An Ads  - Email UnRegistered Before");
+		HomePage homepage = new HomePage(driver);
+		jualIklan = homepage.clickJualIklan();
+		jualIklan.checkKembaliKePasangIklan();
+        jualIklan.setElementJualIklan();
 	    KategoriPage kategori = jualIklan.clickCategoryMobil();
 	    kategori.clickCategory(categoryL1);
 	    kategori.clickCategory(categoryL2);
@@ -147,9 +161,58 @@ public class JualIklanPageTest extends AndroidSetup{
 	    driver.scrollTo("Telepon");
 	    jualIklan.setNama(namaPengiklan);
 	    jualIklan.setElementTelpPengiklan();
-	    jualIklan.setEmail(emailIklanNotRegistered);//wrong email format
+	    jualIklan.setEmail(emailIklanNotRegistered);//email not registered
 	    jualIklan.setTelp(telpIklan);
 	    driver.scrollTo("Pasang iklan");
 	    jualIklan.clickPasangIklanButton();
+	    jualIklan.verifySuccessPostingAds();
+	    jualIklan.clickBacktoHomePage();
+	 }
+	 
+	 //@Test(priority=4)
+	 @Stories("As A User I Want to Be Able to Sell Product")
+	 @TestCaseId("TC_ADR_006_003")
+	 @Title("Verify User Able to Post An Ads  - Email not Registered Before")
+	 public void verifyUserAbleToPostAnAdsRegisteredUser() throws Exception{
+		System.out.println("Verify User Able to Post An Ads  - Email Registered");
+		HomePage homepage = new HomePage(driver);
+		jualIklan = homepage.clickJualIklan();
+		jualIklan.checkKembaliKePasangIklan();
+        jualIklan.setElementJualIklan();
+	    KategoriPage kategori = jualIklan.clickCategoryMobil();
+	    kategori.clickCategory(categoryL1);
+	    kategori.clickCategory(categoryL2);
+	    kategori.clickCategory(categoryL3);
+	    jualIklan.setTitleJualIklan(titleIklan);
+	    jualIklan.setDescription(descIklan);
+	    jualIklan.setElementJualIklanKedua();
+	    jualIklan.clickHargaChooserButton();
+	    jualIklan.fillHargaProduct(hargaProduct);
+	    jualIklan.selesaiSetHargaProduct();
+	    jualIklan.clickTipeKendaraanButton();
+	    jualIklan.setTipeKendaraan();
+	        //Page automatically scroll on Tipe Kendaraan Position
+	    jualIklan.setElementJualIklanKetiga();
+	    jualIklan.clickTransmisi();
+	    jualIklan.chooseTransmisi(transmisi);
+	    jualIklan.clickTahunPembuatan();
+	    jualIklan.setTahunPembuatan();//latest tahun pembuatan
+	    LocationPage location = jualIklan.clickLocation();
+	    location.clickLocation(locationL1);
+	    location.clickLocation(locationL2);
+	    driver.scrollTo("Telepon");
+	    jualIklan.setNama(namaPengiklan);
+	    jualIklan.setElementTelpPengiklan();
+	    jualIklan.setEmail(emailIklanRegistered);//email not registered
+	    jualIklan.setTelp(telpIklan);
+	    driver.scrollTo("Pasang iklan");
+	    jualIklan.clickPasangIklanButton();
+	    if (jualIklan.verifyIsEmailRegistered()){
+	    	LoginPage loginP = jualIklan.clickLanjutLogin();	
+	    	loginP.inputPassword(passValid);
+		    loginP.clickSubmitLoginButton();
+	    }
+	    jualIklan.verifySuccessPostingAds();
+	    jualIklan.clickBacktoHomePage();
 	 }
 }
