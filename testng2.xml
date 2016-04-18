@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Mobile OLXID" verbose="3" parallel="tests" thread-count="2">  
+    <test name="Login Apps OLXID" preserve-order="false">
+       <classes>
+          <class name="scenarios.LoginPageTest"/>
+       </classes>
+    </test>
+    <test name="Search Apps OLXID" preserve-order="false">
+       <classes>
+          <class name="scenarios.HeaderPageTest"/>
+       </classes>
+    </test>
+    <test name="Daftar Apps OLXID" preserve-order="false">
+       <classes>
+          <class name="scenarios.DaftarPageTest"/>
+       </classes>
+    </test>
+</suite>

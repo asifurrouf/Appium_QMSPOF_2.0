@@ -2,7 +2,7 @@
   "capabilities":
       [
         {
-                "deviceName": "192.168.59.102:5555",
+                "deviceName": "192.168.59.103:5555",
                 "version":"4.3",
                 "maxInstances": 1,
                 "platformName":"ANDROID"
@@ -13,9 +13,9 @@
     "cleanUpCycle":2000,
     "timeout":30000,
     "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
-    "url":"http://172.16.100.68:4726/wd/hub",
+    "url":"http://172.16.100.68:4727/wd/hub",
     "host": "172.16.100.68",
-    "port": 4726,
+    "port": 4727,
     "maxSession": 1,
     "register": true,
     "registerCycle": 5000,

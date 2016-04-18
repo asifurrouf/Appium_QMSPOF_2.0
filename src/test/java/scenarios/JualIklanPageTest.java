@@ -6,6 +6,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import pages.BasePage;
@@ -38,10 +39,11 @@ public class JualIklanPageTest extends AndroidSetup{
     private String emailIklanNotRegistered="frengky.orlend@gmail.com";
     private String passValid="frengky123.,";
     
+    @Parameters({"udid"})
 	@BeforeClass
-	public void setUp() throws Exception{
-		prepareAndroidForAppium();
-        System.out.println("Jual Iklan Page Running on ...");
+	public void setUp(String udid) throws Exception{
+		prepareAndroidForAppium(udid);
+        System.out.println("Daftar Page Running on ...");
 	}
 	
 	@AfterClass
@@ -169,7 +171,7 @@ public class JualIklanPageTest extends AndroidSetup{
 	    jualIklan.clickBacktoHomePage();
 	 }
 	 
-	 //@Test(priority=4)
+	 @Test(priority=4)
 	 @Stories("As A User I Want to Be Able to Sell Product")
 	 @TestCaseId("TC_ADR_006_003")
 	 @Title("Verify User Able to Post An Ads  - Email not Registered Before")

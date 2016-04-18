@@ -25,6 +25,7 @@ public class ListingPage extends BasePage {
 	private String priceTextMobilID="com.app.tokobagus.betterb:id/price";
 	private String actionBarID="com.app.tokobagus.betterb:id/action_bar";
 	private String topListingID="com.app.tokobagus.betterb:id/imageview_toplisting";
+	private String kotaListingID="com.app.tokobagus.betterb:id/location";
 	
 	
 	public ListingPage(WebDriver driver) {
@@ -193,5 +194,25 @@ public class ListingPage extends BasePage {
 		 getTextAttachment("-->Array Get From Elements: "+Arrays.toString(hargaArray)+"\n"+
                            "-->Sort Array Now Become  : " + Arrays.toString(sortArray));
 	}
-
+   
+	@Step("Verify Pilih Kota")//search verify that all kota displayed related to keyword
+	public void verifyChooseKota(String kotaL2) throws Exception{
+		System.out.println("Verify Pilih Kota");
+		Iterator<WebElement> elements = getListElements(getIdLocator(kotaListingID)).iterator();
+		boolean status=true;
+		while (elements.hasNext()) {
+			 String kota = elements.next().getText();
+			 System.out.println("Search Result : "+kota);
+			 if (!kota.contains(kotaL2)){
+				 status=false;
+			 }
+		}
+		if (!status){
+			getAttachment("verifyChooseKota.png");
+			Assert.fail("Please check file verifyChooseKota.png");
+		}else{
+			getAttachment("verifyChooseKota.png");
+			Assert.assertTrue(status);
+		}
+	}
 }

@@ -5,6 +5,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
+
 import pages.FilterPage;
 import pages.HomePage;
 import pages.ListingPage;
@@ -21,11 +23,12 @@ public class ListingPageTest extends AndroidSetup{
   private String mobilKeyword="Ertiga";
   
  
-@BeforeClass
-  public void setUp() throws Exception{
-	  prepareAndroidForAppium();
-      System.out.println("Listing Page Feature Running on ...");
-  }
+    @Parameters({"udid"})
+	@BeforeClass
+	public void setUp(String udid) throws Exception{
+		prepareAndroidForAppium(udid);
+      System.out.println("Daftar Page Running on ...");
+	}
   
 @AfterClass
   public void tearDown() throws Exception {

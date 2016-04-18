@@ -2,6 +2,7 @@ package scenarios;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import pages.HomePage;
@@ -20,10 +21,11 @@ public class LoginPageTest extends AndroidSetup{
 	private String passBlank="";
 	private LoginPage loginpage;
 	
+	@Parameters({"udid"})
 	@BeforeClass
-	public void setUp() throws Exception{
-		prepareAndroidForAppium();
-        System.out.println("LoginPage Running on ...");
+	public void setUp(String udid) throws Exception{
+		prepareAndroidForAppium(udid);
+        System.out.println("Daftar Page Running on ...");
 	}
 	
 	 @AfterClass
@@ -73,7 +75,6 @@ public class LoginPageTest extends AndroidSetup{
 		 loginpage.inputPassword(passValid);
 		 loginpage.clickSubmitLoginButton();
 		 loginpage.verifySuccessLogin();
-		 //loginpage.clickLogout();
 		 homepage=loginpage.clickLogout();
 		 homepage.getTextMobilLink();
 	 }

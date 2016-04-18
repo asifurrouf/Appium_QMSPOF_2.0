@@ -4,7 +4,7 @@
         {
                 "deviceName": "192.168.59.101:5555",
                 "version":"4.3",
-                "maxInstances": 3,
+                "maxInstances": 1,
                 "platformName":"ANDROID"
         }
       ],
@@ -16,7 +16,7 @@
     "url":"http://172.16.100.68:4725/wd/hub",
     "host": "172.16.100.68",
     "port": 4725,
-    "maxSession": 5,
+    "maxSession": 1,
     "register": true,
     "registerCycle": 5000,
     "hubPort": 4444,

@@ -1,6 +1,7 @@
 package scenarios;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import pages.HomePage;
@@ -16,11 +17,11 @@ import ru.yandex.qatools.allure.annotations.Title;
 public class HomePageTest extends AndroidSetup {
 	HomePage homepage;
 	
+	@Parameters({"udid"})
 	@BeforeClass
-	public void setUp() throws Exception{
-		prepareAndroidForAppium();
-        homepage=new HomePage(driver);
-        System.out.println("HomePage Running on ...");
+	public void setUp(String udid) throws Exception{
+		prepareAndroidForAppium(udid);
+        System.out.println("Daftar Page Running on ...");
 	}
 	
 	 @AfterClass

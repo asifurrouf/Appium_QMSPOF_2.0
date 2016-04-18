@@ -1,8 +1,10 @@
 package scenarios;
 
 import org.testng.annotations.AfterClass;
-
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import pages.DaftarPage;
@@ -22,10 +24,10 @@ public class DaftarPageTest extends AndroidSetup{
 	private String passwordValid="12345";
 	private String konfirmasiPasswordInvalid="54321";
 	
+	@Parameters({"udid"})
 	@BeforeClass
-	public void setUp() throws Exception{
-		prepareAndroidForAppium();
-		
+	public void setUp(String udid) throws Exception{
+		prepareAndroidForAppium(udid);
         System.out.println("Daftar Page Running on ...");
 	}
 	
@@ -66,7 +68,7 @@ public class DaftarPageTest extends AndroidSetup{
 	     daftarPage.verifyPasswordCantBeBlank();
 	 }
 	 
-	 @Test(priority=2)
+	 @Test(priority=3)
 	 @Stories("As A User I Will Not Be Able to Register")
 	 @TestCaseId("TC_ADR_004_003")
 	 @Title("Verify User Not Able to Register with Blank Konfirmasi Password")
@@ -82,7 +84,7 @@ public class DaftarPageTest extends AndroidSetup{
 	     daftarPage.verifyKonfirmasiPasswordCantBeBlank();
 	 }
     
-	 @Test(priority=2)
+	 @Test(priority=4)
 	 @Stories("As A User I Will Not Be Able to Register")
 	 @TestCaseId("TC_ADR_004_004")
 	 @Title("Verify User Not Able to Register with Different Konfirmasi Password")
@@ -99,7 +101,7 @@ public class DaftarPageTest extends AndroidSetup{
 	     daftarPage.verifyKonfirmasiPasswordNotSame();
 	 }
 	 
-	 @Test(priority=2)
+	 @Test(priority=5)
 	 @Stories("As A User I Will Not Be Able to Register")
 	 @TestCaseId("TC_ADR_004_005")
 	 @Title("Verify User Not Able to Register with UnCheck Pernyataan Setuju")
@@ -115,7 +117,7 @@ public class DaftarPageTest extends AndroidSetup{
 	     daftarPage.verifyUnCheckPernyataanSetuju();
 	 }
 	 
-	 @Test(priority=3)
+	 @Test(priority=6)
 	 @Stories("As A User I Want to Be Able to Register")
 	 @TestCaseId("TC_ADR_004_006")
 	 @Title("Verify User Able to Daftar")

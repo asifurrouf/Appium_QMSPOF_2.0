@@ -156,9 +156,9 @@ public class HomePage extends BasePage {
     }
     
     @Step("Click Search")
-	public HeaderPage clickSearchButton(){
+	public ListingPage clickSearchButton(){
 		clickElement(getIdLocator(searchButtonID));
-		return new HeaderPage(driver);
+		return new ListingPage(driver);
 	}
     
     @Step("Input Search Keyword")
