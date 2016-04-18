@@ -27,8 +27,9 @@ public class ListingPageTest extends AndroidSetup{
 	@BeforeClass
 	public void setUp(String udid) throws Exception{
 		prepareAndroidForAppium(udid);
-      System.out.println("Daftar Page Running on ...");
+      System.out.println("Listing Page Running on ...");
 	}
+	
   
 @AfterClass
   public void tearDown() throws Exception {

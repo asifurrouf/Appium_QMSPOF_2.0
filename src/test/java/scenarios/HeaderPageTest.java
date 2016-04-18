@@ -24,8 +24,9 @@ public class HeaderPageTest extends AndroidSetup{
 	@BeforeClass
 	public void setUp(String udid) throws Exception{
 		prepareAndroidForAppium(udid);
-        System.out.println("Daftar Page Running on ...");
+        System.out.println("Header Page Running on ...");
 	}
+	
 	
 	@AfterClass
 	 public void tearDown() throws Exception {

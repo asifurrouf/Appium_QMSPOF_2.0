@@ -2,24 +2,28 @@
 <suite name="Mobile OLXID" verbose="2" parallel="tests" thread-count="4">  
     <test name="Daftar Apps OLXID" preserve-order="false">
        <parameter name="udid" value="192.168.99.101:5555"/> 
+       <!--parameter name="ipNode" value="http://172.16.100.68:4725/wd/hub"/-->
        <classes>
           <class name="scenarios.DaftarPageTest"/>
        </classes>
     </test>
     <test name="Login Apps OLXID" preserve-order="false">
        <parameter name="udid" value="192.168.99.102:5555"/> 
+       <!--  parameter name="ipNode" value="http://172.16.100.68:4726/wd/hub"/--> 
        <classes>
           <class name="scenarios.LoginPageTest"/>
        </classes>
     </test>
     <test name="Search Apps OLXID" preserve-order="false">
        <parameter name="udid" value="192.168.99.103:5555"/> 
+       <!--parameter name="ipNode" value="http://172.16.100.68:4727/wd/hub"/--> 
        <classes>
           <class name="scenarios.HeaderPageTest"/>
        </classes>
     </test>
     <test name="Listing Page Apps OLXID" preserve-order="false">
-       <parameter name="udid" value="192.168.99.105:5555"/> 
+       <parameter name="udid" value="192.168.99.104:5555"/> 
+       <!--  parameter name="ipNode" value="http://172.16.100.68:4728/wd/hub"/-->
        <classes>
           <class name="scenarios.ListingPageTest"/>
        </classes>

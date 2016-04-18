@@ -24,6 +24,7 @@ public class HomePageTest extends AndroidSetup {
         System.out.println("Daftar Page Running on ...");
 	}
 	
+	
 	 @AfterClass
 	    public void tearDown() throws Exception {
 	    	System.out.println("HomePage Quit");

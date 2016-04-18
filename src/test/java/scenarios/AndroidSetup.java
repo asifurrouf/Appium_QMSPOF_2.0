@@ -3,23 +3,26 @@ package scenarios;
 
 import io.appium.java_client.android.AndroidDriver;
 
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Parameters;
 
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
 
 public class AndroidSetup {
     protected AndroidDriver driver;
-    
+   // protected RemoteWebDriver driver;
     
     protected void prepareAndroidForAppium(String udid) throws MalformedURLException, Exception {
-       // File appDir = new File("/Users/tegar/AppiumDemo/apps");
-       // File app = new File(appDir, "app-olxid-release.6.1.3.apk");
+        //File appDir = new File("/Users/tegar/AppiumDemo/apps");
+        //File app = new File(appDir, "app-olxid-release.6.1.3.apk");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("device","Android");
 
@@ -27,7 +30,7 @@ public class AndroidSetup {
         capabilities.setCapability("appActivity", "sea.olx.activities.SplashscreenActivity");
         //capabilities.setCapability(CapabilityType.BROWSER_NAME,"android");
         //mandatory capabilities
-        capabilities.setCapability("deviceName","Android");
+        capabilities.setCapability("deviceName",udid);
         capabilities.setCapability("platformName","Android");
         capabilities.setCapability("udid", udid);
         
@@ -36,11 +39,11 @@ public class AndroidSetup {
         capabilities.setCapability("full-reset", false);
         
         //other caps
-        //capabilities.setCapability("app", app.getAbsolutePath());
+        //capabilities.setCapability("app", app.getAbsolutePath());RemoteWebDriver
         //Thread.sleep(3500);
         driver =  new AndroidDriver(new URL("http://192.168.99.100:4444/wd/hub"), capabilities);
-        System.out.println("SESSION CREATED : "+driver.getSessionId().toString()+" "+udid);
-        Thread.sleep(10000);
+        //driver =  new AndroidDriver(new URL(ipNode), capabilities);
+        System.out.println("SESSION CREATED : "+driver.getSessionId().toString()+" "+udid+" ");
     }
     
     
