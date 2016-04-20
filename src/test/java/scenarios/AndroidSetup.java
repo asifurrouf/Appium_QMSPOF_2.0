@@ -2,15 +2,8 @@ package scenarios;
 
 
 import io.appium.java_client.android.AndroidDriver;
-
-import org.openqa.selenium.Platform;
-import org.openqa.selenium.remote.CapabilityType;
+import pages.Constant;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.Parameters;
-
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -18,11 +11,10 @@ import java.net.URL;
 
 public class AndroidSetup {
     protected AndroidDriver driver;
-   // protected RemoteWebDriver driver;
     
     protected void prepareAndroidForAppium(String udid) throws MalformedURLException, Exception {
-        //File appDir = new File("/Users/tegar/AppiumDemo/apps");
-        //File app = new File(appDir, "app-olxid-release.6.1.3.apk");
+        File appDir = new File(Constant.apkDir);
+        File app = new File(appDir, "app-olxid-release.6.1.3.apk");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("device","Android");
 
@@ -35,14 +27,12 @@ public class AndroidSetup {
         capabilities.setCapability("udid", udid);
         
         //No Reset Apps
-        capabilities.setCapability("no-reset", true);
-        capabilities.setCapability("full-reset", false);
+        capabilities.setCapability("no-reset", false);
+        capabilities.setCapability("full-reset", true);
         
         //other caps
-        //capabilities.setCapability("app", app.getAbsolutePath());RemoteWebDriver
-        //Thread.sleep(3500);
+        capabilities.setCapability("app", app.getAbsolutePath());
         driver =  new AndroidDriver(new URL("http://192.168.99.100:4444/wd/hub"), capabilities);
-        //driver =  new AndroidDriver(new URL(ipNode), capabilities);
         System.out.println("SESSION CREATED : "+driver.getSessionId().toString()+" "+udid+" ");
     }
     

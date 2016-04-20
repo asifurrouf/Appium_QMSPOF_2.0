@@ -50,4 +50,20 @@ public class HeaderPageTest extends AndroidSetup{
 		 listing.verifyResultFilterByKeyword(keyword);
 	 }
 	
+	 @Test(priority=1)
+	 @Stories("As A User I Want to Be Able to Search in Header Page")
+	 @TestCaseId("TC_ADR_005_002")
+	 @Title("Verify User Able to Search in Header Page")
+	 public void searchWithLocationAndProduct() throws Exception{
+		 System.out.println("Verify User Able to Search in Header Page");
+		 HomePage homepage = new HomePage(driver);
+		 headerPage = homepage.clickLocationChooser();
+		 headerPage.clickKotaL1(kotaL1);//Bogor
+		 headerPage.clickKotaL2(kotaL2);//Bogor Kota
+		 ListingPage listing = homepage.clickSearchButton();
+		 headerPage.fillSearchKeyword(keyword);
+		 listing.verifyChooseKota(kotaL2);
+		 listing.verifyResultFilterByKeyword(keyword);
+	 }
+	 
 }

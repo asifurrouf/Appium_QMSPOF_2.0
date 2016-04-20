@@ -25,12 +25,12 @@ public class LoginPageTest extends AndroidSetup{
 	@BeforeClass
 	public void setUp(String udid) throws Exception{
 		prepareAndroidForAppium(udid);
-        System.out.println("Daftar Page Running on ...");
+        System.out.println("Login Page Running on ...");
 	}
 	
 	 @AfterClass
 	 public void tearDown() throws Exception {
-	    	System.out.println("LoginPage Quit");
+	    	System.out.println("Login Page Quit");
 	        driver.quit();
 	 }
 	 

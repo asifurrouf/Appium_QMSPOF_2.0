@@ -2,7 +2,6 @@ package scenarios;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
@@ -76,7 +75,7 @@ public class ListingPageTest extends AndroidSetup{
 	  filter.uncheckCariDalamDeskripsi();
 	  filter.fillKeyword(mobilKeyword);
 	  listing.clickActionBar();
-	  Thread.sleep(2000);//wait autocomplete form appear
+	  Thread.sleep(1200);//wait autocomplete form appear
 	  listing.clickActionBar();//choose filter from input not autocomplete module
 	  listing = filter.clickFilterSubmitButton();//click submit button
 	  listing.verifyResultFilterByKeyword(mobilKeyword);

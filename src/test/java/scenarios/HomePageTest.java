@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LandingPage;
 import pages.LoginPage;
+import pages.MobilPage;
 import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;
 import ru.yandex.qatools.allure.annotations.TestCaseId;
@@ -21,7 +22,7 @@ public class HomePageTest extends AndroidSetup {
 	@BeforeClass
 	public void setUp(String udid) throws Exception{
 		prepareAndroidForAppium(udid);
-        System.out.println("Daftar Page Running on ...");
+        System.out.println("HomePage Running on ...");
 	}
 	
 	
@@ -129,5 +130,4 @@ public class HomePageTest extends AndroidSetup {
    	public void verifyImageDrawerLink(){
 		homepage.getImageDrawer();
 	}
-	
 }
