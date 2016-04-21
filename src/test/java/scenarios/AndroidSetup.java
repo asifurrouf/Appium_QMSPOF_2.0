@@ -13,7 +13,7 @@ public class AndroidSetup {
     protected AndroidDriver driver;
     
     protected void prepareAndroidForAppium(String udid) throws MalformedURLException, Exception {
-        File appDir = new File(Constant.apkDir);
+        File appDir = new File("/Users/tegar/olxid-mobile-test/Resources");
         File app = new File(appDir, "app-olxid-release.6.1.3.apk");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("device","Android");
