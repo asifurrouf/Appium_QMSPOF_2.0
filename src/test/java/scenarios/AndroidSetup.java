@@ -27,8 +27,8 @@ public class AndroidSetup {
         capabilities.setCapability("udid", udid);
         
         //No Reset Apps
-        capabilities.setCapability("no-reset", false);
-        capabilities.setCapability("full-reset", true);
+        capabilities.setCapability("noReset", false);
+        capabilities.setCapability("fullReset", true);
         
         //other caps
         capabilities.setCapability("app", app.getAbsolutePath());
