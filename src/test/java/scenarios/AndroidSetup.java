@@ -13,8 +13,9 @@ public class AndroidSetup {
     protected AndroidDriver driver;
     
     protected void prepareAndroidForAppium(String udid) throws MalformedURLException, Exception {
-        File appDir = new File("/Users/tegar/olxid-mobile-test/Resources");
-        File app = new File(appDir, "app-olxid-release.6.1.3.apk");
+        File appDir = new File("/home/olx/olxid-mobile-test/Resources");
+        //File appDir = new File("/home/tegar/olxid-mobile-test/Resources");
+        File app = new File(appDir, "app-olxid-release_candidate_1.6.3.2.apk");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("device","Android");
 
@@ -22,9 +23,10 @@ public class AndroidSetup {
         capabilities.setCapability("appActivity", "sea.olx.activities.SplashscreenActivity");
         //capabilities.setCapability(CapabilityType.BROWSER_NAME,"android");
         //mandatory capabilities
-        capabilities.setCapability("deviceName",udid);
+        //capabilities.setCapability("deviceName",udid);
+        capabilities.setCapability("deviceName","Galaxy S4");
         capabilities.setCapability("platformName","Android");
-        capabilities.setCapability("udid", udid);
+        //capabilities.setCapability("udid", udid);
         
         //No Reset Apps
         capabilities.setCapability("noReset", false);

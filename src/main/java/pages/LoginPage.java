@@ -78,4 +78,17 @@ public class LoginPage extends BasePage {
     	return new HomePage(driver);
     }
     
+    @Step("Verify Homepage Not Login")
+    public void verifyNotLogin(){
+    	Assert.assertFalse(isElementPresent(getIdLocator(userLoginID)));
+    }
+    
+    @Step("Back to Homepage")
+    public HomePage clickBackButton(){
+    	driver.navigate().back();
+    	driver.navigate().back();
+    	return new HomePage(driver);
+    }
+    
+    
 }

@@ -37,6 +37,7 @@ public class HomePageTest extends AndroidSetup {
    	@Title("Verify All Link Available")
    	@Test
    	public void verifyAllCategoryAndLink(){
+		homepage.clickLocationNotif();
 		homepage.getTextMobilLink();
 		homepage.getTextMotorLink();
 		homepage.getTextPropertyLink();

@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import ru.yandex.qatools.allure.annotations.Step;
 
@@ -22,12 +23,13 @@ public class HomePage extends BasePage {
     private String postAdsLink="com.app.tokobagus.betterb:id/postAdButton";
     private String pilihLokasi="com.app.tokobagus.betterb:id/locationTop";   
     private String searchLink="com.app.tokobagus.betterb:id/action_search";
-    private String imageIndex="0";
+    private String openNav="Buka navigasi";
     private String navLogin="com.app.tokobagus.betterb:id/log_in";
     private String navDaftar="com.app.tokobagus.betterb:id/register";
     private String searchButtonID="com.app.tokobagus.betterb:id/action_search";
     private String locationChooserID="com.app.tokobagus.betterb:id/locationChooser";
     private String searchTextID="com.app.tokobagus.betterb:id/search_src_text";
+    private String notifOpenAppsLocation="com.app.tokobagus.betterb:id/pager_title_strip";
     
     public HomePage(WebDriver driver) {
         super(driver);
@@ -35,6 +37,11 @@ public class HomePage extends BasePage {
     
     public LoginPage goToLoginPage(){
     	return new LoginPage(driver);
+    }
+    
+    @Step("Click Petunjuk Lokasi")
+    public void clickLocationNotif(){
+    	clickElement(getIdLocator(notifOpenAppsLocation));
     }
     
     @Step("Locate Mobil Link")
@@ -105,19 +112,19 @@ public class HomePage extends BasePage {
     
     @Step("Locate Image Drawer Link")
     public void getImageDrawer(){
-    	isWaitElementPresent(getImageLocator(imageIndex));
+    	isWaitElementPresent(getContentLocator(openNav));
     }
     
     @Step("Go to Login Menu")
     public LoginPage clickLoginPage(){
-    	clickElement(getImageLocator(imageIndex));
+    	clickElement(getContentLocator(openNav));
     	clickElement(getIdLocator(navLogin));
     	return new LoginPage(driver);
     }
     
     @Step("Go To Daftar Menu")
     public DaftarPage clickDaftarPage(){
-    	clickElement(getImageLocator(imageIndex));
+    	clickElement(getContentLocator(openNav));
     	clickElement(getIdLocator(navDaftar));
     	return new DaftarPage(driver);
     }
@@ -178,7 +185,6 @@ public class HomePage extends BasePage {
     	clickElement(getIdLocator(postAdsLink));
     	return new JualIklanPage(driver);
     }
-    
     
     public void clearText(WebElement elementToBeCleared) {
         elementToBeCleared.sendKeys("x");

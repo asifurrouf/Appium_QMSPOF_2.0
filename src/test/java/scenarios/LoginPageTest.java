@@ -38,15 +38,17 @@ public class LoginPageTest extends AndroidSetup{
 	 @Stories("As A User I Will not be Able to Login")
 	 @TestCaseId("TC_ADR_002_001")
 	 @Title("Verify User Not Able to Login with InValid Email Format")
-	 public void userAbleToLoginWithWrongEmailFormat(){
+	 public void userNotAbleToLoginWithWrongEmailFormat(){
 		 System.out.println("Verify User Not Able to Login with InValid Email Format");
 		 HomePage homepage = new HomePage(driver);
+		 homepage.clickLocationNotif();
 		 loginpage = homepage.clickLoginPage();
 		 loginpage.inputEmail(emailInvalidFormat);
 		 loginpage.inputPassword(passBlank);
 		 loginpage.clickSubmitLoginButton();
 		 loginpage.verifyEmailLoginFormatWrong();
 		 loginpage.verifyPasswordLoginBlank();
+		 loginpage.clickBackButton();
 	 }
 	 
 	 @Test(priority=2)
@@ -61,6 +63,7 @@ public class LoginPageTest extends AndroidSetup{
 		 loginpage.inputPassword(passInvalid);
 		 loginpage.clickSubmitLoginButton();
 	     loginpage.verifyInvalidLogin();
+	     loginpage.clickBackButton();
 	 }
 	 
 	 @Test(priority=3)
@@ -75,7 +78,17 @@ public class LoginPageTest extends AndroidSetup{
 		 loginpage.inputPassword(passValid);
 		 loginpage.clickSubmitLoginButton();
 		 loginpage.verifySuccessLogin();
-		 homepage=loginpage.clickLogout();
-		 homepage.getTextMobilLink();
+	 }
+	 
+	 @Test(priority=4)
+	 @Stories("As A User I Want to be Able to Logout")
+	 @TestCaseId("TC_ADR_002_004")
+	 @Title("Verify User Able to Logout")
+	 public void userAbleToLogout(){
+		 System.out.println("Verify User Able to Logout");
+		 LoginPage loginpage = new LoginPage(driver);
+		 HomePage homepage = loginpage.clickLogout();
+		 homepage.clickLoginPage();
+		 loginpage.verifyNotLogin();
 	 }
 }

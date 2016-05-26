@@ -70,7 +70,8 @@ public class BasePage  {
     }
     
     protected void clickElement(By by){
-    	waitForClickabilityOf(by);
+    	//waitForClickabilityOf(by);
+    	waitForVisibilityOf(by);
     	driver.findElement(by).click();
     }
     
@@ -113,8 +114,13 @@ public class BasePage  {
     	return By.id(locator);
     }
     
+    
     public By getImageLocator(String locator){
     	return By.xpath("//android.widget.ImageButton[@index='"+locator+"']");
+    }
+    
+    public By getContentLocator(String locator){
+    	return By.xpath("//android.widget.ImageButton[@content-desc='"+locator+"']");
     }
     
     public By getButtonLocator(String locator){
