@@ -27,7 +27,7 @@ public class HomePage extends BasePage {
     private String navLogin="com.app.tokobagus.betterb:id/log_in";
     private String navDaftar="com.app.tokobagus.betterb:id/register";
     private String searchButtonID="com.app.tokobagus.betterb:id/action_search";
-    private String locationChooserID="com.app.tokobagus.betterb:id/locationChooser";
+    private String locationChooserID="com.app.tokobagus.betterb:id/btnChooseLocation";
     private String searchTextID="com.app.tokobagus.betterb:id/search_src_text";
     private String notifOpenAppsLocation="com.app.tokobagus.betterb:id/pager_title_strip";
     
@@ -174,6 +174,7 @@ public class HomePage extends BasePage {
     	return new ListingPage(driver);
     }
     
+   
     @Step("Click Location Chooser")
 	public HeaderPage clickLocationChooser(){
 		clickElement(getIdLocator(locationChooserID));

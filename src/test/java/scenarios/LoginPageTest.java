@@ -75,7 +75,7 @@ public class LoginPageTest extends AndroidSetup{
 		 HomePage homepage = new HomePage(driver);
 		 loginpage = homepage.clickLoginPage();
 		 loginpage.inputEmail(emailValid);
-		 loginpage.inputPassword(passValid);
+		 loginpage.inputPassword(passValid)                                                                                                                                                                          ;
 		 loginpage.clickSubmitLoginButton();
 		 loginpage.verifySuccessLogin();
 	 }

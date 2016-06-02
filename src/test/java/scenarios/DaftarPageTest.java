@@ -45,12 +45,14 @@ public class DaftarPageTest extends AndroidSetup{
 	 public void userNotAbleToRegisterWithWrongEmailFormat(){
 		 System.out.println("Verify User Not Able to Register with InValid Email Format");
 		 HomePage homepage = new HomePage(driver);
+		 homepage.clickLocationNotif();
 		 daftarPage = homepage.clickDaftarPage();
 		 daftarPage.setElementDaftar();
 		 daftarPage.setEmailDaftar(emailDaftarInvalidFormat);
 		 daftarPage.clickSetuju();
 		 daftarPage.clickSubmitRegister();
 		 daftarPage.verifyEmailLoginFormatWrong();
+		 daftarPage.clickBackButton();
 	 }
 	 
 	 @Test(priority=2)
@@ -67,6 +69,7 @@ public class DaftarPageTest extends AndroidSetup{
 		 daftarPage.clickSetuju();
 		 daftarPage.clickSubmitRegister();
 	     daftarPage.verifyPasswordCantBeBlank();
+	     daftarPage.clickBackButton();
 	 }
 	 
 	 @Test(priority=3)
@@ -83,6 +86,7 @@ public class DaftarPageTest extends AndroidSetup{
 		 daftarPage.clickSetuju();
 		 daftarPage.clickSubmitRegister();
 	     daftarPage.verifyKonfirmasiPasswordCantBeBlank();
+	     daftarPage.clickBackButton();
 	 }
     
 	 @Test(priority=4)
@@ -100,6 +104,7 @@ public class DaftarPageTest extends AndroidSetup{
 		 daftarPage.clickSetuju();
 		 daftarPage.clickSubmitRegister();
 	     daftarPage.verifyKonfirmasiPasswordNotSame();
+	     daftarPage.clickBackButton();
 	 }
 	 
 	 @Test(priority=5)
@@ -116,6 +121,7 @@ public class DaftarPageTest extends AndroidSetup{
 		 daftarPage.setKonfirmasiPasswordDaftar(passwordValid);
 		 daftarPage.clickSubmitRegister();
 	     daftarPage.verifyUnCheckPernyataanSetuju();
+	     daftarPage.clickBackButton();
 	 }
 	 
 	 @Test(priority=6)

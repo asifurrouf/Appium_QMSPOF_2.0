@@ -41,6 +41,7 @@ public class HeaderPageTest extends AndroidSetup{
 	 public void searchWithLocation() throws Exception{
 		 System.out.println("Verify User Able to Search in Header Page");
 		 HomePage homepage = new HomePage(driver);
+		 homepage.clickLocationNotif();
 		 headerPage = homepage.clickLocationChooser();
 		 headerPage.clickKotaL1(kotaL1);//Bogor
 		 headerPage.clickKotaL2(kotaL2);//Bogor Kota

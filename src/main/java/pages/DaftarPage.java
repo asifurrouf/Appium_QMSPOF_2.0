@@ -87,4 +87,11 @@ public class DaftarPage extends BasePage {
 		Assert.assertTrue(getTextElements(getIdLocator(errorMsgLoginID), 0).getText().contains("Wajib diisi"));
 	}
 	
+	@Step("Back to Homepage")
+    public HomePage clickBackButton(){
+    	driver.navigate().back();
+    	driver.navigate().back();
+    	return new HomePage(driver);
+    }
+	
 }

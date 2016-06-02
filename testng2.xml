@@ -4,7 +4,7 @@
        <parameter name="udid" value="192.168.56.101:5555"/> 
        <!--  parameter name="ipNode" value="http://172.16.100.68:4726/wd/hub"/--> 
        <classes>
-          <class name="scenarios.LoginPageTest"/>
+          <class name="scenarios.JualIklanPageTest"/>
        </classes>
     </test>
 </suite>

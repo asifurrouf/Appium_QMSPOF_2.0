@@ -75,13 +75,12 @@ public class JualIklanPageTest extends AndroidSetup{
 	 public void verifyUserNotAbleToPostAnAdsIfAllFieldBlank() throws Exception{
 		System.out.println("Verify User Not Able to Post An Ads If All Field Blank");
 		HomePage homepage = new HomePage(driver);
+		homepage.clickLocationNotif();
 		jualIklan = homepage.clickJualIklan();
-		jualIklan.checkKembaliKePasangIklan();
         jualIklan.setElementJualIklan();
         driver.scrollTo("Nama");
         jualIklan.clickPasangIklanButton();
         jualIklan.verifyAllErrorNotification();
-        driver.navigate().back();//back to homepage
 	 }
 	
 	 @Test(priority=2)
@@ -91,8 +90,8 @@ public class JualIklanPageTest extends AndroidSetup{
 	 public void verifyUserNotAbleToPostAnAdsIfElementsNotMeetCriteria() throws Exception{
 		System.out.println("Verify User Not Able to Post An Ads If Title Length Less Than 15");
 		HomePage homepage = new HomePage(driver);
+		homepage.clickBackButton();
 		jualIklan = homepage.clickJualIklan();
-		jualIklan.checkKembaliKePasangIklan();
         jualIklan.setElementJualIklan();
         KategoriPage kategori = jualIklan.clickCategoryMobil();
         kategori.clickCategory(categoryL1);
@@ -115,7 +114,7 @@ public class JualIklanPageTest extends AndroidSetup{
         LocationPage location = jualIklan.clickLocation();
         location.clickLocation(locationL1);
         location.clickLocation(locationL2);
-        driver.scrollTo("Telepon");
+        driver.scrollTo("Nomor handphone");
         jualIklan.setNama(namaPengiklan);
         jualIklan.setElementTelpPengiklan();
         jualIklan.setEmail(emailIklanRegistered.replace("@gmail.com", ""));//wrong email format
@@ -137,8 +136,8 @@ public class JualIklanPageTest extends AndroidSetup{
 	 public void verifyUserAbleToPostAnAdsUnRegisteredUser() throws Exception{
 		System.out.println("Verify User Able to Post An Ads  - Email UnRegistered Before");
 		HomePage homepage = new HomePage(driver);
+		homepage.clickBackButton();
 		jualIklan = homepage.clickJualIklan();
-		jualIklan.checkKembaliKePasangIklan();
         jualIklan.setElementJualIklan();
 	    KategoriPage kategori = jualIklan.clickCategoryMobil();
 	    kategori.clickCategory(categoryL1);
@@ -172,7 +171,7 @@ public class JualIklanPageTest extends AndroidSetup{
 	    jualIklan.clickBacktoHomePage();
 	 }
 	 
-	 @Test(priority=4)
+	 //@Test(priority=4)
 	 @Stories("As A User I Want to Be Able to Sell Product")
 	 @TestCaseId("TC_ADR_006_003")
 	 @Title("Verify User Able to Post An Ads  - Email not Registered Before")

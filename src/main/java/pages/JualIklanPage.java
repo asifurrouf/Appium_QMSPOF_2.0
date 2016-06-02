@@ -112,16 +112,19 @@ public class JualIklanPage extends BasePage{
 	
 	@Step("Verify Error Notification Title")
 	public void verifyErrorOnTitle(){
-		Assert.assertTrue(getListElements(getIdLocator(errorMessageID)).get(0).getText().toLowerCase().contains("tidak bisa kurang"));
+		System.out.println("Verify Error Notification Title");
+		Assert.assertTrue(getListElements(getIdLocator(errorMessageID)).get(0).getText().toLowerCase().contains("15 karakter"));
 	}
 	
 	@Step("Verify Error Notification Description")
 	public void verifyErrorOnDesc(){
+		System.out.println("Verify Error Notification Description");
 		Assert.assertTrue(getListElements(getIdLocator(errorMessageID)).get(1).getText().toLowerCase().contains("tidak bisa kurang"));
 	}
 	
 	@Step("Verify Error Telp Invalid")
 	public void verifyErrorPhone(){
+		System.out.println("Verify Error Telp Invalid");
 		Assert.assertTrue(getListElements(getIdLocator(errorMessageID)).get(0).getText().toLowerCase().contains("telepon"));
 	}
 	
@@ -282,6 +285,12 @@ public class JualIklanPage extends BasePage{
 	    	Assert.fail("Fail to Post an Ads");
 	    }
 	}
+	
+	@Step("Click Back Button")
+    public HomePage clickBackButton(){
+    	driver.navigate().back();
+    	return new HomePage(driver);
+    }
 	
 	@Step("Click Back to HomePage")
 	public void clickBacktoHomePage(){
