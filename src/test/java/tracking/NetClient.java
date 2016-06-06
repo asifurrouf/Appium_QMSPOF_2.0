@@ -171,17 +171,6 @@ public class NetClient {
         }
     }
 
-    /**
-     * Step 1 : Creating Request to List Bugs - GET
-     *          - ArrayJSON meta
-     *          - ArrayJSON links
-     *          - capture value on last index of ArrayJson links
-     * step 2 : Capture last page - GET
-     *          - Send Capture Value to PATH URL of attachments
-     * Step 3 : Send Attachments
-     * Finish
-     */
-
     public String getLastpageUrl(){
         String response = getListBugs();
         JSONObject listBug = new JSONObject(response);
@@ -192,38 +181,12 @@ public class NetClient {
         }
         return lastPage;
     }
-
-    @Test
+    
     public void setBugsID() {
         JSONObject res = new JSONObject(req(getLastpageUrl(), "GET"));
         JSONArray arr = res.getJSONArray("bugs");
         this.bugsId = arr.getJSONObject(arr.length()-1).getInt("id");
         System.out.print("Latest Bugs ID :"+bugsId);
-    }
-
-    public void sendAttachments(){
-        try {
-            // Send Attachments
-            setBugsID();
-            URL url = new URL(endPoint+"/v1/bugs/"+this.bugsId+"attachments");
-            this.conn = (HttpURLConnection) url.openConnection();
-            this.conn.setRequestMethod("POST");
-            this.conn.setRequestProperty("Content-Type", "multipart/form-data");
-            this.conn.setRequestProperty("Authorization","Bearer "+token);
-
-            if (this.conn.getResponseCode() != 200 ){
-                throw new RuntimeException("Failed request :" +this.conn.getResponseCode());
-            }
-
-            responseString = readInputStream(this.conn.getInputStream());
-
-            closeConnection(this.conn);
-
-        } catch ( MalformedURLException e ){
-            e.printStackTrace();
-        } catch ( IOException e ){
-            e.printStackTrace();
-        }
     }
 
 }
