@@ -2,6 +2,8 @@ package pages;
 
 import java.util.List;
 
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -19,6 +21,7 @@ public class DaftarPage extends BasePage {
 	private WebElement pernyataanSetujuElement;
 	private WebElement newsletterOLXElement;
 	private String errorMsgLoginID = "com.app.tokobagus.betterb:id/errorMsg";
+	private String searchButton = "com.app.tokobagus.betterb:id/action_search";
 	
 	public DaftarPage(WebDriver driver) {
 		super(driver);
@@ -91,7 +94,13 @@ public class DaftarPage extends BasePage {
     public HomePage clickBackButton(){
     	driver.navigate().back();
     	driver.navigate().back();
+		tapOutsideNavBar();
     	return new HomePage(driver);
     }
+
+	@Step("Close Navigation Bar")
+	public void tapOutsideNavBar(){
+		clickElement(getIdLocator(searchButton));
+	}
 	
 }

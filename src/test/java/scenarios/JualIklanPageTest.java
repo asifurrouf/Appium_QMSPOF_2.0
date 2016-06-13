@@ -2,6 +2,7 @@ package scenarios;
 
 import java.io.IOException;
 
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -19,6 +20,8 @@ import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;
 import ru.yandex.qatools.allure.annotations.TestCaseId;
 import ru.yandex.qatools.allure.annotations.Title;
+import sun.nio.ch.Net;
+import tracking.NetClient;
 
 @Features("Jual Iklan Features")
 public class JualIklanPageTest extends AndroidSetup{
@@ -38,35 +41,18 @@ public class JualIklanPageTest extends AndroidSetup{
     private String transmisi="Triptonic";
     private String emailIklanNotRegistered="frengky.orlend@gmail.com";
     private String passValid="frengky123.,";
-    
+
     @Parameters({"udid"})
-	@BeforeClass
-	public void setUp(String udid) throws Exception{
-		prepareAndroidForAppium(udid);
+    @BeforeClass
+    public void setUp(String udid) throws Exception{
+        prepareAndroidForAppium(udid);
         System.out.println("JualIklan Page Running on ...");
-	}
-	
-	
-	@AfterClass
-	 public void tearDown() throws Exception {
-	    	System.out.println("Jual Iklan Page Page Quit");
-	        driver.quit();
-	 }
-	
-	@AfterMethod
-    public void onTestFailure(ITestResult testResult) throws IOException, Exception {
-		//System.out.println("onTestFailure "+testResult.getStatus());
-		BasePage bp =  new BasePage(driver);
-      if(testResult.getStatus() == ITestResult.FAILURE){
-    	  System.out.println("test result fail");
-          bp.getAttachment("FailedOn_JualIklanPageTest."+testResult.getMethod().getMethodName()+".png");
-          System.out.println("--FailedOn_JualIklanPageTest."+testResult.getMethod().getMethodName()+".png");
-      }else{
-    	  System.out.println("test result success");
-    	  bp.getAttachment("SuccessOn_JualIklanPageTest."+testResult.getMethod().getMethodName()+".png");
-    	  System.out.println("--SuccessOn_JualIklanPageTest."+testResult.getMethod().getMethodName()+".png");
-      }
-	}
+    }
+
+    @AfterClass
+    public void tearDown() throws Exception {
+        driver.quit();
+    }
 	
 	 @Test(priority=1)
 	 @Stories("As A User I Wont Be Able to Sell Product")

@@ -10,7 +10,7 @@ import java.net.URL;
 
 
 public class AndroidSetup {
-    protected AndroidDriver driver;
+    protected static AndroidDriver driver;
     
     protected void prepareAndroidForAppium(String udid) throws MalformedURLException, Exception {
         File appDir = new File("/home/olx/olxid-mobile-test/Resources");
@@ -37,6 +37,9 @@ public class AndroidSetup {
         driver =  new AndroidDriver(new URL("http://192.168.99.100:4444/wd/hub"), capabilities);
         System.out.println("SESSION CREATED : "+driver.getSessionId().toString()+" "+udid+" ");
     }
-    
+
+    public static AndroidDriver getDriver (){
+        return driver;
+    }
     
 }

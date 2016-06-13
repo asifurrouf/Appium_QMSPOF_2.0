@@ -1,7 +1,9 @@
 package pages;
 
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
+import com.google.common.base.Function;
+import io.appium.java_client.android.AndroidDriver;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
 
 import ru.yandex.qatools.allure.annotations.Step;
@@ -28,7 +30,7 @@ public class LoginPage extends BasePage {
     
     @Step("Input Password")
     public void inputPassword(String password){
-    	sendKeysElements(getIdLocator(passwordTextInputID), 1, password);
+    	sendKeysElements(getEditTextResource(passwordTextInputID), 1, password);
     }
     
     @Step("Click Submit Login Button")
@@ -73,8 +75,9 @@ public class LoginPage extends BasePage {
     
     @Step("Click LogOut")
     public HomePage clickLogout(){
-    	System.out.println("Click Logout");
-    	clickElement(getTextLocator(logoutButtonText));
+        System.out.println("Click Logout");
+        scrollElementToIntract(getTextLocator(logoutButtonText), "Log out");
+        clickElement(getTextLocator(logoutButtonText));
     	return new HomePage(driver);
     }
     
@@ -89,6 +92,15 @@ public class LoginPage extends BasePage {
     	driver.navigate().back();
     	return new HomePage(driver);
     }
-    
-    
+
+    private void scrollElementToIntract(final By locator, final String text) {
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        wait.until(new Function<WebDriver, WebElement>() {
+            @Override
+            public WebElement apply(WebDriver driver) {
+                ((AndroidDriver) driver).scrollTo(text);
+                return driver.findElement(locator);
+            }
+        });
+    }
 }

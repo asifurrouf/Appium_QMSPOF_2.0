@@ -87,16 +87,17 @@ public class ListingPage extends BasePage {
 	@Step("Iterate Value from Result Search = {0}")
 	public void verifyResultFilterByKeyword(String keyword) throws Exception{
 		System.out.println("--Iterate value from Result Search Mobil keyword");
-		Boolean status=true;
+		Boolean status=false;
 		waitForVisibilityOf(getIdLocator(brandTextTitleMobilID));
 		 List<WebElement> elements = driver.findElements(getIdLocator(brandTextTitleMobilID));
 		 Iterator<WebElement> program = elements.iterator();
 		 while (program.hasNext()) {
 		        String values = program.next().getText();
+
 		        System.out.println("Search for keyword : "+keyword.toUpperCase()+
 		        		           " from Apps Value : "+values.toUpperCase());
-		        if (!values.toUpperCase().contains(keyword.toUpperCase())){
-		        	status=false;
+		        if (values.toUpperCase().contains(keyword.toUpperCase())){
+		        	status=true;
 		        }
 		    }
 		 if (!status){

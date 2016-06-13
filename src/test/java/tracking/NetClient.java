@@ -1,19 +1,31 @@
 package tracking;
 
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.mime.MultipartEntityBuilder;
+import org.apache.http.entity.mime.content.FileBody;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.openqa.selenium.WebDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.Test;
+import pages.BasePage;
+import pages.Constant;
 
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 
 /**
  * Created by buddyarifin on 5/31/16.
  */
-public class NetClient {
+public class NetClient extends BasePage {
 
     public static final String PROJECT_NAME = "AndroidOLXID";
     public static final String META = "meta";
@@ -33,6 +45,8 @@ public class NetClient {
     String lastpageUrl;
     String responseString;
     HttpURLConnection conn;
+
+    public NetClient (WebDriver driver) { super(driver); };
 
     public HttpURLConnection openConnection(String URL, String restMethod) {
         try{
@@ -99,7 +113,8 @@ public class NetClient {
     }
 
     public String getListBugs() {
-        setProjID(PROJECT_NAME);
+//        setProjID(PROJECT_NAME);
+        this.projID = 15087;
         return req(endPoint+"/v1/projects/"+projID+"/bugs", "GET");
     }
 
@@ -117,7 +132,6 @@ public class NetClient {
         System.out.println("Project ID : "+this.projID);
     }
 
-
     public void setProjVersionSection(){
         String response = getListBugs();
         JSONObject bugs = new JSONObject(response);
@@ -133,14 +147,18 @@ public class NetClient {
         System.out.println("AndroidOLXID project version id bugs : " +this.projectVersionID+" and project section id bugs : "+this.projectSectionID);
     }
 
-    public void createBug(String testname) {
+    public void createBug(ITestResult result) {
         try{
-            setProjVersionSection();
+//            setProjVersionSection();
+            this.projectVersionID = 18754;
+            this.projectSectionID = 45017;
+            this.projID = 15087;
+
             this.conn = openConnection(endPoint+"/v1/projects/"+this.projID+"/bugs", "POST");
             conn.setDoOutput(true);
 
             JSONObject postBody = new JSONObject();
-            postBody.put("title", "Automation Test : "+testname );
+            postBody.put("title", "Automation Test : "+result.getMethod().getMethodName() );
             postBody.put("status_id", 1);
             postBody.put("severity_id", 2);
             postBody.put("project_version_id", this.projectVersionID);
@@ -160,6 +178,7 @@ public class NetClient {
             readInputStream(conn.getInputStream());
 
             conn.disconnect();
+            this.sendAttachments(result);
         }
 
         catch (MalformedURLException e) {
@@ -171,7 +190,7 @@ public class NetClient {
         }
     }
 
-    public String getLastpageUrl(){
+    public String getLastBugsPageUrl(){
         String response = getListBugs();
         JSONObject listBug = new JSONObject(response);
         String lastPage = listBug.getJSONObject(META).getJSONObject(PAGINATION)
@@ -181,12 +200,40 @@ public class NetClient {
         }
         return lastPage;
     }
-    
-    public void setBugsID() {
-        JSONObject res = new JSONObject(req(getLastpageUrl(), "GET"));
+
+    public int getLastBugsID() {
+        JSONObject res = new JSONObject(req(getLastBugsPageUrl(), "GET"));
         JSONArray arr = res.getJSONArray("bugs");
-        this.bugsId = arr.getJSONObject(arr.length()-1).getInt("id");
-        System.out.print("Latest Bugs ID :"+bugsId);
+        return arr.getJSONObject(arr.length()-1).getInt("id");
+    }
+
+    @Test
+    public void sendAttachments(ITestResult result) {
+        try {
+            HttpPost post = new HttpPost(endPoint + "/v1/bugs/" + getLastBugsID() + "/attachments");
+            post.setHeader("Authorization", "Bearer " + token);
+
+            File screenshoot = new File(Constant.screenshotsDir+"/FailedOn_"+result.getTestClass().getName()
+                    +result.getMethod().getMethodName()+".png");
+
+            MultipartEntityBuilder builder = MultipartEntityBuilder.create();
+            FileBody fileBody = new FileBody(screenshoot);
+            builder.addPart("file", fileBody);
+            HttpEntity entity = builder.build();
+            post.setEntity(entity);
+
+            HttpClient client = HttpClientBuilder.create().build();
+            HttpResponse response = client.execute(post);
+
+            this.responseString = readInputStream(response.getEntity().getContent());
+        }
+        catch ( IOException e) {
+            e.printStackTrace();
+        }
+        catch ( Exception e) {
+            e.printStackTrace();
+        }
+    System.out.print("Response Uploading : "+responseString);
     }
 
 }

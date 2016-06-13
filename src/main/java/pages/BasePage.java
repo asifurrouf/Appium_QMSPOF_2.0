@@ -109,12 +109,13 @@ public class BasePage  {
     public By getEditTextLocator(String locator){
     	return By.xpath("//android.widget.EditText[@text='"+locator+"']");
     }
+
+    public By getEditTextResource(String locator) { return By.xpath("//android.widget.EditText[@resource-id='"+locator+"']"); }
     
     public By getIdLocator(String locator){
     	return By.id(locator);
     }
-    
-    
+
     public By getImageLocator(String locator){
     	return By.xpath("//android.widget.ImageButton[@index='"+locator+"']");
     }
@@ -122,6 +123,8 @@ public class BasePage  {
     public By getContentLocator(String locator){
     	return By.xpath("//android.widget.ImageButton[@content-desc='"+locator+"']");
     }
+
+    public By getResourceLocator(String locator){ return By.xpath("//android.widget.ImageButton[@resource-id='"+locator+"']"); }
     
     public By getButtonLocator(String locator){
     	return By.xpath("//android.widget.Button[@text='"+locator+"']");
