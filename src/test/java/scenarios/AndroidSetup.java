@@ -2,7 +2,7 @@ package scenarios;
 
 
 import io.appium.java_client.android.AndroidDriver;
-import pages.Constant;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import java.io.File;
 import java.net.MalformedURLException;
@@ -10,12 +10,13 @@ import java.net.URL;
 
 
 public class AndroidSetup {
-    protected static AndroidDriver driver;
+
+    public static AndroidDriver driver;
     
-    protected void prepareAndroidForAppium(String udid) throws MalformedURLException, Exception {
-        File appDir = new File("/home/olx/olxid-mobile-test/Resources");
+    public void prepareAndroidForAppium(String udid) throws MalformedURLException, Exception {
+        File appDir = new File("/Users/buddyarifin/Documents/AutomationsTools/olxid-mobile-test/Resources");
         //File appDir = new File("/home/tegar/olxid-mobile-test/Resources");
-        File app = new File(appDir, "app-olxid-release_candidate_1.6.3.2.apk");
+        File app = new File(appDir, "olxid-6.4.0.apk");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("device","Android");
 

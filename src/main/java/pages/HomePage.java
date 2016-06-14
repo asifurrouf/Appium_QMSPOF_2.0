@@ -1,11 +1,15 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import com.google.common.base.Function;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.pagefactory.AndroidFindBy;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import org.testng.annotations.BeforeClass;
+import org.testng.asserts.Assertion;
 import ru.yandex.qatools.allure.annotations.Step;
 
 public class HomePage extends BasePage {
@@ -21,7 +25,7 @@ public class HomePage extends BasePage {
     private String rumah="Rumah Tangga";
     private String perlengkapanBayi="Perlengkapan Bayi & Anak";
     private String postAdsLink="com.app.tokobagus.betterb:id/postAdButton";
-    private String pilihLokasi="com.app.tokobagus.betterb:id/locationTop";   
+    private String pilihLokasi="Mencari lokasi";
     private String searchLink="com.app.tokobagus.betterb:id/action_search";
     private String openNav="Buka navigasi";
     private String navLogin="com.app.tokobagus.betterb:id/log_in";
@@ -30,9 +34,29 @@ public class HomePage extends BasePage {
     private String locationChooserID="com.app.tokobagus.betterb:id/btnChooseLocation";
     private String searchTextID="com.app.tokobagus.betterb:id/search_src_text";
     private String notifOpenAppsLocation="com.app.tokobagus.betterb:id/pager_title_strip";
+    private String googlePlayServices="Get Google Play services";
     
     public HomePage(WebDriver driver) {
         super(driver);
+    }
+
+    protected Boolean checkAlertBeforeTest(final By locator){
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        return wait.until(new Function<WebDriver, Boolean>() {
+            @Override
+            public Boolean apply(WebDriver driver) {
+                Boolean value = isElementPresent(locator);
+                if (value){
+                    System.out.println("WARNING: Google Play Service not Available... ");
+                    clickElement(getButtonLocator(googlePlayServices));
+                    return true;
+                } else if (value != true ) {
+                    clickElement(getIdLocator(notifOpenAppsLocation));
+                    return true;
+                }
+            return true;
+            }
+        });
     }
     
     public LoginPage goToLoginPage(){
@@ -41,7 +65,7 @@ public class HomePage extends BasePage {
     
     @Step("Click Petunjuk Lokasi")
     public void clickLocationNotif(){
-    	clickElement(getIdLocator(notifOpenAppsLocation));
+        checkAlertBeforeTest(getTextLocator(googlePlayServices));
     }
     
     @Step("Locate Mobil Link")
@@ -89,7 +113,8 @@ public class HomePage extends BasePage {
     @Step("Locate Perlengkapan Bayi Link")
     public void getTextPerlengkapanBayiLink(){
     	//waitForVisibilityOf(getTextLocator(perlengkapanBayi));
-    	isWaitElementPresent(getTextLocator(perlengkapanBayi));
+        //isWaitElementPresent(getTextLocator(perlengkapanBayi));
+        Assert.assertTrue(isElementPresentAfterScroll(getTextLocator(perlengkapanBayi), perlengkapanBayi));
     }
     
     @Step("Locate Post An Ads Button")
@@ -101,7 +126,7 @@ public class HomePage extends BasePage {
     @Step("Locate Lokasi Link ")
     public void getLokasiLink(){
     	//waitForVisibilityOf(getIdLocator(pilihLokasi));
-    	isWaitElementPresent(getIdLocator(pilihLokasi));
+    	isWaitElementPresent(getToogleTextLocator(pilihLokasi));
     }
     
     @Step("Locate Search Link ")

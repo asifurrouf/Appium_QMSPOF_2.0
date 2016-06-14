@@ -1,5 +1,7 @@
 package pages;
 
+import com.google.common.base.Function;
+import io.appium.java_client.android.AndroidDriver;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -9,6 +11,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import ru.yandex.qatools.allure.annotations.Attachment;
@@ -20,6 +24,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created Simple by Egakun on 22 March 2015
@@ -133,6 +138,8 @@ public class BasePage  {
     public By getAndroidViewLocator(int index){
     	return (By.xpath("//android.view.View[@clickable='True']"));
     }
+
+    public By getToogleTextLocator(String locator ) { return (By.xpath("//android.widget.ToggleButton[@text='"+locator+"']")); }
     
     public By getSpinnerLocator(String locator){
     	return By.xpath("//android.widget.CheckedTextView[@text='"+locator+"']");
@@ -234,6 +241,29 @@ public class BasePage  {
         tapObject.put("y", (double) 170); // in pixels from top
         tapObject.put("element", Double.valueOf(((RemoteWebElement) elementToTap).getId()));
         js.executeScript("mobile: tap", tapObject);
+    }
+
+    /**
+     *
+     * This method using fluentWait, this method will loop delay
+     * - with actions - on Seconds until equals with
+     * expected Time Out.
+     *
+     * @param locator is to spesific element.
+     * @return boolean value
+    */
+    public Boolean isElementPresentAfterScroll(final By locator, final String text) {
+        Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+                .withTimeout(30, TimeUnit.SECONDS)
+                .pollingEvery(5, TimeUnit.SECONDS)
+                .ignoring(NoSuchElementException.class);
+        return wait.until(new Function<WebDriver, Boolean>() {
+            @Override
+            public Boolean apply(WebDriver driver) {
+                ((AndroidDriver) driver).scrollTo(text);
+                return driver.findElement(locator).isDisplayed();
+            }
+        });
     }
     
     //creating sort descending

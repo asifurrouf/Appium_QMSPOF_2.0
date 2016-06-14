@@ -1,6 +1,8 @@
 package pages;
 
 import com.google.common.base.Function;
+import io.appium.java_client.MobileDriver;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.*;
@@ -98,7 +100,8 @@ public class LoginPage extends BasePage {
         wait.until(new Function<WebDriver, WebElement>() {
             @Override
             public WebElement apply(WebDriver driver) {
-                ((AndroidDriver) driver).scrollTo(text);
+                // Handle android 4.3 to scroll
+                ((AndroidDriver) driver).swipe(88, 450, 88, 100, 1000);
                 return driver.findElement(locator);
             }
         });
