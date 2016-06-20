@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Mobile OLXID" verbose="2" parallel="tests" thread-count="3">
 
-    <listeners>
-        <listener class-name="scenarios.TestListener" />
-    </listeners>
-
     <test name="Daftar Apps OLXID" preserve-order="false">
        <parameter name="udid" value="192.168.99.101:5555"/> 
        <!--parameter name="ipNode" value="http://172.16.100.68:4725/wd/hub"/-->

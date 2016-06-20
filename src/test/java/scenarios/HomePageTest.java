@@ -1,8 +1,5 @@
 package scenarios;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import pages.HomePage;
 import pages.LandingPage;
@@ -13,24 +10,10 @@ import ru.yandex.qatools.allure.annotations.Stories;
 import ru.yandex.qatools.allure.annotations.TestCaseId;
 import ru.yandex.qatools.allure.annotations.Title;
 
-
+@Listeners({ScreenshootsListener.class})
 @Features ("Homepage Feature")
 public class HomePageTest extends AndroidSetup {
 	HomePage homepage;
-	
-	@Parameters({"udid"})
-	@BeforeClass
-	public void setUp(String udid) throws Exception{
-		prepareAndroidForAppium(udid);
-        System.out.println("HomePage Running on ...");
-	}
-	
-	
-	 @AfterClass
-	    public void tearDown() throws Exception {
-	    	System.out.println("HomePage Quit");
-	        driver.quit();
-	    }
 	
 	@Stories("As A User I Want to be Able to Go to Verify Homepage Menu")
    	@TestCaseId("TC_ADR_001_001")

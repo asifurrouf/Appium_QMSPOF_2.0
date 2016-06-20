@@ -5,12 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
 import pages.BasePage;
 import tracking.NetClient;
-import scenarios.AndroidSetup;
 
 
 public class TestListener
@@ -29,7 +25,7 @@ public class TestListener
     	try {
     	   System.out.println("***** Error "+testResult.getName()+" test has failed *****");
             base.getAttachment("FailedOn_"+testResult.getTestClass().getName()+testResult.getMethod().getMethodName()+".png");
-            request.createBug(testResult);
+            request.create(testResult);
             System.out.println("FailedOn_"+testResult.getTestClass().getName()+testResult.getMethod().getMethodName()+".png");
     	} catch (Exception e){
     		System.out.print("-->Unable to screen capture");

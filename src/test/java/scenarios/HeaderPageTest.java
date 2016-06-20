@@ -1,9 +1,6 @@
 package scenarios;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import pages.HeaderPage;
 import pages.HomePage;
@@ -12,6 +9,8 @@ import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;
 import ru.yandex.qatools.allure.annotations.TestCaseId;
 import ru.yandex.qatools.allure.annotations.Title;
+
+@Listeners({ScreenshootsListener.class})
 @Features("Header / Top Search Feature")
 public class HeaderPageTest extends AndroidSetup{
 	private HeaderPage headerPage;
@@ -19,20 +18,6 @@ public class HeaderPageTest extends AndroidSetup{
 	private String keyword="Ertiga";
 	private String kotaL1="Bogor";
 	private String kotaL2="Bogor Kota";
-	
-	@Parameters({"udid"})
-	@BeforeClass
-	public void setUp(String udid) throws Exception{
-		prepareAndroidForAppium(udid);
-        System.out.println("Header Page Running on ...");
-	}
-	
-	
-	@AfterClass
-	 public void tearDown() throws Exception {
-	    	System.out.println("Header Page Quit");
-	        driver.quit();
-	 }
 	
 	 @Test(priority=1)
 	 @Stories("As A User I Want to Be Able to Search in Header Page")

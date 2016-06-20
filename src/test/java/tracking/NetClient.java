@@ -1,5 +1,8 @@
 package tracking;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonParser;
+import com.google.gson.stream.JsonReader;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -31,20 +34,22 @@ public class NetClient extends BasePage {
     public static final String META = "meta";
     public static final String PAGINATION = "pagination";
     public static final String LINKS = "links";
+    public static final String BUGS = "bugs";
     static String token = "esjeDdcllCuWGEqfW8yOM4LjL7lfwyEjMKKhNrrY";
-    int projID;
-    int projectVersionID;
-    int projectSectionID;
-    int bugsId;
+    private int projID;
+    private int projectVersionID;
+    private int projectSectionID;
+    private int bugsId = 0;
     static String endPoint = "https://api.leantesting.com";
     static String accessToken = "?access_token="+token;
     static String pathUserInfoUrl = endPoint+"/v1/me"+accessToken;
     static String pathListProjUrl = endPoint+"/v1/projects/"+accessToken;
-    String pathListBugs = endPoint+"/v1/projects/"+projID+"/bugs";
-    String pathCreateBugUrl = endPoint+"/v1/projects/"+this.projID+"/bugs";
-    String lastpageUrl;
-    String responseString;
-    HttpURLConnection conn;
+    private String pathListBugs = endPoint+"/v1/projects/"+projID+"/bugs";
+    private String pathCreateBugUrl = endPoint+"/v1/projects/"+this.projID+"/bugs";
+    private String lastpageUrl;
+    private String responseString;
+    private HttpURLConnection conn;
+    private JSONArray dataBugs = new JSONArray();
 
     public NetClient (WebDriver driver) { super(driver); };
 
@@ -72,12 +77,12 @@ public class NetClient extends BasePage {
     public String req(String URL, String restMethod) {
         try{
             conn = openConnection(URL, restMethod);
+            conn.setDoOutput(true);
 
             if (conn.getResponseCode() != 200 ){
                 throw new RuntimeException("Failed request :" +conn.getResponseCode());
             }
             responseString = readInputStream(conn.getInputStream());
-
             closeConnection(conn);
 
         }
@@ -94,14 +99,27 @@ public class NetClient extends BasePage {
         try {
             BufferedReader br = new BufferedReader(new InputStreamReader((stream)));
             responseString = br.readLine();
-            if (responseString != null) {
-                System.out.print(this.responseString);
-            }
         }
         catch (IOException e) {
             e.printStackTrace();
         }
         return responseString;
+    }
+
+    public void writeReqBody(JSONObject object, OutputStream stream){
+        try {
+            StringWriter out = new StringWriter();
+            object.write(out);
+            System.out.println("Request body : "+out.toString());
+
+            DataOutputStream wr = new DataOutputStream(stream);
+            wr.writeBytes(out.toString());
+            wr.flush();
+            wr.close();
+
+        } catch (IOException e){
+            e.printStackTrace();
+        }
     }
 
     public String getUserInfo() {
@@ -112,10 +130,10 @@ public class NetClient extends BasePage {
         return req(pathListProjUrl, "GET");
     }
 
-    public String getListBugs() {
-//        setProjID(PROJECT_NAME);
-        this.projID = 15087;
-        return req(endPoint+"/v1/projects/"+projID+"/bugs", "GET");
+    public JSONObject getListBugs() {
+        setProjID(PROJECT_NAME);
+        String response = req(endPoint+"/v1/projects/"+projID+"/bugs", "GET");
+        return new JSONObject(response);
     }
 
     public void setProjID(String project) throws JSONException{
@@ -125,16 +143,13 @@ public class NetClient extends BasePage {
         for (int i = 0 ; i < arr.length() ; i++) {
             if (arr.getJSONObject(i).getString("name").equalsIgnoreCase(project)) {
                 this.projID = arr.getJSONObject(i).getInt("id");
-                System.out.println("AndroidOLXID project id : " +this.projID);
                 break;
             }
         }
-        System.out.println("Project ID : "+this.projID);
     }
 
     public void setProjVersionSection(){
-        String response = getListBugs();
-        JSONObject bugs = new JSONObject(response);
+        JSONObject bugs = getListBugs();
         JSONArray arr = bugs.getJSONArray("bugs");
         for (int i = 0 ; i < arr.length() ; i++) {
             System.out.println(arr.getJSONObject(i).getString("title"));
@@ -147,52 +162,8 @@ public class NetClient extends BasePage {
         System.out.println("AndroidOLXID project version id bugs : " +this.projectVersionID+" and project section id bugs : "+this.projectSectionID);
     }
 
-    public void createBug(ITestResult result) {
-        try{
-//            setProjVersionSection();
-            this.projectVersionID = 18754;
-            this.projectSectionID = 45017;
-            this.projID = 15087;
-
-            this.conn = openConnection(endPoint+"/v1/projects/"+this.projID+"/bugs", "POST");
-            conn.setDoOutput(true);
-
-            JSONObject postBody = new JSONObject();
-            postBody.put("title", "Automation Test : "+result.getMethod().getMethodName() );
-            postBody.put("status_id", 1);
-            postBody.put("severity_id", 2);
-            postBody.put("project_version_id", this.projectVersionID);
-            postBody.put("project_section_id", this.projectSectionID);
-            postBody.put("type_id", 1);
-
-            StringWriter out = new StringWriter();
-            postBody.write(out);
-
-            System.out.println("Request body : "+out.toString());
-
-            DataOutputStream wr = new DataOutputStream(conn.getOutputStream());
-            wr.writeBytes(out.toString());
-            wr.flush();
-            wr.close();
-
-            readInputStream(conn.getInputStream());
-
-            conn.disconnect();
-            this.sendAttachments(result);
-        }
-
-        catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
-
-        catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     public String getLastBugsPageUrl(){
-        String response = getListBugs();
-        JSONObject listBug = new JSONObject(response);
+        JSONObject listBug = getListBugs();
         String lastPage = listBug.getJSONObject(META).getJSONObject(PAGINATION)
                 .getJSONObject(LINKS).getString("last");
         if (lastPage == null){
@@ -207,7 +178,6 @@ public class NetClient extends BasePage {
         return arr.getJSONObject(arr.length()-1).getInt("id");
     }
 
-    @Test
     public void sendAttachments(ITestResult result) {
         try {
             HttpPost post = new HttpPost(endPoint + "/v1/bugs/" + getLastBugsID() + "/attachments");
@@ -236,4 +206,110 @@ public class NetClient extends BasePage {
     System.out.print("Response Uploading : "+responseString);
     }
 
+    public JSONArray getBugsJson() {
+        System.out.println("Store Existing Bugs from leantesting.com to Array");
+        JSONArray jsonArray = new JSONArray();
+        JSONObject listBugs = getListBugs();
+        int totalPages = listBugs.getJSONObject(META).getJSONObject(PAGINATION).getInt("total_pages");
+        for (int i=1 ; i<= totalPages; i++) {
+            String res = req("https://api.leantesting.com/v1/projects/15087/bugs/?page="+i, "GET");
+            JSONArray array = new JSONObject(res).getJSONArray(BUGS);
+            for (int j = 1 ; j <= array.length() ; j++ ) {
+                jsonArray.put(array.getJSONObject(j-1));
+            }
+        }
+    return jsonArray;
+    }
+
+    public int searchBugsId(String title, JSONArray arr){
+            for (int i = 0 ; i < arr.length() ; i++) {
+                if (arr.getJSONObject(i).getString("title").equalsIgnoreCase(title)) {
+                    this.bugsId = arr.getJSONObject(i).getInt("id");
+                    System.out.println("Found Bugs with id : " + this.bugsId);
+                }
+            }
+        return this.bugsId;
+    }
+
+    public void goToTracker(ITestResult testResult, JSONArray array){
+        int checkId = searchBugsId("Automation Test : "+ testResult.getMethod().getMethodName(), array);
+        if ( checkId > 0 ) {
+            System.out.println("Update Existing Bugs for id : "+ checkId);
+            updateCase(testResult, checkId);
+        } else if ( checkId < 0 ) {
+            System.out.println("Creating new bugs ...");
+            create(testResult);
+        } else {
+            System.out.println("Not integrate anything");
+        }
+    }
+
+    public void updateCase(ITestResult result, int bugsId) {
+        switch (result.getStatus()) {
+            // ITestResult status 1 = Success
+            case 1 : update(bugsId, result, 6);
+                     break;
+            // ITestResult status 2 = Failure
+            case 2 : update(bugsId, result, 1);
+                     break;
+            // ITestResult status 3 = Skip
+            case 3 : System.out.println("Test Read as SKIP");
+                     break;
+            // ITestResult status 4 = Success precentage failure
+            case 4 : System.out.println("Test Read as Success precentage failure");
+                     break;
+            default:
+                System.out.println("Invalid Status from ITestResult");
+        }
+
+    }
+
+    public void create(ITestResult result) {
+        try{
+            setProjVersionSection();
+            this.conn = openConnection(endPoint+"/v1/projects/"+this.projID+"/bugs", "POST");
+            conn.setDoOutput(true);
+            JSONObject postBody = new JSONObject();
+            postBody.put("title", "Automation Test : "+result.getMethod().getMethodName() );
+            postBody.put("status_id", 1);
+            postBody.put("severity_id", 2);
+            postBody.put("project_version_id", this.projectVersionID);
+            postBody.put("project_section_id", this.projectSectionID);
+            postBody.put("type_id", 1);
+            writeReqBody(postBody, conn.getOutputStream());
+            conn.disconnect();
+            this.sendAttachments(result);
+        }
+
+        catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void update(int bugsid, ITestResult result, int status){
+        try {
+            setProjVersionSection();
+            this.conn = openConnection(endPoint + "/v1/bugs/" + bugsid, "PUT");
+            conn.setDoOutput(true);
+            JSONObject bodyReq = new JSONObject();
+            bodyReq.put("title", "Automation Test : "+ result.getMethod().getMethodName());
+            bodyReq.put("status_id", status);
+            bodyReq.put("severity_id", 2);
+            bodyReq.put("project_version_id", this.projectVersionID);
+            bodyReq.put("project_section_id", this.projectSectionID);
+            bodyReq.put("type_id", 1);
+            bodyReq.put("description", "Running date : "+result.getEndMillis());
+            writeReqBody(bodyReq, conn.getOutputStream());
+            readInputStream(conn.getInputStream());
+            conn.disconnect();
+
+        } catch (MalformedURLException e){
+            e.printStackTrace();
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+    }
 }

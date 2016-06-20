@@ -1,11 +1,6 @@
 package scenarios;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import pages.DaftarPage;
 import pages.HomePage;
@@ -15,7 +10,7 @@ import ru.yandex.qatools.allure.annotations.Stories;
 import ru.yandex.qatools.allure.annotations.TestCaseId;
 import ru.yandex.qatools.allure.annotations.Title;
 
-
+@Listeners({ScreenshootsListener.class})
 @Features("Registrasi Feature")
 public class DaftarPageTest extends AndroidSetup{
 	private DaftarPage daftarPage;
@@ -23,20 +18,6 @@ public class DaftarPageTest extends AndroidSetup{
 	private String emailDaftarValidFormat="daftar@gmail.com";
 	private String passwordValid="12345";
 	private String konfirmasiPasswordInvalid="54321";
-	
-	@Parameters({"udid"})
-	@BeforeClass
-	public void setUp(String udid) throws Exception{
-		prepareAndroidForAppium(udid);
-        System.out.println("Daftar Page Running on ...");
-	}
-	
-	
-	@AfterClass
-	 public void tearDown() throws Exception {
-	    	System.out.println("Daftar Page Quit");
-	        driver.quit();
-	 }
 	
 	 @Test(priority=1)
 	 @Stories("As A User I Will Not Be Able To Register")

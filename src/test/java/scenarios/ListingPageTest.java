@@ -1,10 +1,6 @@
 package scenarios;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 import pages.FilterPage;
 import pages.HomePage;
 import pages.ListingPage;
@@ -14,27 +10,11 @@ import ru.yandex.qatools.allure.annotations.Stories;
 import ru.yandex.qatools.allure.annotations.TestCaseId;
 import ru.yandex.qatools.allure.annotations.Title;
 
-
+@Listeners({ScreenshootsListener.class})
 @Features("Listing Page Feature")
 public class ListingPageTest extends AndroidSetup{
   protected ListingPage listing;
   private String mobilKeyword="Ertiga";
-  
- 
-    @Parameters({"udid"})
-	@BeforeClass
-	public void setUp(String udid) throws Exception{
-		prepareAndroidForAppium(udid);
-      System.out.println("Listing Page Running on ...");
-	}
-	
-  
-@AfterClass
-  public void tearDown() throws Exception {
-  	System.out.println("Listing Page Quit");
-      driver.quit();
-  }
-
   
   @Test(priority=1)
   @Stories("As A User I Want to be Able to Verify Mobil Menu")
@@ -43,6 +23,7 @@ public class ListingPageTest extends AndroidSetup{
   public void verifyAllMobilLink(){
 	  System.out.println("--Verify All Mobil Link Available");
 	  HomePage homepage = new HomePage(driver);
+      homepage.clickLocationNotif();
 	  MobilPage mobil = homepage.clickMobilPage();
 	  mobil.getSemuaMobilLink();
 	  mobil.getMobilBekasLink();

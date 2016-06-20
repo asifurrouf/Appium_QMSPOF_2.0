@@ -2,16 +2,25 @@ package scenarios;
 
 
 import io.appium.java_client.android.AndroidDriver;
+import org.json.JSONArray;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
+import tracking.NetClient;
+
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 
 public class AndroidSetup {
 
     public static AndroidDriver driver;
+    public static JSONArray array;
+    public NetClient net;
     
     public void prepareAndroidForAppium(String udid) throws MalformedURLException, Exception {
         File appDir = new File("/Users/buddyarifin/Documents/AutomationsTools/olxid-mobile-test/Resources");
@@ -35,8 +44,23 @@ public class AndroidSetup {
         
         //other caps
         capabilities.setCapability("app", app.getAbsolutePath());
-        driver =  new AndroidDriver(new URL("http://192.168.99.100:4444/wd/hub"), capabilities);
+        driver =  new AndroidDriver(new URL("http://localhost:7777/wd/hub"), capabilities);
         System.out.println("SESSION CREATED : "+driver.getSessionId().toString()+" "+udid+" ");
+    }
+
+    @Parameters({"udid"})
+    @BeforeClass
+    public void setUp(String udid) throws Exception{
+        prepareAndroidForAppium(udid);
+        net = new NetClient(driver);
+        this.array = net.getBugsJson();
+    }
+
+
+    @AfterClass
+    public void tearDown() throws Exception {
+        System.out.println("Closed App and Erase session ");
+        driver.quit();
     }
 
     public static AndroidDriver getDriver (){

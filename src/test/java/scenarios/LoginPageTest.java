@@ -1,9 +1,6 @@
 package scenarios;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import pages.HomePage;
 import pages.LoginPage;
@@ -12,6 +9,7 @@ import ru.yandex.qatools.allure.annotations.Stories;
 import ru.yandex.qatools.allure.annotations.TestCaseId;
 import ru.yandex.qatools.allure.annotations.Title;
 
+@Listeners({ScreenshootsListener.class})
 @Features("Login Feature")
 public class LoginPageTest extends AndroidSetup{
 	private String emailValid="frengky.sheeran@gmail.com";
@@ -20,19 +18,6 @@ public class LoginPageTest extends AndroidSetup{
 	private String emailInvalidFormat="frengky";
 	private String passBlank="";
 	private LoginPage loginpage;
-	
-	@Parameters({"udid"})
-	@BeforeClass
-	public void setUp(String udid) throws Exception{
-		prepareAndroidForAppium(udid);
-        System.out.println("Login Page Running on ...");
-	}
-	
-	 @AfterClass
-	 public void tearDown() throws Exception {
-	    	System.out.println("Login Page Quit");
-	        driver.quit();
-	 }
 	 
 	 @Test(priority=1)
 	 @Stories("As A User I Will not be Able to Login")

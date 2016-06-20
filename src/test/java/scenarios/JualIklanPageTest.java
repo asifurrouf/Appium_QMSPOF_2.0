@@ -4,11 +4,7 @@ import java.io.IOException;
 
 import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import pages.BasePage;
 import pages.HomePage;
@@ -23,6 +19,7 @@ import ru.yandex.qatools.allure.annotations.Title;
 import sun.nio.ch.Net;
 import tracking.NetClient;
 
+@Listeners({ScreenshootsListener.class})
 @Features("Jual Iklan Features")
 public class JualIklanPageTest extends AndroidSetup{
     private JualIklanPage jualIklan;
@@ -41,18 +38,6 @@ public class JualIklanPageTest extends AndroidSetup{
     private String transmisi="Triptonic";
     private String emailIklanNotRegistered="frengky.orlend@gmail.com";
     private String passValid="frengky123.,";
-
-    @Parameters({"udid"})
-    @BeforeClass
-    public void setUp(String udid) throws Exception{
-        prepareAndroidForAppium(udid);
-        System.out.println("JualIklan Page Running on ...");
-    }
-
-    @AfterClass
-    public void tearDown() throws Exception {
-        driver.quit();
-    }
 	
 	 @Test(priority=1)
 	 @Stories("As A User I Wont Be Able to Sell Product")

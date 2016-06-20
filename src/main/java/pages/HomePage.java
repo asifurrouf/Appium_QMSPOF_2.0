@@ -3,6 +3,7 @@ package pages;
 import com.google.common.base.Function;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidKeyCode;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -11,6 +12,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.asserts.Assertion;
 import ru.yandex.qatools.allure.annotations.Step;
+
+import java.util.concurrent.TimeUnit;
 
 public class HomePage extends BasePage {
 
@@ -40,21 +43,25 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
+
+
     protected Boolean checkAlertBeforeTest(final By locator){
-        WebDriverWait wait = new WebDriverWait(driver, 20);
+        driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+        WebDriverWait wait = new WebDriverWait(driver, 30);
         return wait.until(new Function<WebDriver, Boolean>() {
             @Override
             public Boolean apply(WebDriver driver) {
-                Boolean value = isElementPresent(locator);
+                Boolean value = isWaitElementPresent(locator);
                 if (value){
                     System.out.println("WARNING: Google Play Service not Available... ");
                     clickElement(getButtonLocator(googlePlayServices));
                     return true;
-                } else if (value != true ) {
+                } else if ( value != true ) {
                     clickElement(getIdLocator(notifOpenAppsLocation));
                     return true;
                 }
-            return true;
+                ((AndroidDriver)driver).pressKeyCode(AndroidKeyCode.ENTER);
+            return isElementPresent(locator);
             }
         });
     }

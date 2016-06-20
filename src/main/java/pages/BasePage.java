@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import org.testng.Assert;
 import ru.yandex.qatools.allure.annotations.Attachment;
 
 import org.openqa.selenium.TakesScreenshot;
@@ -41,6 +42,7 @@ public class BasePage  {
     protected void waitForVisibilityOf(By locator) {
         WebDriverWait wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        Assert.assertTrue(isElementPresent(locator));
     }
     protected void waitForClickabilityOf(By locator) {
         WebDriverWait wait = new WebDriverWait(driver, 20);
@@ -100,10 +102,12 @@ public class BasePage  {
     }
     
     protected void sendKeysElements(WebElement element,String keys){
+        Assert.assertTrue(element.isDisplayed());
     	element.sendKeys(keys);
     }
     
     protected void clickElements(WebElement element){
+        Assert.assertTrue(element.isDisplayed());
     	element.click();
     }
     
@@ -190,6 +194,7 @@ public class BasePage  {
 	
     
     public void scrollPageUp() {
+        System.out.println("Scrolling the content..");
         JavascriptExecutor js = (JavascriptExecutor) driver;
         HashMap<String, Double> swipeObject = new HashMap<String, Double>();
         swipeObject.put("startX", 0.50);
@@ -250,6 +255,7 @@ public class BasePage  {
      * expected Time Out.
      *
      * @param locator is to spesific element.
+     * @param text is to spesific text scroll scroll will stop
      * @return boolean value
     */
     public Boolean isElementPresentAfterScroll(final By locator, final String text) {
