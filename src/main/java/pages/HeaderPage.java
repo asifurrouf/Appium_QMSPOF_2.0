@@ -9,29 +9,52 @@ import ru.yandex.qatools.allure.annotations.Step;
 
 public class HeaderPage extends BasePage{
     private String kotaListingID="com.app.tokobagus.betterb:id/location";
+    
+    
+    private String iconSearchID="com.app.tokobagus.betterb:id/action_search";
+    private String chooseLocationBtn="com.app.tokobagus.betterb:id/btnChooseLocation";
     private String searchTextAreaID="com.app.tokobagus.betterb:id/search_src_text";
-  
-	
+    
 	public HeaderPage(WebDriver driver) {
 		super(driver);
 	}
 	
-	
-	@Step("Choose Kota")
-	public void clickKotaL1(String kotaL1){
-	   clickElement(getTextLocator(kotaL1));	
-	}
-	
-	@Step("Choose Sub Kota")
-	public HomePage clickKotaL2(String kotaL2){
-		clickElement(getTextLocator(kotaL2));
-		return new HomePage(driver);
+	@Step("Click Icon Search")
+	public void clickIconSearch(){
+		clickElement(getIdLocator(iconSearchID));
 	}
 	
 	@Step("Fill Search Keyword")
 	public void fillSearchKeyword(String keyword){
 		sendKeysElement(getIdLocator(searchTextAreaID), keyword+"\n");
 	}
+	
+	@Step("Click Location Button")
+	public void clickLocation(){
+		clickElement(getIdLocator(chooseLocationBtn));
+	}
+	
+
+	@Step("Choose Kota L1") 
+	public void clickKotaL1(String kotaL1){
+	   clickElement(getTextLocator(kotaL1));	
+	}
+	
+	
+	@Step("Choose Kota L2")
+	public void clickSubKotaL2(String kotaL2){
+		clickElement(getTextLocator(kotaL2));
+	}
+	
+	
+	@Deprecated //Old Version apps 613
+	@Step("Choose Sub Kota")
+	public HomePage clickKotaL2(String kotaL2){
+		clickElement(getTextLocator(kotaL2));
+		return new HomePage(driver);
+	}
+	
+	
 
 	@Deprecated // move to listingPage function
 	@Step("Verify Pilih Kota")

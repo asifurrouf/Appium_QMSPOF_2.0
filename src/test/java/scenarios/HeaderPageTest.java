@@ -16,8 +16,8 @@ public class HeaderPageTest extends AndroidSetup{
 	private HeaderPage headerPage;
 
 	private String keyword="Ertiga";
-	private String kotaL1="Bogor";
-	private String kotaL2="Bogor Kota";
+	private String kotaL1="Jakarta";
+	private String kotaL2="Seluruh Jakarta";
 	
 	 @Test(priority=1)
 	 @Stories("As A User I Want to Be Able to Search in Header Page")
@@ -28,8 +28,8 @@ public class HeaderPageTest extends AndroidSetup{
 		 HomePage homepage = new HomePage(driver);
 		 homepage.clickLocationNotif();
 		 headerPage = homepage.clickLocationChooser();
-		 headerPage.clickKotaL1(kotaL1);//Bogor
-		 headerPage.clickKotaL2(kotaL2);//Bogor Kota
+		 headerPage.clickKotaL1(kotaL1);//Jakarta
+		 headerPage.clickSubKotaL2(kotaL2);//Seluruh Jakarta
 		 ListingPage listing = homepage.clickSearchButton();
 		 headerPage.fillSearchKeyword(keyword);
 		 listing.verifyChooseKota(kotaL2);
