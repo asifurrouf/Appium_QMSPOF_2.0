@@ -35,7 +35,7 @@ public class NetClient extends BasePage {
     public static final String PAGINATION = "pagination";
     public static final String LINKS = "links";
     public static final String BUGS = "bugs";
-    static String token = "esjeDdcllCuWGEqfW8yOM4LjL7lfwyEjMKKhNrrY";
+    static String token = "rqHRZDI8lV257vz0qrsXNZkKpMIRtNqCr3OOD2U5";
     private int projID;
     private int projectVersionID;
     private int projectSectionID;
@@ -236,11 +236,11 @@ public class NetClient extends BasePage {
         if ( checkId > 0 ) {
             System.out.println("Update Existing Bugs for id : "+ checkId);
             updateCase(testResult, checkId);
-        } else if ( checkId < 0 ) {
+        } else if ( checkId <= 0 ) {
             System.out.println("Creating new bugs ...");
             create(testResult);
         } else {
-            System.out.println("Not integrate anything");
+            System.out.println("Not integrate anything ");
         }
     }
 

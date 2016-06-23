@@ -1,10 +1,12 @@
 package scenarios;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.ListingDetailPage;
 import pages.ListingPage;
 import pages.MobilPage;
+import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;
 import ru.yandex.qatools.allure.annotations.TestCaseId;
 import ru.yandex.qatools.allure.annotations.Title;
@@ -12,6 +14,9 @@ import ru.yandex.qatools.allure.annotations.Title;
 /**
  * Created by buddyarifin on 6/23/16.
  */
+
+@Listeners({ScreenshootsListener.class})
+@Features("Listing Details Page")
 public class ListingDetailPageTest extends AndroidSetup {
     protected ListingPage listingPage;
     protected ListingDetailPage detailPage;
