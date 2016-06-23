@@ -241,6 +241,19 @@ public class NetClient extends BasePage {
             create(testResult);
         } else {
             System.out.println("Not integrate anything" + checkId);
+            createBugsCase(testResult);
+        } 
+    }
+
+    public void createBugsCase(ITestResult result) {
+        switch (result.getStatus()) {
+            case 1 : System.out.println("Test Succeded");
+                     break;
+            case 2 : System.out.println("Creating new bugs ...");
+                     create(result);
+                     break;
+            default:
+                System.out.println("Invalid Status from ITestResult - Created Case");
         }
     }
 
@@ -259,7 +272,7 @@ public class NetClient extends BasePage {
             case 4 : System.out.println("Test Read as Success precentage failure");
                      break;
             default:
-                System.out.println("Invalid Status from ITestResult");
+                System.out.println("Invalid Status from ITestResult - Updated Case");
         }
 
     }

@@ -32,7 +32,7 @@ public class HeaderPageTest extends AndroidSetup{
 		 headerPage.clickSubKotaL2(kotaL2);//Seluruh Jakarta
 		 ListingPage listing = homepage.clickSearchButton();
 		 headerPage.fillSearchKeyword(keyword);
-		 listing.verifyChooseKota(kotaL2);
+		 listing.verifyChooseKota(kotaL1);
 		 listing.verifyResultFilterByKeyword(keyword);
 	 }
 	

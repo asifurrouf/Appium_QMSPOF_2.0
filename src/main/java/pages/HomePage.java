@@ -28,7 +28,7 @@ public class HomePage extends BasePage {
     private String rumah="Rumah Tangga";
     private String perlengkapanBayi="Perlengkapan Bayi & Anak";
     private String postAdsLink="com.app.tokobagus.betterb:id/postAdButton";
-    private String pilihLokasi="Mencari lokasi";
+    private String pilihLokasi="Lokasi terdekat";
     private String searchLink="com.app.tokobagus.betterb:id/action_search";
     private String openNav="Buka navigasi";
     private String navLogin="com.app.tokobagus.betterb:id/log_in";
