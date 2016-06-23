@@ -111,6 +111,10 @@ public class BasePage  {
     	element.click();
     }
     
+    public String getStringText(By locator){
+       return driver.findElement(locator).getText();	
+    }
+    
     public By getTextLocator(String locator){
     	return By.xpath("//android.widget.TextView[@text='"+locator+"']");
     }
@@ -179,6 +183,12 @@ public class BasePage  {
     	waitForVisibilityOf(locator);
     	List<WebElement> elements = driver.findElements(locator);
     	return elements.get(index);
+    }
+    
+    protected int getSizeElements(By locator){
+    	//waitForVisibilityOf(locator);
+    	List<WebElement> elements = driver.findElements(locator);
+    	return elements.size();
     }
     
     @Attachment(value = "{0}", type = "image/png")

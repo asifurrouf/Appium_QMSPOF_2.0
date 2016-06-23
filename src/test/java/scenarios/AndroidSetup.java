@@ -23,9 +23,9 @@ public class AndroidSetup {
     public NetClient net;
     
     public void prepareAndroidForAppium(String udid) throws MalformedURLException, Exception {
-        File appDir = new File("/Users/buddyarifin/Documents/AutomationsTools/olxid-mobile-test/Resources");
-        //File appDir = new File("/home/tegar/olxid-mobile-test/Resources");
-        File app = new File(appDir, "olxid-6.4.0.apk");
+        //File appDir = new File("/Users/buddyarifin/Documents/AutomationsTools/olxid-mobile-test/Resources");
+        File appDir = new File("/Users/tegar/olxid-mobile-test/Resources");
+        File app = new File(appDir, "olxid-6.4.2.apk");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("device","Android");
 
@@ -44,7 +44,7 @@ public class AndroidSetup {
         
         //other caps
         capabilities.setCapability("app", app.getAbsolutePath());
-        driver =  new AndroidDriver(new URL("http://localhost:7777/wd/hub"), capabilities);
+        driver =  new AndroidDriver(new URL("http://192.168.99.100:4444/wd/hub"), capabilities);
         System.out.println("SESSION CREATED : "+driver.getSessionId().toString()+" "+udid+" ");
     }
 

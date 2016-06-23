@@ -38,6 +38,8 @@ public class HomePage extends BasePage {
     private String searchTextID="com.app.tokobagus.betterb:id/search_src_text";
     private String notifOpenAppsLocation="com.app.tokobagus.betterb:id/pager_title_strip";
     private String googlePlayServices="Get Google Play services";
+    private String favoritText="Favorit";
+    
     
     public HomePage(WebDriver driver) {
         super(driver);
@@ -69,10 +71,12 @@ public class HomePage extends BasePage {
     	return new LoginPage(driver);
     }
     
+    
+    
     @Step("Click Petunjuk Lokasi")
     public void clickLocationNotif(){
         //checkAlertBeforeTest(getTextLocator(googlePlayServices));
-    	clickElement(getIdLocator(notifOpenAppsLocation),5);
+    	clickElement(getIdLocator(notifOpenAppsLocation),30);
     }
     
     @Step("Locate Mobil Link")
@@ -167,7 +171,14 @@ public class HomePage extends BasePage {
     	return new MobilPage(driver);
     }
     
+    @Step("Go to Fave Menu")
+    public FavouritePage clickFavePage(){
+        clickElement(getContentLocator(openNav));
+        clickElement(getTextLocator(favoritText));
+        return new FavouritePage(driver);
+    }
     
+ 
     public ListingPage searchFor(String keyword) {
     	sendKeysElement(getIdLocator(searchTextID), keyword);
         clickElement(getIdLocator(searchLink));

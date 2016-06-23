@@ -93,15 +93,17 @@ public class ListingPage extends BasePage {
 	    return titlePertama.getText();
 	}
 	
-	@Step("Click advertisement")
+	@Step("Click advertisement")//Return to Listing Page detail
 	public void clickAdsDetail(){
 	    WebElement adsPertama = getTextElements(getIdLocator(adsListPertamaID), 0);
 	    adsPertama.click();
 	}
 	
 	@Step("Click Favourite On First Ads")
-	public void clickFaveAds(){
+	public void clickFaveAds(){ 
 		WebElement iconFave = getTextElements(getIdLocator(faveIconID), 0);
+		iconFave.click();
+		//return new ListingPage(driver);
 	}
 	
 	@Step("Iterate Value from Result Search = {0}")
