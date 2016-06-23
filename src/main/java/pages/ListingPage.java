@@ -87,16 +87,18 @@ public class ListingPage extends BasePage {
 	public void clickActionBar(){
 		clickElement(getIdLocator(actionBarID));
 	}
-	
+
 	public String getFirstAdsTitle(){
-		WebElement titlePertama = getTextElements(getIdLocator(adsTitlePertamaID), 0);
+        WebElement titlePertama = getTextElements(getIdLocator(adsTitlePertamaID), 0);
 	    return titlePertama.getText();
 	}
 	
 	@Step("Click advertisement")//Return to Listing Page detail
-	public void clickAdsDetail(){
+	public ListingDetailPage clickAdsDetail(){
+        System.out.println("Click first Ads, then go to details");
 	    WebElement adsPertama = getTextElements(getIdLocator(adsListPertamaID), 0);
 	    adsPertama.click();
+        return new ListingDetailPage(driver);
 	}
 	
 	@Step("Click Favourite On First Ads")
