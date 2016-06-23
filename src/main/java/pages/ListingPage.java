@@ -27,6 +27,9 @@ public class ListingPage extends BasePage {
 	private String topListingID="com.app.tokobagus.betterb:id/imageview_toplisting";
 	private String kotaListingID="com.app.tokobagus.betterb:id/location";
 	
+	private String adsListPertamaID="com.app.tokobagus.betterb:id/photo";
+	private String adsTitlePertamaID="com.app.tokobagus.betterb:id/title";
+	
 	
 	public ListingPage(WebDriver driver) {
 		super(driver);
@@ -83,6 +86,15 @@ public class ListingPage extends BasePage {
 		clickElement(getIdLocator(actionBarID));
 	}
 	
+	@Step("Click advertisement")
+	public void clickAdsDetail(){
+	    WebElement titlePertama = getTextElements(getIdLocator(brandTextTitleMobilID), 0);
+	    String title = titlePertama.getText();
+	    WebElement adsPertama = getTextElements(getIdLocator(adsListPertamaID), 0);
+	    adsPertama.click();
+	}
+	
+	
 	
 	@Step("Iterate Value from Result Search = {0}")
 	public void verifyResultFilterByKeyword(String keyword) throws Exception{
@@ -96,6 +108,9 @@ public class ListingPage extends BasePage {
 
 		        System.out.println("Search for keyword : "+keyword.toUpperCase()+
 		        		           " from Apps Value : "+values.toUpperCase());
+		        
+		        Assert.assertTrue(values.toUpperCase().contains(keyword.toUpperCase()), "Hasil Tidak Sesuai untuk pencarian");
+		        
 		        if (values.toUpperCase().contains(keyword.toUpperCase())){
 		        	status=true;
 		        }

@@ -145,7 +145,7 @@ public class JualIklanPageTest extends AndroidSetup{
 	 //@Test(priority=4)
 	 @Stories("As A User I Want to Be Able to Sell Product")
 	 @TestCaseId("TC_ADR_006_003")
-	 @Title("Verify User Able to Post An Ads  - Email not Registered Before")
+	 @Title("Verify User Able to Post An Ads  - Email Registered Before")
 	 public void verifyUserAbleToPostAnAdsRegisteredUser() throws Exception{
 		System.out.println("Verify User Able to Post An Ads  - Email Registered");
 		HomePage homepage = new HomePage(driver);

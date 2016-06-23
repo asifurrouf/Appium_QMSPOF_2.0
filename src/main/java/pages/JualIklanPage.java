@@ -297,4 +297,14 @@ public class JualIklanPage extends BasePage{
 		clickElement(getIdLocator(backToHomePageID));
 	}
 	
+	@Step("Verify PIN Blackberry")
+	public void verifyPINBBIsCorrect(String pin){
+		Assert.assertTrue(pin.matches("([0-9A-F]{8})"), "Please check your pin BB Format");
+	}
+	
+	@Step("Verify Phone Number")
+	public void verifyPhoneNumberIsCorrect(String phone){
+		Assert.assertTrue(phone.replace("-", "").matches("([0-9])"), "Please check your phone format");
+	}
+	
 }

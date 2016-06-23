@@ -98,8 +98,9 @@ public class DaftarPage extends BasePage {
 	
 	@Step("Back to Homepage")
     public HomePage clickBackButton(){
-    	driver.navigate().back();
-		driver.navigate().back();
+    	//driver.navigate().back();
+		//driver.navigate().back();
+		tapOutsideNavBar();
 		tapOutsideNavBar();
     	return new HomePage(driver);
     }

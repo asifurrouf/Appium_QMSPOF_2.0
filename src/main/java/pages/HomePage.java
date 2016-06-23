@@ -46,17 +46,16 @@ public class HomePage extends BasePage {
 
 
     protected Boolean checkAlertBeforeTest(final By locator){
-        driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-        WebDriverWait wait = new WebDriverWait(driver, 30);
+        WebDriverWait wait = new WebDriverWait(driver, 6);
         return wait.until(new Function<WebDriver, Boolean>() {
             @Override
             public Boolean apply(WebDriver driver) {
-                Boolean value = isWaitElementPresent(locator);
+                Boolean value = isElementPresent(locator);
                 if (value){
                     System.out.println("WARNING: Google Play Service not Available... ");
                     clickElement(getButtonLocator(googlePlayServices));
                     return true;
-                } else if ( value != true ) {
+                } else if ( !value ) {
                     clickElement(getIdLocator(notifOpenAppsLocation));
                     return true;
                 }
@@ -72,7 +71,8 @@ public class HomePage extends BasePage {
     
     @Step("Click Petunjuk Lokasi")
     public void clickLocationNotif(){
-        checkAlertBeforeTest(getTextLocator(googlePlayServices));
+        //checkAlertBeforeTest(getTextLocator(googlePlayServices));
+    	clickElement(getIdLocator(notifOpenAppsLocation),5);
     }
     
     @Step("Locate Mobil Link")
