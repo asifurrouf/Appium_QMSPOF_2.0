@@ -2,7 +2,7 @@
   "capabilities":
       [
         {
-                "deviceName": "192.168.59.105:5555",
+                "deviceName": "192.168.99.105:5555",
                 "version":"4.3",
                 "maxInstances": 1,
                 "platformName":"ANDROID"
@@ -20,7 +20,7 @@
     "register": true,
     "registerCycle": 5000,
     "hubPort": 4444,
-    "hubHost": "192.168.99.1"
+    "hubHost": "192.168.99.100"
   }
 }
 

@@ -5,5 +5,7 @@
 test-output/
 .gitignore
 testng.xml
+testng2.xml
 Screenshots/
 .idea
+Nexus*

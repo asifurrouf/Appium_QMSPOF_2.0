@@ -90,7 +90,7 @@ public class NetClient extends BasePage {
             e.printStackTrace();
         }
         catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Cannot Connect to Lean Testing");
         }
         return responseString;
     }

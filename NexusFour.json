@@ -2,10 +2,12 @@
   "capabilities":
       [
         {
-                "deviceName": "192.168.59.105:5555",
+                "deviceName": "192.168.99.104:5555",
                 "version":"4.3",
                 "maxInstances": 1,
-                "platformName":"ANDROID"
+                "platformName":"ANDROID",
+                "udid":"192.168.99.104:5555",
+                "device":"192.168.99.104:5555"
         }
       ],
   "configuration":
