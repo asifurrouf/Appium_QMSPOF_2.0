@@ -95,7 +95,7 @@
         <configuration>
             <skipTests>false</skipTests>
         	<suiteXmlFiles>
-            	<suiteXmlFile>testng.xml</suiteXmlFile>
+            	<suiteXmlFile>testng2.xml</suiteXmlFile>
             </suiteXmlFiles>
             <!-- 
             <systemPropertyVariables>

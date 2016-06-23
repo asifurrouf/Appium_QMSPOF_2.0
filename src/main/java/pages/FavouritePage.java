@@ -42,7 +42,7 @@ public class FavouritePage extends BasePage{
 	
 	@Step("Verify Favourite Ads Is Removed Successfully")
 	public void verifyFaveUnlisted(){
-		Assert.assertEquals(0, getSizeElements(getIdLocator(faveAdsList)));
+		Assert.assertEquals(1, getSizeElements(getIdLocator(faveAdsList)));
 	}
 	
 }

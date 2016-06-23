@@ -48,7 +48,7 @@ public class HomePage extends BasePage {
 
 
     protected Boolean checkAlertBeforeTest(final By locator){
-        WebDriverWait wait = new WebDriverWait(driver, 6);
+        WebDriverWait wait = new WebDriverWait(driver, 20);
         return wait.until(new Function<WebDriver, Boolean>() {
             @Override
             public Boolean apply(WebDriver driver) {
@@ -70,8 +70,6 @@ public class HomePage extends BasePage {
     public LoginPage goToLoginPage(){
     	return new LoginPage(driver);
     }
-    
-    
     
     @Step("Click Petunjuk Lokasi")
     public void clickLocationNotif(){

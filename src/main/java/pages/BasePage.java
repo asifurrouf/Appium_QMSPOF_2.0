@@ -87,6 +87,9 @@ public class BasePage  {
     	driver.findElement(by).click();
     }
     
+    protected void clickElementWithoutWait(By by){
+    	driver.findElement(by).click();
+    }
     
     protected void sendKeysElement(By by,String keys){
     	waitForVisibilityOf(by);

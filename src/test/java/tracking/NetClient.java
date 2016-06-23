@@ -35,7 +35,7 @@ public class NetClient extends BasePage {
     public static final String PAGINATION = "pagination";
     public static final String LINKS = "links";
     public static final String BUGS = "bugs";
-    static String token = "esjeDdcllCuWGEqfW8yOM4LjL7lfwyEjMKKhNrrY";
+    static String token = "rqHRZDI8lV257vz0qrsXNZkKpMIRtNqCr3OOD2U5";
     private int projID;
     private int projectVersionID;
     private int projectSectionID;
@@ -203,7 +203,7 @@ public class NetClient extends BasePage {
         catch ( Exception e) {
             e.printStackTrace();
         }
-    System.out.print("Response Uploading : "+responseString);
+    System.out.print("Response Uploading File : "+responseString);
     }
 
     public JSONArray getBugsJson() {
@@ -236,11 +236,11 @@ public class NetClient extends BasePage {
         if ( checkId > 0 ) {
             System.out.println("Update Existing Bugs for id : "+ checkId);
             updateCase(testResult, checkId);
-        } else if ( checkId < 0 ) {
+        } else if ( checkId <= 0 ) {
             System.out.println("Creating new bugs ...");
             create(testResult);
         } else {
-            System.out.println("Not integrate anything");
+            System.out.println("Not integrate anything" + checkId);
         }
     }
 
@@ -277,6 +277,7 @@ public class NetClient extends BasePage {
             postBody.put("project_section_id", this.projectSectionID);
             postBody.put("type_id", 1);
             writeReqBody(postBody, conn.getOutputStream());
+            System.out.println("Response Body :"+readInputStream(conn.getInputStream()));
             conn.disconnect();
             this.sendAttachments(result);
         }
@@ -303,7 +304,7 @@ public class NetClient extends BasePage {
             bodyReq.put("type_id", 1);
             bodyReq.put("description", "Running date : "+result.getEndMillis());
             writeReqBody(bodyReq, conn.getOutputStream());
-            readInputStream(conn.getInputStream());
+            System.out.println("Response Body :"+readInputStream(conn.getInputStream()));
             conn.disconnect();
 
         } catch (MalformedURLException e){
