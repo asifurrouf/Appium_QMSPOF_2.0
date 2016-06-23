@@ -30,6 +30,8 @@ public class ListingPage extends BasePage {
 	private String adsListPertamaID="com.app.tokobagus.betterb:id/photo";
 	private String adsTitlePertamaID="com.app.tokobagus.betterb:id/title";
 	
+	private String faveIconID="com.app.tokobagus.betterb:id/circle";
+	
 	
 	public ListingPage(WebDriver driver) {
 		super(driver);
@@ -86,15 +88,21 @@ public class ListingPage extends BasePage {
 		clickElement(getIdLocator(actionBarID));
 	}
 	
+	public String getFirstAdsTitle(){
+		WebElement titlePertama = getTextElements(getIdLocator(adsTitlePertamaID), 0);
+	    return titlePertama.getText();
+	}
+	
 	@Step("Click advertisement")
 	public void clickAdsDetail(){
-	    WebElement titlePertama = getTextElements(getIdLocator(brandTextTitleMobilID), 0);
-	    String title = titlePertama.getText();
 	    WebElement adsPertama = getTextElements(getIdLocator(adsListPertamaID), 0);
 	    adsPertama.click();
 	}
 	
-	
+	@Step("Click Favourite On First Ads")
+	public void clickFaveAds(){
+		WebElement iconFave = getTextElements(getIdLocator(faveIconID), 0);
+	}
 	
 	@Step("Iterate Value from Result Search = {0}")
 	public void verifyResultFilterByKeyword(String keyword) throws Exception{
